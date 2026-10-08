@@ -3,6 +3,7 @@ extends Node2D
 const WOLF_SCENE: PackedScene = preload("res://scenes/common_wolf.tscn")
 const TERRAIN_SCRIPT: Script = preload("res://scripts/terrain_visual.gd")
 const SPIKE_SCENE: PackedScene = preload("res://scenes/spike_trap.tscn")
+const GATE_SCRIPT: Script = preload("res://scripts/stage_gate.gd")
 const MAP_WIDTH := 4800.0
 
 # Each marker is [center_x, walk_surface_y, width, visual_depth, variation].
@@ -32,20 +33,43 @@ const WOLF_POSITIONS := [
 ]
 
 func _ready() -> void:
+	_add_world_safety()
 	_add_ground(1375.0, 500.0, 2750.0, 40.0, 40)
-	_add_ground(2990.0, 590.0, 470.0, 40.0, 41)
+	# Bridge the Root Passage's former floor gap so a missed jump never traps Red.
+	_add_ground(3110.0, 500.0, 720.0, 40.0, 41)
 	_add_ground(4135.0, 500.0, 1330.0, 40.0, 42)
-	_add_platform(3235.0, 555.0, 110.0, 32.0, 43)
-	_add_platform(3300.0, 530.0, 110.0, 32.0, 44)
-	_add_platform(3360.0, 500.0, 110.0, 32.0, 45)
 	for platform in PLATFORMS:
 		_add_platform(float(platform[0]), float(platform[1]), float(platform[2]), float(platform[3]), int(platform[4]))
 	for spawn in WOLF_POSITIONS:
 		_add_wolf(spawn)
-	_add_alpha_wolf(Vector2(2510.0, 500.0))
-	_add_spike(Vector2(2945.0, 590.0))
-	_add_spike(Vector2(3065.0, 590.0))
+	_add_stage_gate()
 	queue_redraw()
+
+func _add_world_safety() -> void:
+	# A low catch floor covers every gap, while invisible side walls keep Red
+	# inside the playable map. The visible paths and platforms stay unchanged.
+	_add_ground(MAP_WIDTH * 0.5, 590.0, MAP_WIDTH + 400.0, 40.0, 90)
+	_add_collision_box("LeftMapBoundary", Vector2(-36.0, 180.0), Vector2(40.0, 1000.0))
+	_add_collision_box("RightMapBoundary", Vector2(MAP_WIDTH + 36.0, 180.0), Vector2(40.0, 1000.0))
+
+func _add_collision_box(node_name: String, box_position: Vector2, box_size: Vector2) -> void:
+	var body := StaticBody2D.new()
+	body.name = node_name
+	body.position = box_position
+	var collision := CollisionShape2D.new()
+	var shape := RectangleShape2D.new()
+	shape.size = box_size
+	collision.shape = shape
+	body.add_child(collision)
+	add_child(body)
+
+func _add_stage_gate() -> void:
+	var gate := Node2D.new()
+	gate.name = "StageTwoGate"
+	gate.position = Vector2(4660.0, 390.0)
+	gate.set_script(GATE_SCRIPT)
+	gate.set("next_scene_path", "res://scenes/stage2_boss.tscn")
+	add_child(gate)
 
 func _add_ground(center_x: float, surface_y: float, width: float, depth: float, variant: int) -> void:
 	var body := StaticBody2D.new()
@@ -91,17 +115,6 @@ func _add_wolf(spawn: Vector2) -> void:
 	wolf.position = spawn
 	add_child(wolf)
 
-func _add_alpha_wolf(spawn: Vector2) -> void:
-	var wolf := WOLF_SCENE.instantiate() as CharacterBody2D
-	wolf.name = "AlphaWolf"
-	wolf.position = spawn
-	wolf.set("maximum_health", 126)
-	wolf.add_to_group("boss")
-	var visual := wolf.get_node("Visual") as AnimatedSprite2D
-	visual.scale = Vector2(1.65, 1.65)
-	visual.modulate = Color(0.88, 0.68, 0.76, 1.0)
-	add_child(wolf)
-
 func _add_spike(spawn: Vector2) -> void:
 	var spikes := SPIKE_SCENE.instantiate()
 	spikes.position = spawn
@@ -113,7 +126,6 @@ func _draw() -> void:
 	_draw_ruins()
 	_draw_root_cave()
 	_draw_corrupted_tree()
-	_draw_witch_gate()
 	_draw_secret_marker()
 
 func _draw_region_labels() -> void:
@@ -125,7 +137,7 @@ func _draw_region_labels() -> void:
 	draw_string(ThemeDB.fallback_font, Vector2(2910, 300), "ROOT PASSAGE", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 14, label_color)
 	draw_string(ThemeDB.fallback_font, Vector2(3370, 300), "UPPER FOREST", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 14, label_color)
 	draw_string(ThemeDB.fallback_font, Vector2(4040, 300), "CORRUPTED GROVE", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 14, label_color)
-	draw_string(ThemeDB.fallback_font, Vector2(4500, 300), "WITCH'S GATE", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 14, label_color)
+	draw_string(ThemeDB.fallback_font, Vector2(4500, 300), "MOON GATE", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 14, label_color)
 
 func _draw_entrance_sign() -> void:
 	draw_line(Vector2(112, 498), Vector2(112, 444), Color("47342e"), 5.0, true)
@@ -164,16 +176,6 @@ func _draw_corrupted_tree() -> void:
 	draw_line(Vector2(4176, 382), Vector2(4280, 320), Color("7b2d43"), 4.0, true)
 	for point in [Vector2(4170, 320), Vector2(4280, 320), Vector2(4075, 430)]:
 		draw_circle(point, 5.0, Color("b54650", 0.66))
-
-func _draw_witch_gate() -> void:
-	draw_rect(Rect2(4544, 334, 38, 166), Color("33303a"), true)
-	draw_rect(Rect2(4738, 334, 38, 166), Color("33303a"), true)
-	draw_rect(Rect2(4535, 324, 250, 22), Color("49424c"), true)
-	draw_line(Vector2(4563, 335), Vector2(4660, 260), Color("393541"), 16.0, true)
-	draw_line(Vector2(4660, 260), Vector2(4760, 335), Color("393541"), 16.0, true)
-	draw_rect(Rect2(4600, 360, 120, 140), Color("17131c", 0.94), true)
-	draw_line(Vector2(4660, 374), Vector2(4660, 470), Color("8a313f", 0.62), 3.0, true)
-	draw_circle(Vector2(4660, 372), 7.0, Color("b8484f", 0.52))
 
 func _draw_secret_marker() -> void:
 	draw_circle(Vector2(1245, 344), 3.0, Color("ffcf8a", 0.75))

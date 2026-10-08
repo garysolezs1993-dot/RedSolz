@@ -1,0 +1,99 @@
+extends Node2D
+
+const WOLF_BOSS_SCENE: PackedScene = preload("res://scenes/cursed_wolf_boss.tscn")
+const TERRAIN_SCRIPT: Script = preload("res://scripts/terrain_visual.gd")
+const MAP_WIDTH := 2800.0
+
+# A connected forest clearing: the main floor stays readable while these
+# broad ledges give Red a few safe routes above the boss's ground attacks.
+const PLATFORMS := [
+	[390.0, 438.0, 210.0, 36.0, 51],
+	[690.0, 382.0, 190.0, 34.0, 52],
+	[1010.0, 434.0, 220.0, 36.0, 53],
+	[1350.0, 378.0, 210.0, 34.0, 54],
+	[1660.0, 430.0, 200.0, 36.0, 55],
+	[2050.0, 382.0, 210.0, 34.0, 56],
+	[2410.0, 438.0, 220.0, 36.0, 57],
+]
+
+func _ready() -> void:
+	_add_world_safety()
+	_add_platform(1400.0, 500.0, MAP_WIDTH, 44.0, 50)
+	for platform in PLATFORMS:
+		_add_platform(float(platform[0]), float(platform[1]), float(platform[2]), float(platform[3]), int(platform[4]))
+	_add_cursed_wolf(Vector2(1860.0, 500.0))
+	queue_redraw()
+
+func _add_world_safety() -> void:
+	_add_platform(MAP_WIDTH * 0.5, 590.0, MAP_WIDTH + 400.0, 40.0, 58)
+	_add_collision_box("LeftMapBoundary", Vector2(-36.0, 180.0), Vector2(40.0, 1000.0))
+	_add_collision_box("RightMapBoundary", Vector2(MAP_WIDTH + 36.0, 180.0), Vector2(40.0, 1000.0))
+
+func _add_collision_box(node_name: String, box_position: Vector2, box_size: Vector2) -> void:
+	var body := StaticBody2D.new()
+	body.name = node_name
+	body.position = box_position
+	var collision := CollisionShape2D.new()
+	var shape := RectangleShape2D.new()
+	shape.size = box_size
+	collision.shape = shape
+	body.add_child(collision)
+	add_child(body)
+
+func _add_platform(center_x: float, surface_y: float, width: float, depth: float, variant: int) -> void:
+	var body := StaticBody2D.new()
+	body.name = "RootedLedge_%02d" % variant
+	body.position = Vector2(center_x, surface_y + 9.0)
+	var collision := CollisionShape2D.new()
+	var shape := RectangleShape2D.new()
+	shape.size = Vector2(width, 18.0)
+	collision.one_way_collision = true
+	collision.one_way_collision_margin = 8.0
+	collision.shape = shape
+	body.add_child(collision)
+	var visual := Node2D.new()
+	visual.name = "UnevenRockVisual"
+	visual.set_script(TERRAIN_SCRIPT)
+	visual.set("dimensions", Vector2(width, depth))
+	visual.set("variant", variant)
+	visual.set("surface_y", -9.0)
+	body.add_child(visual)
+	add_child(body)
+
+func _add_cursed_wolf(spawn: Vector2) -> void:
+	var wolf := WOLF_BOSS_SCENE.instantiate() as CharacterBody2D
+	wolf.name = "CursedWolfBoss"
+	wolf.position = spawn
+	add_child(wolf)
+
+func _draw() -> void:
+	var label_color := Color(0.78, 0.68, 0.73, 0.9)
+	draw_string(ThemeDB.fallback_font, Vector2(70.0, 300.0), "THE BLOOD MOON CLEARING", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
+	draw_string(ThemeDB.fallback_font, Vector2(1510.0, 300.0), "CURSED WOLF DEN", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
+	_draw_entrance_arch()
+	_draw_crimson_roots()
+	_draw_lanterns()
+
+func _draw_entrance_arch() -> void:
+	for x in [120.0, 210.0]:
+		draw_rect(Rect2(x, 388.0, 18.0, 112.0), Color("302a35"), true)
+		draw_rect(Rect2(x - 5.0, 382.0, 28.0, 10.0), Color("514450"), true)
+	draw_line(Vector2(125.0, 390.0), Vector2(174.0, 344.0), Color("403744"), 12.0, true)
+	draw_line(Vector2(174.0, 344.0), Vector2(222.0, 390.0), Color("403744"), 12.0, true)
+
+func _draw_crimson_roots() -> void:
+	var root_color := Color("302630")
+	draw_line(Vector2(1750.0, 500.0), Vector2(1712.0, 340.0), root_color, 18.0, true)
+	draw_line(Vector2(1712.0, 340.0), Vector2(1615.0, 282.0), root_color, 10.0, true)
+	draw_line(Vector2(1732.0, 420.0), Vector2(1830.0, 335.0), Color("582a3b"), 8.0, true)
+	draw_line(Vector2(1830.0, 335.0), Vector2(1940.0, 280.0), Color("713143"), 5.0, true)
+	draw_line(Vector2(2115.0, 500.0), Vector2(2150.0, 360.0), root_color, 16.0, true)
+	draw_line(Vector2(2150.0, 360.0), Vector2(2260.0, 315.0), Color("542938"), 7.0, true)
+	for point in [Vector2(1830.0, 335.0), Vector2(1940.0, 280.0), Vector2(2260.0, 315.0)]:
+		draw_circle(point, 5.0, Color("b54650", 0.55))
+
+func _draw_lanterns() -> void:
+	for x in [310.0, 1120.0, 1590.0, 2500.0]:
+		draw_line(Vector2(x, 500.0), Vector2(x, 458.0), Color("382b2b"), 3.0, true)
+		draw_rect(Rect2(x - 4.0, 453.0, 8.0, 10.0), Color("ffba66"), true)
+		draw_circle(Vector2(x, 458.0), 14.0, Color(1.0, 0.4, 0.16, 0.11))

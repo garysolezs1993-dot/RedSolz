@@ -10,6 +10,7 @@ const JUMP_VELOCITY := -360.0
 const MAX_AIR_JUMPS := 2
 const DROP_THROUGH_DURATION := 0.22
 const DASH_SPEED := 430.0
+const DASH_IFRAME_DURATION := 0.7
 const ATTACK_RECOVERY := 0.16
 const ATTACK_WINDUP := 0.12
 const HITSTOP_TIME := 0.055
@@ -36,6 +37,7 @@ var skill_timer := 0.0
 var skill_uses_hitbox := false
 var hurt_timer := 0.0
 var invulnerable := 0.0
+var default_collision_layer := 1
 var idle_blink_timer := 3.0
 var crouch_state := "standing"
 var standing_visual_scale := Vector2.ONE
@@ -49,7 +51,13 @@ var current_health := 100
 var spin_effect: AnimatedSprite2D
 
 func _ready() -> void:
-	current_health = maximum_health
+	var root := get_tree().root
+	if root.has_meta("stage_transition_health"):
+		current_health = clampi(int(root.get_meta("stage_transition_health")), 0, maximum_health)
+		root.remove_meta("stage_transition_health")
+	else:
+		current_health = maximum_health
+	default_collision_layer = collision_layer
 	standing_visual_scale = visual.scale
 	hitbox.owner_node = self
 	hitbox.hit_confirmed.connect(_on_attack_hit)
@@ -180,6 +188,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 0.0
 		move_and_slide()
 		_play_if_changed("dash")
+		if dash_timer <= 0.0:
+			collision_layer = default_collision_layer
 		return
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
@@ -205,7 +215,11 @@ func _physics_process(delta: float) -> void:
 			_play_sound("jump")
 	if Input.is_action_just_pressed("dash") and not attacking and skill_timer <= 0.0:
 		dash_timer = _animation_duration("dash")
-		invulnerable = 0.24
+		invulnerable = maxf(invulnerable, DASH_IFRAME_DURATION)
+		# Wolves use layer 1 in their collision mask. Temporarily move Red to
+		# layer 3 so they cannot block or carry her during the dash; mask 1 stays
+		# enabled, preserving collision with terrain and walls.
+		collision_layer = 1 << 2
 		_play_sound("dash")
 	if Input.is_action_just_pressed("attack") and cooldown <= 0.0 and not attacking and skill_timer <= 0.0:
 		_start_attack()

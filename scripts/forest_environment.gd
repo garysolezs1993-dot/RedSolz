@@ -100,7 +100,13 @@ func _add_lantern_light(lantern_position: Vector2, glow_texture: Texture2D) -> v
 	add_child(light)
 
 func _add_player_rim_light(glow_texture: Texture2D) -> void:
-	var player := get_tree().get_first_node_in_group("player")
+	# A deferred callback can run after a scene transition has orphaned this node.
+	if not is_inside_tree():
+		return
+	var scene_tree := get_tree()
+	if scene_tree == null:
+		return
+	var player := scene_tree.get_first_node_in_group("player")
 	if player == null:
 		return
 	var light := PointLight2D.new()

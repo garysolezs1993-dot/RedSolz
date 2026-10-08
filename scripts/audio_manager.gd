@@ -1,6 +1,5 @@
 extends Node
 
-const MUSIC_PATH := "res://audio/bgm/silent_forest_theme.wav"
 const SFX_PATHS := {
 	"jump": "res://audio/sfx/jump.wav",
 	"dash": "res://audio/sfx/dash.wav",
@@ -37,8 +36,11 @@ var next_player := 0
 func _ready() -> void:
 	add_to_group("audio_manager")
 	var music_stream := $Music.stream as AudioStreamWAV
+	var music_path: String = "<empty Music stream>"
+	if $Music.stream != null:
+		music_path = $Music.stream.resource_path
 	if music_stream == null:
-		push_error("Could not load background music: %s" % MUSIC_PATH)
+		push_error("Could not load background music: %s" % music_path)
 	else:
 		# Loop points are measured in samples; set the end explicitly so a zero
 		# loop_end from a stale import cannot stop the track near its beginning.
@@ -47,12 +49,12 @@ func _ready() -> void:
 		music_stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
 		$Music.stream = music_stream
 		$Music.bus = "Master"
-		# The source is a quiet ambient mix; boost it so it stays audible beside SFX.
-		$Music.volume_db = 2.0
+		# Keep the forest ambience underneath the combat SFX.
+		$Music.volume_db = -14.0 if music_path.ends_with("alpha_wolf_boss_theme.wav") else -10.0
 		if not $Music.playing:
 			$Music.play()
 		if $Music.playing:
-			print("Background music started: %s" % MUSIC_PATH)
+			print("Background music started: %s" % music_path)
 		else:
 			push_warning("Background music did not start playing.")
 	for sound_name in SFX_PATHS:
