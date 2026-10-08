@@ -1,0 +1,299 @@
+{
+  "source": "SOURCE_REFERENCE_SHEET.png",
+  "character_frames": 8,
+  "fx_frames": 8,
+  "frame_size": "64x64",
+  "format": "RGBA PNG",
+  "true_alpha": true,
+  "character_fx_separated": true,
+  "verification": [
+    {
+      "file": "attack_spin/attack_spin_00.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        1,
+        8,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        1,
+        8,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        7,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        7,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        7,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_05.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        8,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_06.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        6,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "attack_spin/attack_spin_07.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        8,
+        56,
+        62
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_00.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        253
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        8,
+        16,
+        49,
+        49
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        5,
+        16,
+        64,
+        54
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        6,
+        10,
+        64,
+        56
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        7,
+        64,
+        60
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        2,
+        64,
+        64
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_05.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        3,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_06.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        253
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        8,
+        64,
+        62
+      ]
+    },
+    {
+      "file": "spin_fx/spin_fx_07.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha_range": [
+        0,
+        253
+      ],
+      "has_real_transparency": true,
+      "bbox": [
+        0,
+        14,
+        59,
+        63
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "character": "Common Wolf",
+  "version": "clean_regenerated_v3",
+  "canvas": [
+    32,
+    32
+  ],
+  "direction": "right",
+  "background": "true alpha transparency",
+  "animations": {
+    "idle": 8,
+    "howl": 8,
+    "walk": 8,
+    "run": 8,
+    "jump": 6,
+    "attack": 8,
+    "hurt": 4,
+    "die": 8
+  },
+  "notes": [
+    "Generated using the existing wolf visual design as strict reference.",
+    "Every frame is an individual PNG with the complete wolf silhouette.",
+    "Grounded animations share a consistent foot baseline and scale.",
+    "Attack FX are not baked into the wolf frames."
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "source": "image(3).png",
+  "logical_size": [
+    32,
+    32
+  ],
+  "recommended_display_scale": 1,
+  "animations": {
+    "idle": {
+      "frames": [
+        "idle/idle_00.png",
+        "idle/idle_01.png",
+        "idle/idle_02.png",
+        "idle/idle_03.png",
+        "idle/idle_04.png",
+        "idle/idle_05.png",
+        "idle/idle_06.png",
+        "idle/idle_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "blink": {
+      "frames": [
+        "blink/blink_00.png",
+        "blink/blink_01.png",
+        "blink/blink_02.png",
+        "blink/blink_03.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "breath": {
+      "frames": [
+        "breath/breath_00.png",
+        "breath/breath_01.png",
+        "breath/breath_02.png",
+        "breath/breath_03.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "walk": {
+      "frames": [
+        "walk/walk_00.png",
+        "walk/walk_01.png",
+        "walk/walk_02.png",
+        "walk/walk_03.png",
+        "walk/walk_04.png",
+        "walk/walk_05.png",
+        "walk/walk_06.png",
+        "walk/walk_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "run": {
+      "frames": [
+        "run/run_00.png",
+        "run/run_01.png",
+        "run/run_02.png",
+        "run/run_03.png",
+        "run/run_04.png",
+        "run/run_05.png",
+        "run/run_06.png",
+        "run/run_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "jump": {
+      "frames": [
+        "jump/jump_00.png",
+        "jump/jump_01.png",
+        "jump/jump_02.png",
+        "jump/jump_03.png",
+        "jump/jump_04.png",
+        "jump/jump_05.png",
+        "jump/jump_06.png",
+        "jump/jump_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "fall": {
+      "frames": [
+        "fall/fall_00.png",
+        "fall/fall_01.png",
+        "fall/fall_02.png",
+        "fall/fall_03.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "land": {
+      "frames": [
+        "land/land_00.png",
+        "land/land_01.png",
+        "land/land_02.png",
+        "land/land_03.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "crouch": {
+      "frames": [
+        "crouch/crouch_00.png",
+        "crouch/crouch_01.png",
+        "crouch/crouch_02.png",
+        "crouch/crouch_03.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "crouch_walk": {
+      "frames": [
+        "crouch_walk/crouch_walk_00.png",
+        "crouch_walk/crouch_walk_01.png",
+        "crouch_walk/crouch_walk_02.png",
+        "crouch_walk/crouch_walk_03.png",
+        "crouch_walk/crouch_walk_04.png",
+        "crouch_walk/crouch_walk_05.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "dash": {
+      "frames": [
+        "dash/dash_00.png",
+        "dash/dash_01.png",
+        "dash/dash_02.png",
+        "dash/dash_03.png",
+        "dash/dash_04.png",
+        "dash/dash_05.png",
+        "dash/dash_06.png",
+        "dash/dash_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "attack_slash": {
+      "frames": [
+        "attack_slash/attack_slash_00.png",
+        "attack_slash/attack_slash_01.png",
+        "attack_slash/attack_slash_02.png",
+        "attack_slash/attack_slash_03.png",
+        "attack_slash/attack_slash_04.png",
+        "attack_slash/attack_slash_05.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "attack_spin": {
+      "frames": [
+        "attack_spin/attack_spin_00.png",
+        "attack_spin/attack_spin_01.png",
+        "attack_spin/attack_spin_02.png",
+        "attack_spin/attack_spin_03.png",
+        "attack_spin/attack_spin_04.png",
+        "attack_spin/attack_spin_05.png",
+        "attack_spin/attack_spin_06.png",
+        "attack_spin/attack_spin_07.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "attack_thrust": {
+      "frames": [
+        "attack_thrust/attack_thrust_00.png",
+        "attack_thrust/attack_thrust_01.png",
+        "attack_thrust/attack_thrust_02.png",
+        "attack_thrust/attack_thrust_03.png",
+        "attack_thrust/attack_thrust_04.png",
+        "attack_thrust/attack_thrust_05.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "attack_air": {
+      "frames": [
+        "attack_air/attack_air_00.png",
+        "attack_air/attack_air_01.png",
+        "attack_air/attack_air_02.png",
+        "attack_air/attack_air_03.png",
+        "attack_air/attack_air_04.png",
+        "attack_air/attack_air_05.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "skill_blood_blossom": {
+      "frames": [
+        "skill_blood_blossom/skill_blood_blossom_00.png",
+        "skill_blood_blossom/skill_blood_blossom_01.png",
+        "skill_blood_blossom/skill_blood_blossom_02.png",
+        "skill_blood_blossom/skill_blood_blossom_03.png",
+        "skill_blood_blossom/skill_blood_blossom_04.png",
+        "skill_blood_blossom/skill_blood_blossom_05.png",
+        "skill_blood_blossom/skill_blood_blossom_06.png",
+        "skill_blood_blossom/skill_blood_blossom_07.png",
+        "skill_blood_blossom/skill_blood_blossom_08.png",
+        "skill_blood_blossom/skill_blood_blossom_09.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "skill_wolf_summon": {
+      "frames": [
+        "skill_wolf_summon/skill_wolf_summon_00.png",
+        "skill_wolf_summon/skill_wolf_summon_01.png",
+        "skill_wolf_summon/skill_wolf_summon_02.png",
+        "skill_wolf_summon/skill_wolf_summon_03.png",
+        "skill_wolf_summon/skill_wolf_summon_04.png",
+        "skill_wolf_summon/skill_wolf_summon_05.png",
+        "skill_wolf_summon/skill_wolf_summon_06.png",
+        "skill_wolf_summon/skill_wolf_summon_07.png",
+        "skill_wolf_summon/skill_wolf_summon_08.png",
+        "skill_wolf_summon/skill_wolf_summon_09.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "skill_execution": {
+      "frames": [
+        "skill_execution/skill_execution_00.png",
+        "skill_execution/skill_execution_01.png",
+        "skill_execution/skill_execution_02.png",
+        "skill_execution/skill_execution_03.png",
+        "skill_execution/skill_execution_04.png",
+        "skill_execution/skill_execution_05.png",
+        "skill_execution/skill_execution_06.png",
+        "skill_execution/skill_execution_07.png",
+        "skill_execution/skill_execution_08.png",
+        "skill_execution/skill_execution_09.png"
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "hurt": {
+      "frames": [
+        "hurt/hurt_00.png",
+        "hurt/hurt_01.png",
+        "hurt/hurt_02.png",
+        "hurt/hurt_03.png",
+        "hurt/hurt_04.png",
+        "hurt/hurt_05.png"
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "heavy_hurt": {
+      "frames": [
+        "heavy_hurt/heavy_hurt_00.png",
+        "heavy_hurt/heavy_hurt_01.png",
+        "heavy_hurt/heavy_hurt_02.png",
+        "heavy_hurt/heavy_hurt_03.png",
+        "heavy_hurt/heavy_hurt_04.png",
+        "heavy_hurt/heavy_hurt_05.png"
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "down": {
+      "frames": [
+        "down/down_00.png",
+        "down/down_01.png",
+        "down/down_02.png",
+        "down/down_03.png"
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "death": {
+      "frames": [
+        "death/death_00.png",
+        "death/death_01.png",
+        "death/death_02.png",
+        "death/death_03.png",
+        "death/death_04.png",
+        "death/death_05.png",
+        "death/death_06.png",
+        "death/death_07.png"
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "revive": {
+      "frames": [
+        "revive/revive_00.png",
+        "revive/revive_01.png",
+        "revive/revive_02.png",
+        "revive/revive_03.png",
+        "revive/revive_04.png",
+        "revive/revive_05.png"
+      ],
+      "fps": 12,
+      "loop": true
+    }
+  },
+  "effects": {
+    "slash_fx": [
+      "effects/slash_fx/slash_fx_00.png",
+      "effects/slash_fx/slash_fx_01.png",
+      "effects/slash_fx/slash_fx_02.png",
+      "effects/slash_fx/slash_fx_03.png"
+    ],
+    "spin_fx": [
+      "effects/spin_fx/spin_fx_00.png",
+      "effects/spin_fx/spin_fx_01.png",
+      "effects/spin_fx/spin_fx_02.png",
+      "effects/spin_fx/spin_fx_03.png",
+      "effects/spin_fx/spin_fx_04.png"
+    ],
+    "dash_fx": [
+      "effects/dash_fx/dash_fx_00.png",
+      "effects/dash_fx/dash_fx_01.png",
+      "effects/dash_fx/dash_fx_02.png",
+      "effects/dash_fx/dash_fx_03.png",
+      "effects/dash_fx/dash_fx_04.png"
+    ],
+    "blood_fx": [
+      "effects/blood_fx/blood_fx_00.png",
+      "effects/blood_fx/blood_fx_01.png",
+      "effects/blood_fx/blood_fx_02.png",
+      "effects/blood_fx/blood_fx_03.png"
+    ],
+    "impact_fx": [
+      "effects/impact_fx/impact_fx_00.png",
+      "effects/impact_fx/impact_fx_01.png",
+      "effects/impact_fx/impact_fx_02.png",
+      "effects/impact_fx/impact_fx_03.png"
+    ],
+    "magic_circle": [
+      "effects/magic_circle/magic_circle_00.png",
+      "effects/magic_circle/magic_circle_01.png",
+      "effects/magic_circle/magic_circle_02.png",
+      "effects/magic_circle/magic_circle_03.png"
+    ],
+    "petals": [
+      "effects/petals/petals_00.png",
+      "effects/petals/petals_01.png",
+      "effects/petals/petals_02.png"
+    ],
+    "ground_spike": [
+      "effects/ground_spike/ground_spike_00.png",
+      "effects/ground_spike/ground_spike_01.png",
+      "effects/ground_spike/ground_spike_02.png"
+    ]
+  }
+}

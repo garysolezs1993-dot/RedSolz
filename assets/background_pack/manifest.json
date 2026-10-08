@@ -1,0 +1,10 @@
+{
+  "source": "a_wide_highly_detailed_pixel_art_game_asset_sheet.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "format": "PNG RGBA",
+  "godot_filter": "nearest",
+  "note": "Scenic panels are opaque by design; props/effects/foreground/special/weather strips have near-black atlas background keyed transparent."
+}

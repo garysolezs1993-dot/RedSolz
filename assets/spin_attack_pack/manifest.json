@@ -1,0 +1,13 @@
+{
+  "animation": "attack_spin",
+  "frame_count": 8,
+  "character_frame_size": "64x64",
+  "effect_frame_size": "64x64",
+  "format": "PNG RGBA",
+  "filter": "nearest",
+  "folders": {
+    "attack_spin": "Complete character + effect frames",
+    "attack_spin_fx": "Effect-only frames"
+  },
+  "important": "Each PNG is intended to be imported as one independent frame. Do not combine neighboring frames."
+}

@@ -1,0 +1,10 @@
+{
+  "animation": "attack_spin",
+  "character_frames": 8,
+  "fx_frames": 8,
+  "frame_size": "64x64",
+  "format": "RGBA PNG",
+  "transparent": true,
+  "checkerboard_removed": true,
+  "godot_filter": "nearest"
+}

@@ -1,0 +1,23 @@
+{
+  "source": "SOURCE_FOREST_CONCEPT.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "format": "RGBA PNG",
+  "type": "concept_and_reference_asset_pack",
+  "godot": {
+    "filter": "nearest",
+    "recommended_tile_sizes": [
+      "32x32",
+      "64x64"
+    ],
+    "parallax_layers": [
+      "far_sky",
+      "mountains_castle",
+      "far_forest",
+      "mid_forest",
+      "foreground"
+    ]
+  }
+}

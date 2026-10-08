@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/story_atmosphere.gd" id="1_background_script"]
+[ext_resource type="Texture2D" path="res://assets/game_assets/backgrounds/deep_forest.png" id="2_background"]
+[ext_resource type="Script" path="res://scripts/story_motes.gd" id="3_motes_script"]
+
+[node name="StoryAtmosphere" type="Node2D"]
+script = ExtResource("1_background_script")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("2_background")
+texture_filter = 1
+z_index = -20
+
+[node name="FogAndLeaves" type="Node2D" parent="."]
+script = ExtResource("3_motes_script")
+z_index = -10
+
