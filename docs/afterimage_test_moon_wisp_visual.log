@@ -1,0 +1,572 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Reusable visual starts inactive
+PASS: Nearest filtering and unshaded glow preserve readability
+PASS: Conservative scale is shared by every clip
+PASS: idle has all eight supplied frames
+PASS: idle has the correct loop flag
+PASS: idle0 loads the correct source set
+PASS: idle0 uses the entire uncropped canvas
+PASS: idle0 has real transparent corners
+PASS: idle0 retains one uniform scale
+PASS: idle0 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle0 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle0 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle0 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle1 loads the correct source set
+PASS: idle1 uses the entire uncropped canvas
+PASS: idle1 has real transparent corners
+PASS: idle1 retains one uniform scale
+PASS: idle1 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle1 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle1 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle1 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle2 loads the correct source set
+PASS: idle2 uses the entire uncropped canvas
+PASS: idle2 has real transparent corners
+PASS: idle2 retains one uniform scale
+PASS: idle2 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle2 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle2 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle2 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle3 loads the correct source set
+PASS: idle3 uses the entire uncropped canvas
+PASS: idle3 has real transparent corners
+PASS: idle3 retains one uniform scale
+PASS: idle3 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle3 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle3 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle3 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle4 loads the correct source set
+PASS: idle4 uses the entire uncropped canvas
+PASS: idle4 has real transparent corners
+PASS: idle4 retains one uniform scale
+PASS: idle4 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle4 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle4 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle4 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle5 loads the correct source set
+PASS: idle5 uses the entire uncropped canvas
+PASS: idle5 has real transparent corners
+PASS: idle5 retains one uniform scale
+PASS: idle5 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle5 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle5 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle5 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle6 loads the correct source set
+PASS: idle6 uses the entire uncropped canvas
+PASS: idle6 has real transparent corners
+PASS: idle6 retains one uniform scale
+PASS: idle6 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle6 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle6 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle6 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle7 loads the correct source set
+PASS: idle7 uses the entire uncropped canvas
+PASS: idle7 has real transparent corners
+PASS: idle7 retains one uniform scale
+PASS: idle7 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle7 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle7 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle7 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: move has all eight supplied frames
+PASS: move has the correct loop flag
+PASS: move0 loads the correct source set
+PASS: move0 uses the entire uncropped canvas
+PASS: move0 has real transparent corners
+PASS: move0 retains one uniform scale
+PASS: move0 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move0 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move0 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move0 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move1 loads the correct source set
+PASS: move1 uses the entire uncropped canvas
+PASS: move1 has real transparent corners
+PASS: move1 retains one uniform scale
+PASS: move1 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move1 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move1 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move1 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move2 loads the correct source set
+PASS: move2 uses the entire uncropped canvas
+PASS: move2 has real transparent corners
+PASS: move2 retains one uniform scale
+PASS: move2 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move2 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move2 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move2 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move3 loads the correct source set
+PASS: move3 uses the entire uncropped canvas
+PASS: move3 has real transparent corners
+PASS: move3 retains one uniform scale
+PASS: move3 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move3 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move3 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move3 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move4 loads the correct source set
+PASS: move4 uses the entire uncropped canvas
+PASS: move4 has real transparent corners
+PASS: move4 retains one uniform scale
+PASS: move4 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move4 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move4 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move4 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move5 loads the correct source set
+PASS: move5 uses the entire uncropped canvas
+PASS: move5 has real transparent corners
+PASS: move5 retains one uniform scale
+PASS: move5 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move5 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move5 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move5 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move6 loads the correct source set
+PASS: move6 uses the entire uncropped canvas
+PASS: move6 has real transparent corners
+PASS: move6 retains one uniform scale
+PASS: move6 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move6 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move6 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move6 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move7 loads the correct source set
+PASS: move7 uses the entire uncropped canvas
+PASS: move7 has real transparent corners
+PASS: move7 retains one uniform scale
+PASS: move7 core stays anchored: (1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move7 core stays anchored: (-1.0, 0.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move7 core stays anchored: (0.0, -1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: move7 core stays anchored: (0.0, 1.0)
+PASS: Moving head faces travel and tail stays behind
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive has all eight supplied frames
+PASS: arrive has the correct loop flag
+PASS: arrive0 loads the correct source set
+PASS: arrive0 uses the entire uncropped canvas
+PASS: arrive0 has real transparent corners
+PASS: arrive0 retains one uniform scale
+PASS: arrive0 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive0 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive0 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive0 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive1 loads the correct source set
+PASS: arrive1 uses the entire uncropped canvas
+PASS: arrive1 has real transparent corners
+PASS: arrive1 retains one uniform scale
+PASS: arrive1 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive1 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive1 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive1 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive2 loads the correct source set
+PASS: arrive2 uses the entire uncropped canvas
+PASS: arrive2 has real transparent corners
+PASS: arrive2 retains one uniform scale
+PASS: arrive2 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive2 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive2 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive2 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive3 loads the correct source set
+PASS: arrive3 uses the entire uncropped canvas
+PASS: arrive3 has real transparent corners
+PASS: arrive3 retains one uniform scale
+PASS: arrive3 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive3 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive3 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive3 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive4 loads the correct source set
+PASS: arrive4 uses the entire uncropped canvas
+PASS: arrive4 has real transparent corners
+PASS: arrive4 retains one uniform scale
+PASS: arrive4 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive4 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive4 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive4 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive5 loads the correct source set
+PASS: arrive5 uses the entire uncropped canvas
+PASS: arrive5 has real transparent corners
+PASS: arrive5 retains one uniform scale
+PASS: arrive5 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive5 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive5 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive5 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive6 loads the correct source set
+PASS: arrive6 uses the entire uncropped canvas
+PASS: arrive6 has real transparent corners
+PASS: arrive6 retains one uniform scale
+PASS: arrive6 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive6 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive6 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive6 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive7 loads the correct source set
+PASS: arrive7 uses the entire uncropped canvas
+PASS: arrive7 has real transparent corners
+PASS: arrive7 retains one uniform scale
+PASS: arrive7 core stays anchored: (1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive7 core stays anchored: (-1.0, 0.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive7 core stays anchored: (0.0, -1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: arrive7 core stays anchored: (0.0, 1.0)
+PASS: Opposite direction mirrors the same source frames
+PASS: idle actually plays and loops repeatedly
+PASS: move actually plays and loops repeatedly
+PASS: Last arrival frame remains visible for its full interval
+PASS: All arrival frames play once before hiding
+PASS: Arrival never loops or emits repeated completion
+PASS: Visual can be reused at the normal idle speed
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Guidance stays inactive before discovery
+PASS: First seal gathers the Wisp from appearance VFX while pausing the world
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Cinematic travel uses the moving visual
+PASS: Existing guidance flow drives every visual state
+PASS: Cinematic shows the arrival before camera return
+PASS: Wisp follows the existing vertical route to the region, not the exact seal
+PASS: Camera and world resume after all eight arrival frames
+PASS: Guidance can travel left and upward with a trailing comet
+PASS: Short cue keeps the camera with Red
+PASS: Short cue completes and deactivates the reusable visual
+MOON WISP VISUAL: 567 checks; 0 failures

@@ -1,0 +1,66 @@
+[
+    {
+        "file":  "opening_01_silent_keep.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "D029FCF480290CD4CE56CA3F91650C90DA0F4D19B41E7A1BFE469DB7B04FCAC8",
+        "imported_sha256":  "D029FCF480290CD4CE56CA3F91650C90DA0F4D19B41E7A1BFE469DB7B04FCAC8",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_02_brother_prepares.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "472ECB80B1319F79CBA6CCBFED1016A037ECE0E879CEFA1B2C8401891A84836C",
+        "imported_sha256":  "472ECB80B1319F79CBA6CCBFED1016A037ECE0E879CEFA1B2C8401891A84836C",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_03_red_tries_to_follow.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "AE410536CBB4510EA636BB798B6BAB25C5347CAA8FEE2DE2F14A37014392C65C",
+        "imported_sha256":  "AE410536CBB4510EA636BB798B6BAB25C5347CAA8FEE2DE2F14A37014392C65C",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_04_sibling_promise_lily.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "B5B2FF01BF4ABC09E24A9F333BAA43B988DD7B2732C9C72BEE9C010D261C8B07",
+        "imported_sha256":  "B5B2FF01BF4ABC09E24A9F333BAA43B988DD7B2732C9C72BEE9C010D261C8B07",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_05_brother_leaves.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "69B47B3FFA908828991D5CE54AEC33EF78DB71EA214AE2720AD24A0D5F47FC9E",
+        "imported_sha256":  "69B47B3FFA908828991D5CE54AEC33EF78DB71EA214AE2720AD24A0D5F47FC9E",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_06_red_waits_by_lantern.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "327E5BA121FA0518F69527014478786E1DC453F6B7F4A4EE5666CB914A01C9EA",
+        "imported_sha256":  "327E5BA121FA0518F69527014478786E1DC453F6B7F4A4EE5666CB914A01C9EA",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_07_red_decides_to_follow.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "2D13D26957123F7004A7A785889BBE833F9302312B50BE4DB8247A2F43765AB4",
+        "imported_sha256":  "2D13D26957123F7004A7A785889BBE833F9302312B50BE4DB8247A2F43765AB4",
+        "unchanged":  true
+    },
+    {
+        "file":  "opening_08_enter_silent_keep.png",
+        "width":  1672,
+        "height":  941,
+        "zip_sha256":  "EDF8DDC11CFEB7093059C83077940F0F5905D383903D64BE82AFF3F6BED4B090",
+        "imported_sha256":  "EDF8DDC11CFEB7093059C83077940F0F5905D383903D64BE82AFF3F6BED4B090",
+        "unchanged":  true
+    }
+]

@@ -1,0 +1,117 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+   GDScript backtrace (most recent call first):
+       [0] setup (res://tools/tests/test_red_combo.gd:93)
+       [1] _run (res://tools/tests/test_red_combo.gd:105)
+PASS: C binds attack
+PASS: R binds Crescent
+PASS: Wolf summon remains disabled
+PASS: Eight non-looping poses for step 1
+PASS: Requested cadence for step 1
+PASS: Uses unchanged master character/VFX PNGs for step 1
+PASS: Eight non-looping poses for step 2
+PASS: Requested cadence for step 2
+PASS: Uses unchanged master character/VFX PNGs for step 2
+PASS: Eight non-looping poses for step 3
+PASS: Requested cadence for step 3
+PASS: Uses unchanged master character/VFX PNGs for step 3
+PASS: Separate AttackVFX follows Red through VFXAnchor
+PASS: Grounded boot anchor and fixed character scale: 1/00
+PASS: Frame-matched VFX with fixed transform: 1/00
+PASS: Grounded boot anchor and fixed character scale: 1/01
+PASS: Frame-matched VFX with fixed transform: 1/01
+PASS: Grounded boot anchor and fixed character scale: 1/02
+PASS: Frame-matched VFX with fixed transform: 1/02
+PASS: Grounded boot anchor and fixed character scale: 1/03
+PASS: Frame-matched VFX with fixed transform: 1/03
+PASS: Grounded boot anchor and fixed character scale: 1/04
+PASS: Frame-matched VFX with fixed transform: 1/04
+PASS: Grounded boot anchor and fixed character scale: 1/05
+PASS: Frame-matched VFX with fixed transform: 1/05
+PASS: Grounded boot anchor and fixed character scale: 1/06
+PASS: Frame-matched VFX with fixed transform: 1/06
+PASS: Grounded boot anchor and fixed character scale: 1/07
+PASS: Frame-matched VFX with fixed transform: 1/07
+PASS: Grounded boot anchor and fixed character scale: 2/00
+PASS: Frame-matched VFX with fixed transform: 2/00
+PASS: Grounded boot anchor and fixed character scale: 2/01
+PASS: Frame-matched VFX with fixed transform: 2/01
+PASS: Grounded boot anchor and fixed character scale: 2/02
+PASS: Frame-matched VFX with fixed transform: 2/02
+PASS: Grounded boot anchor and fixed character scale: 2/03
+PASS: Frame-matched VFX with fixed transform: 2/03
+PASS: Grounded boot anchor and fixed character scale: 2/04
+PASS: Frame-matched VFX with fixed transform: 2/04
+PASS: Grounded boot anchor and fixed character scale: 2/05
+PASS: Frame-matched VFX with fixed transform: 2/05
+PASS: Grounded boot anchor and fixed character scale: 2/06
+PASS: Frame-matched VFX with fixed transform: 2/06
+PASS: Grounded boot anchor and fixed character scale: 2/07
+PASS: Frame-matched VFX with fixed transform: 2/07
+PASS: Grounded boot anchor and fixed character scale: 3/00
+PASS: Frame-matched VFX with fixed transform: 3/00
+PASS: Grounded boot anchor and fixed character scale: 3/01
+PASS: Frame-matched VFX with fixed transform: 3/01
+PASS: Grounded boot anchor and fixed character scale: 3/02
+PASS: Frame-matched VFX with fixed transform: 3/02
+PASS: Grounded boot anchor and fixed character scale: 3/03
+PASS: Frame-matched VFX with fixed transform: 3/03
+PASS: Grounded boot anchor and fixed character scale: 3/04
+PASS: Frame-matched VFX with fixed transform: 3/04
+PASS: Grounded boot anchor and fixed character scale: 3/05
+PASS: Frame-matched VFX with fixed transform: 3/05
+PASS: Grounded boot anchor and fixed character scale: 3/06
+PASS: Frame-matched VFX with fixed transform: 3/06
+PASS: Grounded boot anchor and fixed character scale: 3/07
+PASS: Frame-matched VFX with fixed transform: 3/07
+PASS: VFX anchor follows Red's movement
+PASS: Cancellation hides the independent effect
+PASS: First press starts starter
+PASS: No follow-up returns to idle and resets combo
+PASS: Unchained attack hides its effect
+PASS: Separate later attack restarts at step 1
+PASS: Starter anticipation, facing 1
+PASS: Starter hits once in 2–4, facing 1
+PASS: Early/window press is queued or consumed, facing 1
+PASS: Buffer chains starter to follow-up at window, facing 1
+PASS: Buffer consumed and follow-up starts at frame zero
+PASS: Follow-up hits once in 2–4, facing 1
+PASS: Frames 4–6 open the next combo window
+PASS: Window press starts finisher anticipation, facing 1
+PASS: Finisher anticipation precedes frame 2
+PASS: Finisher deals one 20-damage hit in 2–4, facing 1
+PASS: Each combo faces/knocks back correctly
+PASS: Uniform display scale across combo
+PASS: Master VFX follows the current pose with no extra legacy layer
+PASS: Finisher cannot queue a fourth attack
+PASS: Finisher ends with recovery and no extra hit
+PASS: Full combo returns to idle
+PASS: Finisher VFX disappears on return to idle
+PASS: Starter anticipation, facing -1
+PASS: Starter hits once in 2–4, facing -1
+PASS: Early/window press is queued or consumed, facing -1
+PASS: Buffer chains starter to follow-up at window, facing -1
+PASS: Buffer consumed and follow-up starts at frame zero
+PASS: Follow-up hits once in 2–4, facing -1
+PASS: Frames 4–6 open the next combo window
+PASS: Window press starts finisher anticipation, facing -1
+PASS: Finisher anticipation precedes frame 2
+PASS: Finisher deals one 20-damage hit in 2–4, facing -1
+PASS: Each combo faces/knocks back correctly
+PASS: Uniform display scale across combo
+PASS: Master VFX follows the current pose with no extra legacy layer
+PASS: Finisher cannot queue a fourth attack
+PASS: Finisher ends with recovery and no extra hit
+PASS: Full combo returns to idle
+PASS: Finisher VFX disappears on return to idle
+PASS: Holding attack does not auto-chain
+PASS: Expired early buffer cannot cause an unexpected later hit
+PASS: Damage cancels combo, queued press and hitbox
+PASS: Damage cancels master VFX
+PASS: Up+C keeps rising slash separate
+PASS: Leaving the floor prevents a ground follow-up
+PASS: Down+C while airborne keeps downward slash
+PASS: Body collider unchanged
+COMBO CHECKS: 109 passed, 0 failed

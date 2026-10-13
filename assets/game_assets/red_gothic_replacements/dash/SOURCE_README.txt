@@ -1,0 +1,1 @@
+8 individual 512x512 RGBA PNG frames from previously approved crimson_hood_dash_sprite_sheet.png. All poses use one uniform scale. Ground baseline y=460. The dash trail is included in some poses; consider separate VFX in final production. Inspect previews for any bleed between closely spaced original poses. These are scaled artwork, not native 48x48 pixel art.

@@ -17,6 +17,8 @@ size=Vector2(44,28)
 [node name="Main" type="Node2D"]
 
 [node name="ForestEnvironment" parent="." instance=ExtResource("12")]
+world_width = 10000.0
+selective_lighting_enabled = true
 
 [node name="Stage1Layout" type="Node2D" parent="."]
 script = ExtResource("14")
@@ -27,7 +29,7 @@ script=ExtResource("1")
 groups=["player"]
 [node name="Visual" type="AnimatedSprite2D" parent="Player"]
 position=Vector2(0,-7)
-scale=Vector2(0.9,0.9)
+scale=Vector2(1,1)
 texture_filter=1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape=SubResource("A")
@@ -38,8 +40,11 @@ collision_mask=2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player/AttackHitbox"]
 shape=SubResource("B")
 [node name="Camera2D" type="Camera2D" parent="Player"]
+zoom=Vector2(1.35,1.35)
 limit_left=0
-limit_right=4800
+limit_right=10000
+limit_top=-360
+limit_bottom=1120
 position_smoothing_enabled=true
 position_smoothing_speed=5.0
 
@@ -54,7 +59,7 @@ script=ExtResource("9")
 [node name="Music" type="AudioStreamPlayer" parent="AudioManager"]
 stream=ExtResource("11")
 volume_db=-10.0
-autoplay=true
+autoplay=false
 
 [node name="UI" type="CanvasLayer" parent="."]
 script=ExtResource("7")
@@ -83,13 +88,14 @@ text="HP  100 / 100"
 position=Vector2(24,84)
 text="THE FOREST REMEMBERS..."
 [node name="BossHP" type="ProgressBar" parent="UI/HUD"]
+visible=false
 position=Vector2(610,48)
 size=Vector2(320,20)
-value=300
 max_value=300
+value=300
 
 [node name="Controls" type="Label" parent="UI/HUD"]
 position=Vector2(24,116)
-text="A/D move   •   Space jump / double jump   •   S + Space drop   •   L dash   •   J attack   •   K wolf   •   U/I skills   •   R restart"
+text="A/D move · Space double jump · S+Space drop · L dash · C/click combo · R Crescent\n↑+C rising · ↓+C (air) dive · U/I skills · E interact · F7 boss test"
 theme_override_colors/font_color=Color(0.78,0.72,0.7,0.9)
 theme_override_font_sizes/font_size=13

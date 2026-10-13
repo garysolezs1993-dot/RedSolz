@@ -1,0 +1,20 @@
+[
+    {
+        "source":  "C:\\Users\\Owner\\Downloads\\ChatGPT Image Oct 13, 2026, 10_33_19 PM-2.png",
+        "asset":  "assets/cutscenes/ending/guardian_revision_v2/guardian_birth.png",
+        "slot":  "Guardian Birth Artwork",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "A3EA42B01E164E10BD3B9D2CCC7FEEB71D6A976FBE6D12816E71474960CD643B",
+        "imported_sha256":  "A3EA42B01E164E10BD3B9D2CCC7FEEB71D6A976FBE6D12816E71474960CD643B"
+    },
+    {
+        "source":  "C:\\Users\\Owner\\Downloads\\ChatGPT Image Oct 13, 2026, 10_34_10 PM.png",
+        "asset":  "assets/cutscenes/ending/guardian_revision_v2/together_wide.png",
+        "slot":  "Together Artwork",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "0C8D9BC57AE1593D5F6E17E66745FE95D9481FD3C76F8D7C8B264DF6704468CA",
+        "imported_sha256":  "0C8D9BC57AE1593D5F6E17E66745FE95D9481FD3C76F8D7C8B264DF6704468CA"
+    }
+]

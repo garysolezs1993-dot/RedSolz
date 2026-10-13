@@ -1,0 +1,58 @@
+[
+    {
+        "file":  "cursed_attack_00.png",
+        "width":  188,
+        "height":  558,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "52957C880340E6BDC64793AEFC5927B00A5A773E78E3C8A1FAF99B89432CADA8"
+    },
+    {
+        "file":  "cursed_attack_01.png",
+        "width":  254,
+        "height":  620,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "0736D8987F74CCDA8ACC7947F458443D5444E84E103419B6DDE7213D76A9F931"
+    },
+    {
+        "file":  "cursed_attack_02.png",
+        "width":  294,
+        "height":  607,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "2D75C9C805A9E4EC4EF083048929B5A545CBA8044F9F65347EAF4765E6B231CA"
+    },
+    {
+        "file":  "cursed_attack_03.png",
+        "width":  276,
+        "height":  707,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "BCEF674E74EA0D4453921849069737BBC2BAF6DBFCF6F2A7A7E8ACF7FE995F76"
+    },
+    {
+        "file":  "cursed_attack_04.png",
+        "width":  438,
+        "height":  724,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "0F3CAFE5A537271CA1B9E53CB9F6CC0457500D1704878C483E01246D3704DBD7"
+    },
+    {
+        "file":  "cursed_attack_05.png",
+        "width":  285,
+        "height":  709,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "41E90D5C9C33B10A6142D32188007DE34CC77CF9295EF1FE9F78A73F59D6CB2A"
+    },
+    {
+        "file":  "cursed_attack_06.png",
+        "width":  221,
+        "height":  724,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "0F390FC2A7A30F341B1140DF2626021D2A298DB69F78C92F3957647A20B3DD4A"
+    },
+    {
+        "file":  "cursed_attack_07.png",
+        "width":  216,
+        "height":  711,
+        "pixel_format":  "Format32bppArgb",
+        "sha256":  "513A6DE183FA8309DC18969FD807DB61A1C67D3EF2FAF4618079243B9A7E99F2"
+    }
+]

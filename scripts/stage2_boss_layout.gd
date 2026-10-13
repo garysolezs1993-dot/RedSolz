@@ -2,7 +2,14 @@ extends Node2D
 
 const WOLF_BOSS_SCENE: PackedScene = preload("res://scenes/cursed_wolf_boss.tscn")
 const TERRAIN_SCRIPT: Script = preload("res://scripts/terrain_visual.gd")
+const PLATFORM_ART := preload("res://scripts/forest_platform_art.gd")
 const MAP_WIDTH := 2800.0
+const ARENA_FLOOR_Y := 500.0
+# Layer 5 also identifies the solid arena floor for the boss's terrain mask.
+const BOSS_FLOOR_LAYER := 1 << 4
+@export var platform_art_enabled := true
+var region_labels_visible := true
+var player: CharacterBody2D
 
 # A connected forest clearing: the main floor stays readable while these
 # broad ledges give Red a few safe routes above the boss's ground attacks.
@@ -18,14 +25,16 @@ const PLATFORMS := [
 
 func _ready() -> void:
 	_add_world_safety()
-	_add_platform(1400.0, 500.0, MAP_WIDTH, 44.0, 50)
+	_add_platform(1400.0, ARENA_FLOOR_Y, MAP_WIDTH, 44.0, 50, false)
 	for platform in PLATFORMS:
 		_add_platform(float(platform[0]), float(platform[1]), float(platform[2]), float(platform[3]), int(platform[4]))
 	_add_cursed_wolf(Vector2(1860.0, 500.0))
+	# Run the fallback after Red's movement, including dash and dive branches.
+	process_physics_priority = 100
 	queue_redraw()
 
 func _add_world_safety() -> void:
-	_add_platform(MAP_WIDTH * 0.5, 590.0, MAP_WIDTH + 400.0, 40.0, 58)
+	_add_platform(MAP_WIDTH * 0.5, 590.0, MAP_WIDTH + 400.0, 40.0, 58, false)
 	_add_collision_box("LeftMapBoundary", Vector2(-36.0, 180.0), Vector2(40.0, 1000.0))
 	_add_collision_box("RightMapBoundary", Vector2(MAP_WIDTH + 36.0, 180.0), Vector2(40.0, 1000.0))
 
@@ -40,14 +49,19 @@ func _add_collision_box(node_name: String, box_position: Vector2, box_size: Vect
 	body.add_child(collision)
 	add_child(body)
 
-func _add_platform(center_x: float, surface_y: float, width: float, depth: float, variant: int) -> void:
+func _add_platform(center_x: float, surface_y: float, width: float, depth: float, variant: int, drop_through: bool = true) -> void:
 	var body := StaticBody2D.new()
-	body.name = "RootedLedge_%02d" % variant
+	# Red recognizes RootedLedge_* as droppable. Ground must not use that name.
+	body.name = ("RootedLedge_%02d" if drop_through else "ArenaGround_%02d") % variant
+	body.collision_layer = (1 | BOSS_FLOOR_LAYER) if variant == 50 else 1
+	body.collision_mask = 0
 	body.position = Vector2(center_x, surface_y + 9.0)
 	var collision := CollisionShape2D.new()
 	var shape := RectangleShape2D.new()
-	shape.size = Vector2(width, 18.0)
-	collision.one_way_collision = true
+	var collision_depth := 18.0 if drop_through else 80.0
+	shape.size = Vector2(width, collision_depth)
+	collision.position.y = collision_depth * .5 - 9.0
+	collision.one_way_collision = drop_through
 	collision.one_way_collision_margin = 8.0
 	collision.shape = shape
 	body.add_child(collision)
@@ -58,18 +72,65 @@ func _add_platform(center_x: float, surface_y: float, width: float, depth: float
 	visual.set("variant", variant)
 	visual.set("surface_y", -9.0)
 	body.add_child(visual)
+	if platform_art_enabled:
+		visual.hide()
+		var art := Node2D.new()
+		art.name = "GothicPlatformArt"
+		art.set_script(PLATFORM_ART)
+		art.set("dimensions", Vector2(width, depth))
+		art.set("surface_y", -9.0)
+		art.set("variant", variant)
+		art.set("area_style", "cellar" if variant == 58 else ("gate" if center_x < 750 and variant != 50 else "heartwood"))
+		# Thin pieces keep the low combat ledges clear of the main floor below.
+		art.set("compact_surface", variant != 50)
+		body.add_child(art)
 	add_child(body)
+
+func _physics_process(_delta: float) -> void:
+	if not is_instance_valid(player):
+		player = get_tree().get_first_node_in_group("player") as CharacterBody2D
+	if not is_instance_valid(player) or player.get("dead") == true:
+		return
+	var foot_offset := 15.0
+	var body_shape := player.get_node_or_null("CollisionShape2D") as CollisionShape2D
+	if body_shape != null and body_shape.shape is RectangleShape2D:
+		foot_offset = body_shape.position.y + (body_shape.shape as RectangleShape2D).size.y * .5
+	var bounded_x := clampf(player.global_position.x, 16.0, MAP_WIDTH - 16.0)
+	var below_floor := player.global_position.y + foot_offset > ARENA_FLOOR_Y + 40.0
+	if below_floor:
+		# Last-resort rescue, without changing health or resetting boss progress.
+		player.call("_cancel_action")
+		var dropped := player.get("dropped_platform") as CollisionObject2D
+		if is_instance_valid(dropped):
+			player.remove_collision_exception_with(dropped)
+		player.set("dropped_platform", null)
+		player.set("drop_through_timer", 0.0)
+		player.global_position = Vector2(bounded_x, ARENA_FLOOR_Y - foot_offset - 1.0)
+		player.velocity = Vector2.ZERO
+		player.reset_physics_interpolation()
+		var camera := player.get_node_or_null("Camera2D") as Camera2D
+		if camera != null:
+			camera.reset_smoothing()
+	elif not is_equal_approx(bounded_x, player.global_position.x):
+		player.global_position.x = bounded_x
+		player.velocity.x = 0.0
+		player.reset_physics_interpolation()
 
 func _add_cursed_wolf(spawn: Vector2) -> void:
 	var wolf := WOLF_BOSS_SCENE.instantiate() as CharacterBody2D
 	wolf.name = "CursedWolfBoss"
 	wolf.position = spawn
+	wolf.collision_mask |= BOSS_FLOOR_LAYER
+	wolf.set("arena_safety_enabled", true)
+	wolf.set("arena_floor_y", ARENA_FLOOR_Y)
+	wolf.set("arena_limits_x", Vector2(28, MAP_WIDTH - 28))
 	add_child(wolf)
 
 func _draw() -> void:
 	var label_color := Color(0.78, 0.68, 0.73, 0.9)
-	draw_string(ThemeDB.fallback_font, Vector2(70.0, 300.0), "THE BLOOD MOON CLEARING", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
-	draw_string(ThemeDB.fallback_font, Vector2(1510.0, 300.0), "CURSED WOLF DEN", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
+	if region_labels_visible:
+		draw_string(ThemeDB.fallback_font, Vector2(70.0, 300.0), "THE BLOOD MOON CLEARING", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
+		draw_string(ThemeDB.fallback_font, Vector2(1510.0, 300.0), "CURSED WOLF DEN", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
 	_draw_entrance_arch()
 	_draw_crimson_roots()
 	_draw_lanterns()

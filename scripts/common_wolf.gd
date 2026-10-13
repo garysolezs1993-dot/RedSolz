@@ -21,8 +21,22 @@ const HOWL_WINDUP_MAX := 0.22
 const HOWL_DURATION := 1.1
 const ATTACK_LUNGE_TRIGGER_RANGE := 100.0
 const ATTACK_LUNGE_DURATION := 0.18
+const MAX_SAFE_DROP := 48.0
+const EDGE_CLEARANCE := 12.0
 
 @export var maximum_health := 42
+# Stage 1 configures these per encounter; defaults preserve other scenes.
+@export var attack_warning_duration := 0.0
+@export var attack_recovery_duration := 0.0
+@export var random_leaps_enabled := true
+@export var leap_interval := Vector2(RANDOM_LEAP_MIN, RANDOM_LEAP_MAX)
+@export var jump_retry_interval := Vector2(.75, 1.15)
+@export var leash_radius := 0.0
+@export var encounter_pack := ""
+@export var pack_attack_delay := 0.0
+@export_range(0.0, 1.0, .05) var melee_knockback_scale := 1.0
+var attack_warning_remaining := 0.0
+var attack_recovery_remaining := 0.0
 
 @onready var visual: AnimatedSprite2D = $Visual
 @onready var collision: CollisionShape2D = $CollisionShape2D
@@ -51,6 +65,9 @@ var howl_windup_timer := 0.0
 var howl_timer := 0.0
 var chase_huff_timer := 0.0
 var rng := RandomNumberGenerator.new()
+var safe_floor: Node2D
+var safe_floor_position := Vector2.ZERO
+var has_safe_floor := false
 
 func _ready() -> void:
 	add_to_group("enemies")
@@ -58,7 +75,7 @@ func _ready() -> void:
 	patrol_origin_x = global_position.x
 	rng.randomize()
 	_choose_patrol_action()
-	random_leap_timer = rng.randf_range(RANDOM_LEAP_MIN, RANDOM_LEAP_MAX)
+	random_leap_timer = rng.randf_range(leap_interval.x, leap_interval.y)
 	chase_huff_timer = rng.randf_range(0.65, 1.15)
 	if patrol_direction != 0.0:
 		visual.flip_h = patrol_direction < 0.0
@@ -73,6 +90,68 @@ func _find_player() -> void:
 		if scene != null:
 			player_node = scene.get_node_or_null("Player") as Node2D
 	target = player_node
+	if target is PhysicsBody2D:
+		# Bites use distance checks. Red's body must never act as terrain that
+		# shoves a lunging wolf below a one-way platform or carries it sideways.
+		add_collision_exception_with(target as PhysicsBody2D)
+
+func _ground_below(feet: Vector2, depth: float = MAX_SAFE_DROP) -> Dictionary:
+	var excluded: Array[RID] = [get_rid()]
+	if is_instance_valid(target) and target is PhysicsBody2D:
+		excluded.append((target as PhysicsBody2D).get_rid())
+	var query := PhysicsRayQueryParameters2D.create(feet - Vector2(0, 6), feet + Vector2(0, depth), 1, excluded)
+	var contact := get_world_2d().direct_space_state.intersect_ray(query)
+	if not contact.is_empty() and not contact["collider"] is StaticBody2D and not contact["collider"] is AnimatableBody2D:
+		return {}
+	return contact
+
+func _remember_safe_floor() -> void:
+	if not is_on_floor():
+		return
+	var contact := _ground_below(global_position, 8.0)
+	if contact.is_empty():
+		return
+	safe_floor = contact["collider"] as Node2D
+	var ground: Vector2 = contact["position"]
+	safe_floor_position = safe_floor.to_local(Vector2(global_position.x, ground.y))
+	has_safe_floor = true
+
+func _has_leap_landing(launch_speed: float, horizontal_speed: float) -> bool:
+	var flight_time := 2.0 * launch_speed / GRAVITY
+	var apex_height := launch_speed * launch_speed / (2.0 * GRAVITY)
+	var landing_x := global_position.x + horizontal_speed * flight_time
+	var probe := Vector2(landing_x, global_position.y - apex_height + 2.0)
+	# Only leap toward terrain within jump height and the allowed small drop.
+	return not _ground_below(probe, apex_height + MAX_SAFE_DROP).is_empty()
+
+func _move_safely(delta: float) -> void:
+	if leash_radius > 0.0 and delta > 0.0:
+		velocity.x = clampf(velocity.x, (patrol_origin_x - leash_radius - global_position.x) / delta, (patrol_origin_x + leash_radius - global_position.x) / delta)
+	# Every horizontal movement source uses this check, including separation,
+	# attack burst and hit knockback. Normal small steps down remain available.
+	if is_on_floor() and velocity.y >= 0.0 and absf(velocity.x) > 0.01:
+		var ahead := global_position + Vector2(velocity.x * delta + signf(velocity.x) * EDGE_CLEARANCE, 0)
+		if _ground_below(ahead).is_empty():
+			velocity.x = 0.0
+			if not pursuing:
+				patrol_direction = -patrol_direction
+				patrol_timer = rng.randf_range(.6, 1.2)
+	move_and_slide()
+	if is_on_floor():
+		_remember_safe_floor()
+	elif has_safe_floor and is_instance_valid(safe_floor) and velocity.y > 0.0:
+		var safe_position := safe_floor.to_global(safe_floor_position)
+		if global_position.y > safe_position.y + MAX_SAFE_DROP:
+			# A miss must not strand a wolf on the catch floor below Red. Validate
+			# the support first so a collapsed platform cannot create a hover.
+			var support := _ground_below(safe_position, 8.0)
+			if not support.is_empty() and support["collider"] == safe_floor:
+				global_position = safe_position - Vector2(0, 1)
+				velocity = Vector2.ZERO
+				attack_elapsed = 0.0
+				attack_cooldown = maxf(attack_cooldown, .3)
+				jump_cooldown = maxf(jump_cooldown, .75)
+				reset_physics_interpolation()
 
 func _choose_patrol_action() -> void:
 	patrol_timer = rng.randf_range(0.65, 1.7)
@@ -147,26 +226,30 @@ func _physics_process(delta: float) -> void:
 	jump_cooldown = maxf(0.0, jump_cooldown - delta)
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
+	_remember_safe_floor()
 	if target == null or not is_instance_valid(target):
 		_find_player()
 		if target == null:
 			_patrol(delta)
-			move_and_slide()
+			_move_safely(delta)
 			return
 		chase_speed = CHASE_START_SPEED
-		move_and_slide()
+		_move_safely(delta)
 		return
 	var distance_x := target.global_position.x - global_position.x
 	var distance_y := absf(target.global_position.y - global_position.y)
 	var horizontal_distance := absf(distance_x)
 	var facing_player := (distance_x > 0.0 and not visual.flip_h) or (distance_x < 0.0 and visual.flip_h)
+	var inside_encounter := leash_radius <= 0.0 or absf(target.global_position.x - patrol_origin_x) <= leash_radius
 	if pursuing:
-		if horizontal_distance > DETECT_RANGE + 60.0 or distance_y > 240.0:
+		if horizontal_distance > DETECT_RANGE + 60.0 or distance_y > 240.0 or not inside_encounter:
 			pursuing = false
-	elif horizontal_distance < DETECT_RANGE and distance_y < 180.0 and facing_player:
+			is_howling = false
+			attack_warning_remaining = 0.0
+	elif inside_encounter and horizontal_distance < DETECT_RANGE and distance_y < 180.0 and facing_player:
 		pursuing = true
 		approach_offset = signf(global_position.x - target.global_position.x) * rng.randf_range(8.0, 28.0)
-		random_leap_timer = rng.randf_range(RANDOM_LEAP_MIN, RANDOM_LEAP_MAX)
+		random_leap_timer = rng.randf_range(leap_interval.x, leap_interval.y)
 		is_howling = true
 		howl_windup_timer = rng.randf_range(HOWL_WINDUP_MIN, HOWL_WINDUP_MAX)
 		howl_timer = HOWL_DURATION
@@ -174,13 +257,16 @@ func _physics_process(delta: float) -> void:
 		chase_huff_timer = rng.randf_range(0.65, 1.15)
 	if pursuing and horizontal_distance > 4.0:
 		visual.flip_h = distance_x < 0.0
-	if pursuing and horizontal_distance > ATTACK_LUNGE_TRIGGER_RANGE and is_on_floor() and hurt_timer <= 0.0 and attack_elapsed <= 0.0 and not is_howling:
+	if pursuing and horizontal_distance > ATTACK_LUNGE_TRIGGER_RANGE and is_on_floor() and hurt_timer <= 0.0 and attack_elapsed <= 0.0 and attack_warning_remaining <= 0.0 and attack_recovery_remaining <= 0.0 and not is_howling:
 		random_leap_timer -= delta
 		var target_is_above := target.global_position.y < global_position.y - 46.0
-		if jump_cooldown <= 0.0 and (target_is_above or is_on_wall() or random_leap_timer <= 0.0):
-			velocity.y = -rng.randf_range(305.0, 355.0)
-			jump_cooldown = rng.randf_range(0.75, 1.15)
-			random_leap_timer = rng.randf_range(RANDOM_LEAP_MIN, RANDOM_LEAP_MAX)
+		if jump_cooldown <= 0.0 and (target_is_above or is_on_wall() or random_leaps_enabled and random_leap_timer <= 0.0):
+			var launch_speed := rng.randf_range(305.0, 355.0)
+			var leap_speed := signf(distance_x) * CHASE_MAX_SPEED
+			if _has_leap_landing(launch_speed, leap_speed):
+				velocity.y = -launch_speed
+				jump_cooldown = rng.randf_range(jump_retry_interval.x, jump_retry_interval.y)
+			random_leap_timer = rng.randf_range(leap_interval.x, leap_interval.y)
 	if hurt_timer > 0.0:
 		is_howling = false
 		velocity.x = move_toward(velocity.x, 0.0, 240.0 * delta)
@@ -197,6 +283,15 @@ func _physics_process(delta: float) -> void:
 			_set_animation("howl")
 		else:
 			is_howling = false
+	elif attack_recovery_remaining > 0.0:
+		attack_recovery_remaining = maxf(0.0, attack_recovery_remaining - delta)
+		velocity.x = 0.0
+		_set_animation("idle")
+	elif attack_warning_remaining > 0.0:
+		attack_warning_remaining = maxf(0.0, attack_warning_remaining - delta)
+		velocity.x = 0.0
+		if attack_warning_remaining <= 0.0:
+			_release_lunge()
 	elif attack_elapsed > 0.0:
 		attack_elapsed += delta
 		if attack_elapsed <= ATTACK_LUNGE_DURATION:
@@ -213,15 +308,22 @@ func _physics_process(delta: float) -> void:
 		if attack_elapsed >= 8.0 / 12.0:
 			attack_elapsed = 0.0
 			attack_cooldown = 0.8
-	elif pursuing and horizontal_distance <= ATTACK_LUNGE_TRIGGER_RANGE and distance_y < 42.0 and attack_cooldown <= 0.0:
-		attack_elapsed = 0.001
+			attack_recovery_remaining = attack_recovery_duration
+	elif pursuing and is_on_floor() and horizontal_distance <= ATTACK_LUNGE_TRIGGER_RANGE and distance_y < 42.0 and attack_cooldown <= 0.0 and _pack_can_attack():
 		attack_landed = false
 		attack_lunge_direction = signf(distance_x)
 		if attack_lunge_direction == 0.0:
 			attack_lunge_direction = -1.0 if visual.flip_h else 1.0
 		attack_lunge_speed = rng.randf_range(320.0, 360.0)
-		_set_animation("attack")
-		_play_wolf_sfx("wolf_attack")
+		if attack_warning_duration > 0.0:
+			attack_warning_remaining = attack_warning_duration + pack_attack_delay
+			velocity.x = 0.0
+			visual.play("attack")
+			visual.set_frame_and_progress(0, 0.0)
+			visual.pause()
+			_play_wolf_sfx("wolf_huff")
+		else:
+			_release_lunge()
 	elif pursuing:
 		chase_speed = move_toward(chase_speed, CHASE_MAX_SPEED, CHASE_ACCELERATION * delta)
 		var approach_x := target.global_position.x + approach_offset
@@ -237,9 +339,30 @@ func _physics_process(delta: float) -> void:
 	else:
 		chase_speed = CHASE_START_SPEED
 		_patrol(delta)
-	if pursuing and hurt_timer <= 0.0 and attack_elapsed <= 0.0 and not is_howling:
+	if pursuing and hurt_timer <= 0.0 and attack_elapsed <= 0.0 and attack_warning_remaining <= 0.0 and attack_recovery_remaining <= 0.0 and not is_howling:
 		velocity.x = clampf(velocity.x + _separation_force() * SEPARATION_STRENGTH, -CHASE_MAX_SPEED, CHASE_MAX_SPEED)
-	move_and_slide()
+	_move_safely(delta)
+	queue_redraw()
+
+func _release_lunge() -> void:
+	attack_elapsed = .001
+	visual.play("attack")
+	visual.set_frame_and_progress(0, 0.0)
+	_play_wolf_sfx("wolf_attack")
+
+func _pack_can_attack() -> bool:
+	if encounter_pack.is_empty():
+		return true
+	for other in get_tree().get_nodes_in_group("enemies"):
+		if other == self or other.get("dead") == true or other.get("encounter_pack") != encounter_pack:
+			continue
+		if float(other.get("attack_warning_remaining")) > 0.0 or float(other.get("attack_elapsed")) > 0.0 or float(other.get("attack_recovery_remaining")) > .35:
+			return false
+	return true
+
+func _draw() -> void:
+	if attack_warning_remaining > 0.0:
+		draw_string(ThemeDB.fallback_font, Vector2(-4, -36), "!", HORIZONTAL_ALIGNMENT_LEFT, -1, 14, Color("e4ba73"))
 
 func _set_animation(animation: String) -> void:
 	if visual.animation != animation:
@@ -254,7 +377,10 @@ func take_damage(amount: int, knockback: float = 0.0) -> void:
 	if dead:
 		return
 	health -= amount
+	attack_warning_remaining = 0.0
+	attack_recovery_remaining = 0.0
 	attack_elapsed = 0.0
+	queue_redraw()
 	attack_cooldown = 0.3
 	if health <= 0:
 		dead = true
@@ -265,7 +391,7 @@ func take_damage(amount: int, knockback: float = 0.0) -> void:
 		_set_animation("die")
 		death_timer = 0.8
 		return
-	velocity.x = knockback
+	velocity.x = knockback * melee_knockback_scale
 	velocity.y = -105.0
 	hurt_timer = HIT_STUN_DURATION
 	var audio := get_tree().get_first_node_in_group("audio_manager")

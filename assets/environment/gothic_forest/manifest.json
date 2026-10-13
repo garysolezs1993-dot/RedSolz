@@ -1,0 +1,271 @@
+{
+  "source_archive": "gothic_forest_platform_cut_assets_clean.zip",
+  "asset_count": 44,
+  "backup_path": "C:\\Users\\Public\\Godot Project\\yuki-solz-platform-sample-backup-20261011-162332",
+  "assets": [
+    {
+      "source": "platform_01.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/crimson_root_island.png",
+      "note": ""
+    },
+    {
+      "source": "platform_02.png",
+      "category": "platform_large",
+      "path": "assets/environment/gothic_forest/platform_large/moss_crimson_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_03.png",
+      "category": "platform_large",
+      "path": "assets/environment/gothic_forest/platform_large/low_moss_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_04.png",
+      "category": "platform_large",
+      "path": "assets/environment/gothic_forest/platform_large/crimson_root_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_05.png",
+      "category": "platform_slope",
+      "path": "assets/environment/gothic_forest/platform_slope/rising_stone_ledge.png",
+      "note": ""
+    },
+    {
+      "source": "platform_06.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/heavy_root_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_07.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/split_rock_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_08.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/twisted_root_island.png",
+      "note": ""
+    },
+    {
+      "source": "platform_09.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/crimson_vine_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_10.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/quiet_moss_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_11.png",
+      "category": "platform_edge",
+      "path": "assets/environment/gothic_forest/platform_edge/left_root_buttress.png",
+      "note": ""
+    },
+    {
+      "source": "platform_12.png",
+      "category": "platform_edge",
+      "path": "assets/environment/gothic_forest/platform_edge/right_carved_support.png",
+      "note": ""
+    },
+    {
+      "source": "platform_13.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/deep_crimson_roots.png",
+      "note": ""
+    },
+    {
+      "source": "platform_14.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/narrow_root_island.png",
+      "note": ""
+    },
+    {
+      "source": "platform_15.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/crimson_left_edge.png",
+      "note": ""
+    },
+    {
+      "source": "platform_16.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/split_crimson_stone.png",
+      "note": ""
+    },
+    {
+      "source": "platform_17.png",
+      "category": "platform_slope",
+      "path": "assets/environment/gothic_forest/platform_slope/ascending_root_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_18.png",
+      "category": "platform_large",
+      "path": "assets/environment/gothic_forest/platform_large/long_connected_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_19.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/broken_stone_island.png",
+      "note": ""
+    },
+    {
+      "source": "platform_20.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/rock_underside_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_21.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/thin_crimson_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_22.png",
+      "category": "platform_large",
+      "path": "assets/environment/gothic_forest/platform_large/thin_moss_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_23.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/thin_rock_shelf.png",
+      "note": ""
+    },
+    {
+      "source": "platform_24.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/thin_crimson_ledge.png",
+      "note": ""
+    },
+    {
+      "source": "platform_25.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/thin_quiet_moss.png",
+      "note": ""
+    },
+    {
+      "source": "platform_26.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/wood_braced_roots.png",
+      "note": ""
+    },
+    {
+      "source": "platform_27.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/crimson_shelf_edge.png",
+      "note": ""
+    },
+    {
+      "source": "platform_28.png",
+      "category": "platform_pair",
+      "path": "assets/environment/gothic_forest/platform_pair/separated_ledge_pair.png",
+      "note": "Two ledges; excluded from single-platform compositions."
+    },
+    {
+      "source": "platform_29.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/wood_braced_rock.png",
+      "note": ""
+    },
+    {
+      "source": "platform_30.png",
+      "category": "platform_medium",
+      "path": "assets/environment/gothic_forest/platform_medium/hanging_moss_cascade.png",
+      "note": ""
+    },
+    {
+      "source": "platform_31.png",
+      "category": "environment_prop",
+      "path": "assets/environment/gothic_forest/environment_prop/fallen_trunk_and_stones.png",
+      "note": ""
+    },
+    {
+      "source": "platform_32.png",
+      "category": "root_hanging",
+      "path": "assets/environment/gothic_forest/root_hanging/bare_branch_roots.png",
+      "note": ""
+    },
+    {
+      "source": "platform_33.png",
+      "category": "root_hanging",
+      "path": "assets/environment/gothic_forest/root_hanging/crimson_vines.png",
+      "note": ""
+    },
+    {
+      "source": "platform_34.png",
+      "category": "root_hanging",
+      "path": "assets/environment/gothic_forest/root_hanging/crimson_branch_roots.png",
+      "note": ""
+    },
+    {
+      "source": "platform_35.png",
+      "category": "environment_prop",
+      "path": "assets/environment/gothic_forest/environment_prop/fallen_crimson_log.png",
+      "note": ""
+    },
+    {
+      "source": "platform_36.png",
+      "category": "wood_support",
+      "path": "assets/environment/gothic_forest/wood_support/carved_post.png",
+      "note": ""
+    },
+    {
+      "source": "platform_37.png",
+      "category": "wood_support",
+      "path": "assets/environment/gothic_forest/wood_support/carved_brace.png",
+      "note": ""
+    },
+    {
+      "source": "platform_38.png",
+      "category": "foliage",
+      "path": "assets/environment/gothic_forest/foliage/wide_crimson_sprig.png",
+      "note": ""
+    },
+    {
+      "source": "platform_39.png",
+      "category": "rock_cluster",
+      "path": "assets/environment/gothic_forest/rock_cluster/mossy_crimson_stones.png",
+      "note": ""
+    },
+    {
+      "source": "platform_40.png",
+      "category": "foliage",
+      "path": "assets/environment/gothic_forest/foliage/crimson_bush.png",
+      "note": ""
+    },
+    {
+      "source": "platform_41.png",
+      "category": "root_cluster",
+      "path": "assets/environment/gothic_forest/root_cluster/crimson_stump.png",
+      "note": ""
+    },
+    {
+      "source": "platform_42.png",
+      "category": "rock_cluster",
+      "path": "assets/environment/gothic_forest/rock_cluster/small_crimson_stones.png",
+      "note": ""
+    },
+    {
+      "source": "platform_43.png",
+      "category": "platform_small",
+      "path": "assets/environment/gothic_forest/platform_small/tiny_root_island.png",
+      "note": ""
+    },
+    {
+      "source": "platform_44.png",
+      "category": "rock_cluster",
+      "path": "assets/environment/gothic_forest/rock_cluster/large_mossy_stones.png",
+      "note": ""
+    }
+  ]
+}

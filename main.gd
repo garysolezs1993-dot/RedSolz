@@ -86,7 +86,7 @@ func _build_hud() -> void:
 	objective_label.add_theme_font_size_override("font_size", 14)
 	stack.add_child(objective_label)
 	var controls := Label.new()
-	controls.text = "A/D or arrows move   •   Space jump   •   Shift dash   •   J attack   •   E ring bell"
+	controls.text = "A/D or arrows move   •   Space jump   •   Shift dash   •   C attack   •   E ring bell"
 	controls.position = Vector2(22, 111)
 	controls.add_theme_color_override("font_color", Color(0.87, 0.83, 0.79, 0.9))
 	controls.add_theme_font_size_override("font_size", 13)

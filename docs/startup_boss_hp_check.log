@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://.godot/check_startup_boss_hp.gd:20)
+PASS: Stage 1 boss bar hidden immediately, before gameplay updates
+Stage 1 UI canvas layer: 1
+PASS: Arrival pauses gameplay
+PASS: Arrival hides gameplay HUD including test shortcut
+PASS: Boss bar remains hidden during paused arrival
+PASS: Skip restores gameplay and HUD
+PASS: Stage 1 gameplay never reveals boss bar
+PASS: Stage 2 boss bar hidden before intro finishes
+PASS: Boss fight reveals bar with actual boss health
+STARTUP BOSS HP CHECK: 0 failures

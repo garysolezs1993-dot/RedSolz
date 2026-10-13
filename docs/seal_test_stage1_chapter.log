@@ -1,0 +1,60 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Isolated test save
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Opening spawn stands on the main floor
+PASS: Camera follows chapter width
+PASS: Environment covers the chapter
+PASS: Stage 1 has no full control dump
+PASS: Eight deliberately placed wolves, including one optional canopy encounter
+PASS: Quiet opening has no wolf: LoneWolf
+PASS: Quiet opening has no wolf: CampWolf
+PASS: Quiet opening has no wolf: ChapelWolf
+PASS: Quiet opening has no wolf: CreekWolf
+PASS: Quiet opening has no wolf: CanopyWolf
+PASS: Quiet opening has no wolf: BurialWolf
+PASS: Quiet opening has no wolf: HeartwoodA
+PASS: Quiet opening has no wolf: HeartwoodB
+PASS: Three meaningful checkpoints
+PASS: An accepted dash teaches dash
+PASS: Walking through a checkpoint never activates or heals
+PASS: Walking past keeps existing respawn
+PASS: Router chooses nearby checkpoint
+PASS: E activates and heals once
+PASS: E saves the correct respawn
+PASS: Repeated E cannot farm healing
+PASS: Activation history is stored
+PASS: Basic combat hint appears before the first wolf
+PASS: Rejected attack does not dismiss the lesson
+PASS: Passing the lesson does not mark it complete
+PASS: Unlearned hint returns when revisiting
+PASS: Real active melee frames complete the attack hint
+PASS: Chapel introduces Rising Slash
+PASS: Actual launcher ascent completes Rising Slash hint
+PASS: Air follow-up completes the aerial lesson
+PASS: Launcher → air attack → Downward Slash lands cleanly
+PASS: Standalone airborne Downward Slash remains usable
+PASS: Projectile release completes Crescent hint
+PASS: Creek practice ledge aligns Crescent with the distant wolf
+PASS: First wolf visibly warns before moving
+PASS: Wolf stops for its punish window after the lunge
+PASS: Stationary three-hit ground combo can defeat the real introductory wolf
+INTRO COMBAT: HP=-18 wolf=(1607.756, 499.9973) Red=(1555.0, 485.0)
+PASS: The introductory wolf provides a safe melee punish opportunity
+PASS: Wolf stays within its encounter instead of following into a quiet section
+PASS: Both cellar guardians attack, with no simultaneous windup/lunge
+PASS: Cellar guardians stay in their guarded room
+PASS: Root bridge still permits entry into the cellar
+PASS: Hollow Oak crown still has a supported reward ledge
+PASS: Burial reward route retains its landing shelf
+PASS: Moon Gate silhouette is visible before reaching the gate
+PASS: All six moon petals retain their identifiers
+PASS: Full main route is traversable without dash, launcher or advanced combos
+PASS: Main-route hazards can all be avoided with ordinary movement and jumping
+PASS: Final quiet checkpoint saves before the boss
+PASS: Retry spawns at the chosen final checkpoint
+PASS: Activated lanterns remain lit after retry
+PASS: Demonstrated lessons remain learned after retry
+PASS: E at the real Moon Gate loads the boss stage
+STAGE 1 CHAPTER: 54 checks; 0 failures

@@ -1,0 +1,2222 @@
+{
+  "idle": {
+    "archive": "Red_Idle_Approved_8Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "idle_00.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_00.png",
+        "sha256": "8bce9f849c0847f0f7c7d303c0d3b38124e9a44f789db13f9a6fae6b749ca917",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_01.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_01.png",
+        "sha256": "469a3bbd83e73958749dc5a3f039fd49ba90519b9dda699469413879473ba7a2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_02.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_02.png",
+        "sha256": "d558d1f06a62a0b5e3875877aba265153bf41cec9f19f5b2500422483613668f",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_03.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_03.png",
+        "sha256": "b396bb872725557eac606e6e5f25ea0d00bf88c035a6c03a77a87cd951828bf6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_04.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_04.png",
+        "sha256": "073c8300746886c73f038a62576c57f1d59b84430fd857ac9e3d937d40357951",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_05.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_05.png",
+        "sha256": "da247f83357cf1ff2941193c5d5b9a2b742369e1522dbc7f312d6cc0ad6760f4",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_06.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_06.png",
+        "sha256": "60f36cbe557c4c3626adca5b0d58e3598da8a39adb12059684c8c7201fe8db19",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "idle_07.png",
+        "source": "Red_Idle_Approved_8Frames/idle/idle_07.png",
+        "sha256": "65931d607ee79418bd492f6628d861f23a5164170b4d0db7428f9739296acd65",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "run": {
+    "archive": "Red_Run_Approved_8Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "run_00.png",
+        "source": "Red_Run_Approved_8Frames/run/run_00.png",
+        "sha256": "adfd432bfcd7eadf04731edc6d0f99bc102986f153cd72a20bb3a8a637dff2ee",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_01.png",
+        "source": "Red_Run_Approved_8Frames/run/run_01.png",
+        "sha256": "bf004364e165c9c6f047f2927d5ab82a3b6f555e4abbf0ca672f732b3dfa3ddf",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_02.png",
+        "source": "Red_Run_Approved_8Frames/run/run_02.png",
+        "sha256": "286d2c1ce7d287c71bea89dc2b1c8b496388ad6871dc8a5fe316e820cab5d3d1",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_03.png",
+        "source": "Red_Run_Approved_8Frames/run/run_03.png",
+        "sha256": "9f1eb11da018138ce78b264b2a1071de6bea40b8a718124c8f180a22c700ef50",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_04.png",
+        "source": "Red_Run_Approved_8Frames/run/run_04.png",
+        "sha256": "6c6b4d66395f1a3db49130c92a6f536da1328afa01bb368f40621937879db5bf",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_05.png",
+        "source": "Red_Run_Approved_8Frames/run/run_05.png",
+        "sha256": "3b5ae523a122437738bf6f9b92236af2d7fe28a6c70fb371004d6463103297d6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_06.png",
+        "source": "Red_Run_Approved_8Frames/run/run_06.png",
+        "sha256": "afab822eae491488f5e8e69f9714d64856d52078207d329f200a1fefb01636ea",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "run_07.png",
+        "source": "Red_Run_Approved_8Frames/run/run_07.png",
+        "sha256": "8d178cd0775816fe775af5f994f3b2a8fa89a02a2a0aabd3fabc93a0de538ccb",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "jump": {
+    "archive": "Red_Jump_Approved_8Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "jump_00.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_00.png",
+        "sha256": "e786c9019096856abb14defbec5633e292ae8cf5b82c1f508e9d8e973c6f6345",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_01.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_01.png",
+        "sha256": "1d6c712ce2bbc044b7a12ebaea1c7131cc774b32fea80bd95bde40a31c56c3e1",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_02.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_02.png",
+        "sha256": "9ca2dbc3f88e14d1b1270903523b4a04a6f098a2f00d0791be204a5795a03809",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_03.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_03.png",
+        "sha256": "f25b67f709a0b5e36b60c2be89187a68858fb1d8a589b77336a91bc5e6495713",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_04.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_04.png",
+        "sha256": "ab7844cbe64ef9021b6c1053d275616b1d641d53d4dde29dd4761a992769b9e2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_05.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_05.png",
+        "sha256": "6ad8b4edcd90d50c25ab017c7919948c7640edf9162af4296e52b66d17d2f3da",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_06.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_06.png",
+        "sha256": "73eb44505a30f8a0dd3d6ce31a19075b0b59d5c9f22bdcbdb4b491ba653b272a",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "jump_07.png",
+        "source": "Red_Jump_Approved_8Frames/jump/jump_07.png",
+        "sha256": "7a185467e0b9ebac83171122176211802980bf42bf85b38107b3d79aec0dbeeb",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "fall": {
+    "archive": "Red_Fall_Approved_4Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "fall_00.png",
+        "source": "Red_Fall_Approved_4Frames/fall/fall_00.png",
+        "sha256": "ff37ff06ca922d0b48fd217300f2486624a1da025e656f33a1a95b68ef074fde",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "fall_01.png",
+        "source": "Red_Fall_Approved_4Frames/fall/fall_01.png",
+        "sha256": "d351c474eaa133ece0575d843e021dbf7d98cab60e5ac8f5ae6c4d0e6a445591",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "fall_02.png",
+        "source": "Red_Fall_Approved_4Frames/fall/fall_02.png",
+        "sha256": "ae9e0b0f5b24871c52e4c0b8baa64a426c7f6ac858ed79bef33c1d698b8f455a",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "fall_03.png",
+        "source": "Red_Fall_Approved_4Frames/fall/fall_03.png",
+        "sha256": "72447807179b2828f55e51b0a6899da9b17f8bf3ad21b50233d0d7873c6c7bbb",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "landing": {
+    "archive": "Red_Landing_Recovery_4Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "landing_recovery_00.png",
+        "source": "Red_Landing_Recovery_4Frames/frames/landing_recovery_00.png",
+        "sha256": "46658ccc9216cc6e7201bbad2f9076e175f0a933c331680189ea11452012db5a",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "landing_recovery_01.png",
+        "source": "Red_Landing_Recovery_4Frames/frames/landing_recovery_01.png",
+        "sha256": "c3dab2731431bbbb224c23c7135373062aaa6b5cb514ff77594c3621c51e1456",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "landing_recovery_02.png",
+        "source": "Red_Landing_Recovery_4Frames/frames/landing_recovery_02.png",
+        "sha256": "ebc5fd73bcea33daa6b590dd77986ccfa8a74ff06c976608a8d5e02f0f68e7e5",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "landing_recovery_03.png",
+        "source": "Red_Landing_Recovery_4Frames/frames/landing_recovery_03.png",
+        "sha256": "9b13b0ad6e8e20a31d213d11def009fce910b1f64659d5a4669027a0852e1808",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "dash": {
+    "archive": "Red_Dash_Approved_8Frames_For_Codex.zip",
+    "frames": [
+      {
+        "file": "dash_00.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_00.png",
+        "sha256": "211a408951522448fb9f43365fb25079472c9305aa360c70e96440567e2eac43",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_01.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_01.png",
+        "sha256": "465a81970cbfb27ebe0f3fde16d91938f4078d5bb2a4f6d406f5468dcff24e51",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_02.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_02.png",
+        "sha256": "0f78d82500b54ab7d8ec7d8331443969169559f86fc4d1f8b8290b81c8d94d84",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_03.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_03.png",
+        "sha256": "a33e7ecdf518a363851ea65d1e82d6d674fb10dae756850d2dd4a71370ec6fd2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_04.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_04.png",
+        "sha256": "18a63692734bc284a92168892a9834ec0e2a35bceb32ffa864b6c5f52fd1fa0f",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_05.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_05.png",
+        "sha256": "387d59def4a8d566b70145b9fb72397431fa8a01f45a1c7592c6b98bdcabc3ed",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_06.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_06.png",
+        "sha256": "e0aa39d406ec96c34a5548510ce7eabfb5935b0c5a796347f4155dde44e26c60",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "dash_07.png",
+        "source": "Red_Dash_Approved_8Frames/dash/dash_07.png",
+        "sha256": "c5721ffbd71fb63c318f2cf196e3ae1c15b055c82d47bf6b35d7c67f988c88c3",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "air_attack": {
+    "archive": "Red_Air_Attack_For_Codex.zip",
+    "frames": [
+      {
+        "file": "air_attack_00.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_00.png",
+        "sha256": "57d90cf27520b188984ec331d05340a88442016eeb4f4c5f8d792ab623e037ef",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_01.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_01.png",
+        "sha256": "c6676fa91b62fc5cb661bbb8da8638b2cc97e857c1e45db9ae26a95a8272a880",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_02.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_02.png",
+        "sha256": "48f58d1a59918358ffe0eaf3aa5333f7a1542bc6a8e30b9a11d3c53ac9210071",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_03.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_03.png",
+        "sha256": "f79972901d4170fbf3770fc441e4db90d61c8d731fb99680f78e6b062cad9637",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_04.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_04.png",
+        "sha256": "686625cfb9924b222fc5a835cb0077669a150ec9c277a17ebab5fd98875facc1",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_05.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_05.png",
+        "sha256": "b18a7b1b34669878f2b547319078cb796999aca2ee26986ca80873d4762e09dc",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_06.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_06.png",
+        "sha256": "4ccf786ff36f0dcdfc5170b79efbb674df76f246fcf826510630965b2fc795f3",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack_07.png",
+        "source": "Red_Air_Attack_For_Codex/frames/air_attack_07.png",
+        "sha256": "eb1855aefb860c915014cf349c660e2095acc02b773c89c6ba1f4ec32b9e149c",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "hurt": {
+    "archive": "Red_Hurt_Cleaned_For_Codex.zip",
+    "frames": [
+      {
+        "file": "hurt_00.png",
+        "source": "frames/hurt_00.png",
+        "sha256": "f551e3cc4423a5a93c80cf6091041a94075eb941aafd27591544ab7460926424",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_01.png",
+        "source": "frames/hurt_01.png",
+        "sha256": "c72e7544f6442b75c360b7f8aa327c9c1a9270ec7e4f71b005a11953847dbdad",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_02.png",
+        "source": "frames/hurt_02.png",
+        "sha256": "4898d74bf5d3f652af005d09c0f93be6886e5e78bbd58ad71a66b96b08a6f0fd",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_03.png",
+        "source": "frames/hurt_03.png",
+        "sha256": "e5023e45cd54e6c74f817373e842b0034b87f5de811b85168c62ec3dbba2fbfa",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_04.png",
+        "source": "frames/hurt_04.png",
+        "sha256": "a22bdc4cd87eb627df7ed3223e783e4dfd192e25a4d6ef0a89da3be8ad1527e0",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_05.png",
+        "source": "frames/hurt_05.png",
+        "sha256": "1f6e0fbc6e8e47df19090e9cb5bf6313e919361cb9488fd08f2a1e058b8315ba",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_06.png",
+        "source": "frames/hurt_06.png",
+        "sha256": "89db6d12a3c04bb2127fa4d615b73f5b364c27d82c2817d0465e87ef9d60b436",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "hurt_07.png",
+        "source": "frames/hurt_07.png",
+        "sha256": "99795a56f6518945b3fb1ff91be692baccc36e6a05d9b2203d093c1f186fde02",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "crouch": {
+    "archive": "Red_Crouch_For_Codex_Download.zip",
+    "frames": [
+      {
+        "file": "crouch_00.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_00.png",
+        "sha256": "955830bba5227c94778f0a417ed3f6e77dd28b4c1ec0b5e267b8385c9512e59e",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_01.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_01.png",
+        "sha256": "f6067b932a45e407b9226361c74a1ad274598891a2f66d843b03818b2277bdac",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_02.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_02.png",
+        "sha256": "83e802d841bd2a0bedeca3696a0fcf5f0a3e1709600cd04a8a4e143b5ff50835",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_03.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_03.png",
+        "sha256": "80c48a09363eb73888ca87126cc89cd2420f5fcd4966d376bd4828b4fa8342f5",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_04.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_04.png",
+        "sha256": "9dac6f613b58fafc2a2490a5ae74026e8cbb22a971f28a0b1e07eee666153af4",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_05.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch/crouch_05.png",
+        "sha256": "d62fbbb554a338f07ae6ddf923786e6d15d07ae493c2381d86d23341ddab55fe",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "crouch_walk": {
+    "archive": "Red_Crouch_For_Codex_Download.zip",
+    "frames": [
+      {
+        "file": "crouch_walk_00.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_00.png",
+        "sha256": "12bc921612a84d2d418e847ccbf19fffca1ac5599d997588441b8dafda720e55",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_01.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_01.png",
+        "sha256": "096ef3d5e19041c0c6838002a53b3721c1baedbc219d752a8811ecbf3e8b695f",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_02.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_02.png",
+        "sha256": "4d311efbf9e23214d093788703a83e2b9c91cae5579b2d8c0e4f55050d34f688",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_03.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_03.png",
+        "sha256": "1e9df24bd9c3f5ef6a61531fd49c988484825e8d496222aa2e3e2e54ea51cb2c",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_04.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_04.png",
+        "sha256": "a9e6320eb379799c1fa8948faea9ee3e40086c397eb57692b290b5b41fe5221f",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_05.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_05.png",
+        "sha256": "0f942e513b95d5c2f5f3e208e900c23e6d438949c97a84a5c8dcde4d4f3df0ce",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_06.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_06.png",
+        "sha256": "ceb0636564c4ce9d120f8ab783cf029ec822501d5ad9c645de93333be0ec025e",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "crouch_walk_07.png",
+        "source": "Red_Crouch_Transparent_For_Codex_v2/crouch_walk/crouch_walk_07.png",
+        "sha256": "5f0924e70709be57aba0965fe772f524edf06de4fffc41efc98d8fbb3c9a6a29",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "rising_slash": {
+    "archive": "red_rising_slash_all_frames.zip",
+    "frames": [
+      {
+        "file": "red_rising_slash_vfx_01.png",
+        "source": "vfx_frames/red_rising_slash_vfx_01.png",
+        "sha256": "af73429f2f3b9c54903937db80e0706913f5eb2890a3491b0ed05d0bdd2bd6d3",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_02.png",
+        "source": "vfx_frames/red_rising_slash_vfx_02.png",
+        "sha256": "5856ef30336f06bab15295da19b327b30ac79f3b2bb1ed13bace0412a4ac184e",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_03.png",
+        "source": "vfx_frames/red_rising_slash_vfx_03.png",
+        "sha256": "87d2f9d8fa2cd6019ced253bd86a65bf1910397b1e408cedcbcb7627ad9473a8",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_04.png",
+        "source": "vfx_frames/red_rising_slash_vfx_04.png",
+        "sha256": "744125fd81185f78cd415e6e98d04c230fd1446d109ef38afa9bd14ef5432448",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_05.png",
+        "source": "vfx_frames/red_rising_slash_vfx_05.png",
+        "sha256": "382ef06263589308c04f8d12eb365aab06c17f9652eff5f08988d3c46c4534b1",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_06.png",
+        "source": "vfx_frames/red_rising_slash_vfx_06.png",
+        "sha256": "35e572146c8bc671182c9f1c32ab752096617bf85090fa2fe7ea1e60799d6e98",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_07.png",
+        "source": "vfx_frames/red_rising_slash_vfx_07.png",
+        "sha256": "69ede448675755143ceae9e2d634baf2017e0625ca3068f0329507a4a7e36844",
+        "canvas": [
+          362,
+          543
+        ]
+      },
+      {
+        "file": "red_rising_slash_vfx_08.png",
+        "source": "vfx_frames/red_rising_slash_vfx_08.png",
+        "sha256": "f569c6d2a50452ba69ebdce46589d153da7c40bf595eb45f743bf35745e5091a",
+        "canvas": [
+          362,
+          543
+        ]
+      }
+    ]
+  },
+  "death": {
+    "archive": "red_death_frames_codex.zip",
+    "frames": [
+      {
+        "file": "death_00.png",
+        "source": "death_00.png",
+        "sha256": "981e5cce8c5561d1ed2c5bb3af36056eeb1d2e86d33362505bdd4016d3074adf",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_01.png",
+        "source": "death_01.png",
+        "sha256": "9b6ecb933cd9016a2e14821cc6c87f777f6ee7db0b36b9a11ecb6c438c7475a6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_02.png",
+        "source": "death_02.png",
+        "sha256": "f7d77382162be0d4b87009ba1d34203deb5963579ae144719d634bdca331e4b5",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_03.png",
+        "source": "death_03.png",
+        "sha256": "9a08bf5cdfabb6cbc08492b9c322b33a7ae96ad9037fc405f06ed3b47aa33819",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_04.png",
+        "source": "death_04.png",
+        "sha256": "77ec42df3b6ca2ad1f74beaf46d90d8d0a75db90a75ac2b359cf649c4aa5e659",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_05.png",
+        "source": "death_05.png",
+        "sha256": "bdb0cfbde9a41231d594b7bc30b612f5eabea655a2531c8f3f49f78466e49d59",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_06.png",
+        "source": "death_06.png",
+        "sha256": "bdb0cfbde9a41231d594b7bc30b612f5eabea655a2531c8f3f49f78466e49d59",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "death_07.png",
+        "source": "death_07.png",
+        "sha256": "bdb0cfbde9a41231d594b7bc30b612f5eabea655a2531c8f3f49f78466e49d59",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "basic_attack": {
+    "archive": "red_basic_attack_frames_codex.zip",
+    "frames": [
+      {
+        "file": "attack_00.png",
+        "source": "attack_00.png",
+        "sha256": "ca7587ccd7cbf79008aae8ab80c72dbcbf6310520ec5ae0939187e92065284f4",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_01.png",
+        "source": "attack_01.png",
+        "sha256": "6ea76400618ca19f5d6c88c827c812f342ef06cac2199fdd0dd2dfa69ab74342",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_02.png",
+        "source": "attack_02.png",
+        "sha256": "13b2b5c45c644c9b1712040fd2c4d8790f28e232f019fe83591f27bbe45e5993",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_03.png",
+        "source": "attack_03.png",
+        "sha256": "49bb0674319081adc810b20845e4f2ea3df7f7f49d1a841ac6f2977be10842ba",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_04.png",
+        "source": "attack_04.png",
+        "sha256": "e64cabd2c598bb6ab0a2ddfb07ff80cef35246da9f670f0649ada5f34fdcfec1",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_05.png",
+        "source": "attack_05.png",
+        "sha256": "77ac52d1b2aa19e16c2d3124628460b2d3fa5ae446ab7ccaa4b5119f2b67c8df",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_06.png",
+        "source": "attack_06.png",
+        "sha256": "3259ca92fb33dc114c77cdbb1cd5c11eb96200e9895ba2f71a99700519ff3be2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack_07.png",
+        "source": "attack_07.png",
+        "sha256": "268f7d809183b625f4462e613b61d35b4853227bc50ffe97a7fbed34a9f77d67",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "crescent_character": {
+    "archive": "crescent_slash_fixed_all_for_codex.zip",
+    "frames": [
+      {
+        "file": "crescent_slash_character_fixed_01.png",
+        "source": "character/crescent_slash_character_fixed_01.png",
+        "sha256": "c462cb86d244d7b22ea21b3dff8eec04283c10ce15f7e35c336878e184138379",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_02.png",
+        "source": "character/crescent_slash_character_fixed_02.png",
+        "sha256": "186772a2d9f95729e9e986abb190282b913a91512538c9f0c60d8d03f335a879",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_03.png",
+        "source": "character/crescent_slash_character_fixed_03.png",
+        "sha256": "de3c5fe770d4c5f6dfe9970f0aa77bc471406f75740e63e294f341b83473a86f",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_04.png",
+        "source": "character/crescent_slash_character_fixed_04.png",
+        "sha256": "222e0fab261d827a299a5ac13f1aad7636b85132275d13e3ecb620f5cc4f7ebe",
+        "canvas": [
+          445,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_05.png",
+        "source": "character/crescent_slash_character_fixed_05.png",
+        "sha256": "e8d4bfaa76a91533b36ccf3438e35d3823ae947415e3acdeb16a5f6ed301104c",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_06.png",
+        "source": "character/crescent_slash_character_fixed_06.png",
+        "sha256": "4be533c40dee53e1c90a95fed58ff8f4615a44150639273de1c7fc01cc284054",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_07.png",
+        "source": "character/crescent_slash_character_fixed_07.png",
+        "sha256": "b29bd2ff08fc770fde230da463324d78a3ff998c44e41f557f59219374f4410d",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_character_fixed_08.png",
+        "source": "character/crescent_slash_character_fixed_08.png",
+        "sha256": "04422cfdf570f83bd557d1017aa9c74ec0fe06221b074d41fe1959487e617432",
+        "canvas": [
+          445,
+          444
+        ]
+      }
+    ]
+  },
+  "crescent_vfx": {
+    "archive": "crescent_slash_fixed_all_for_codex.zip",
+    "frames": [
+      {
+        "file": "crescent_slash_vfx_fixed_01.png",
+        "source": "vfx/crescent_slash_vfx_fixed_01.png",
+        "sha256": "248d9fff1b999a9f51b411053eee6719551711eaf2ba53bb6579092e9d1863dd",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_02.png",
+        "source": "vfx/crescent_slash_vfx_fixed_02.png",
+        "sha256": "4acaa85df98105757d86f889e40da4a0b4b6631f5aa0bf22551b8b2d83306eb3",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_03.png",
+        "source": "vfx/crescent_slash_vfx_fixed_03.png",
+        "sha256": "e239abbeadaa6af4088488f063965a09cadfc2465fb5c895a223d88d9cacd803",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_04.png",
+        "source": "vfx/crescent_slash_vfx_fixed_04.png",
+        "sha256": "fa3863cc8c8041007ad0c21d0b6afad6ba4574992022606ae01c15fbc24bf38f",
+        "canvas": [
+          445,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_05.png",
+        "source": "vfx/crescent_slash_vfx_fixed_05.png",
+        "sha256": "047b2c9772aacb7dd7e94f481f0bef1254d8a367efc0757ed66f043236bf41ed",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_06.png",
+        "source": "vfx/crescent_slash_vfx_fixed_06.png",
+        "sha256": "2a0d7af1a7870a515755ca27ca7dd87345d77745f736608d58870bac3bd1cd37",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_07.png",
+        "source": "vfx/crescent_slash_vfx_fixed_07.png",
+        "sha256": "c7b36d12ba9483c9dd64fe265b15951d09f62d82fd4b8e5fd01478bfe12c7de9",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_vfx_fixed_08.png",
+        "source": "vfx/crescent_slash_vfx_fixed_08.png",
+        "sha256": "d3374132db71ad0907ae77fbafaf2ee490d6d30e132b87a970636a43809a5eec",
+        "canvas": [
+          445,
+          444
+        ]
+      }
+    ]
+  },
+  "crescent_projectile": {
+    "archive": "crescent_slash_fixed_all_for_codex.zip",
+    "frames": [
+      {
+        "file": "crescent_slash_projectile_fixed_01.png",
+        "source": "projectile/crescent_slash_projectile_fixed_01.png",
+        "sha256": "31b27ce45a160ba86de6350fd55f3136b50d1cd58718ec95885ac250b2ca616f",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_02.png",
+        "source": "projectile/crescent_slash_projectile_fixed_02.png",
+        "sha256": "ca248662f9da6df3be1298904bbc0c6083ea9ae2cd5f10ac6c202e80cdf865fd",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_03.png",
+        "source": "projectile/crescent_slash_projectile_fixed_03.png",
+        "sha256": "835205bfb8e311e57d0e233d60a2e0a4ce2b347f6d063d2ce4c70c56a4556d33",
+        "canvas": [
+          443,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_04.png",
+        "source": "projectile/crescent_slash_projectile_fixed_04.png",
+        "sha256": "1d008dac7cdc01f53ff30b91191cc063a79f50780577e39b229ec69f55df3265",
+        "canvas": [
+          445,
+          443
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_05.png",
+        "source": "projectile/crescent_slash_projectile_fixed_05.png",
+        "sha256": "5cbfb0b24d4f9f15d67178c5ff7c9689fedbe4b965793cba9be530fc1d099260",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_06.png",
+        "source": "projectile/crescent_slash_projectile_fixed_06.png",
+        "sha256": "4bdab632cdb57e4b202de4010eb063b1fa1f5a740664ada839a1b1e809cb353f",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_07.png",
+        "source": "projectile/crescent_slash_projectile_fixed_07.png",
+        "sha256": "74dcb8b1c6fc43faeccd8460380b210066d4499d297f654a0187f09d41d58702",
+        "canvas": [
+          443,
+          444
+        ]
+      },
+      {
+        "file": "crescent_slash_projectile_fixed_08.png",
+        "source": "projectile/crescent_slash_projectile_fixed_08.png",
+        "sha256": "c261c21303f1d8c4d4b840d4845436442dbc5e79823dd330173f08631d5726b2",
+        "canvas": [
+          445,
+          444
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_1/character": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack1_00.png",
+        "source": "Attack_1/Character/attack1_00.png",
+        "sha256": "cedc3ff116a76be90a8d1e071445de4aed315e753f6396edf8827d9ca6a7a282",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_01.png",
+        "source": "Attack_1/Character/attack1_01.png",
+        "sha256": "3369aaa9475a2bb7da45e196449483a7410f38c5e7acc122ca73ccbe020e4047",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_02.png",
+        "source": "Attack_1/Character/attack1_02.png",
+        "sha256": "c1e3d5877e3a56df484847f1033c97c38a3a23c131478c53bcdae3ff2e2158f5",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_03.png",
+        "source": "Attack_1/Character/attack1_03.png",
+        "sha256": "ec02725fea32265a55e77407cd7c551cdc40d6fb8f9fb8bac30122487640b4bf",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_04.png",
+        "source": "Attack_1/Character/attack1_04.png",
+        "sha256": "4fcaa8f06b044cd7c2166efaf2289d4551f82d70fab3d7604e440aad3230c5a4",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_05.png",
+        "source": "Attack_1/Character/attack1_05.png",
+        "sha256": "dac8b215d4d23fe9d4215a44e4030e9a2ed5036ade09ef2ebbf49d89d277358c",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_06.png",
+        "source": "Attack_1/Character/attack1_06.png",
+        "sha256": "bbb386b6c944f9c87e53162822182ea9c5e134af9c8b8a1166506643be1c2efc",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_07.png",
+        "source": "Attack_1/Character/attack1_07.png",
+        "sha256": "49f9a385c6c2265c58df26411fe3f7099f205f45d9f8582c6939ff3818ce354b",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_1/vfx": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack1_vfx_00.png",
+        "source": "Attack_1/VFX/attack1_vfx_00.png",
+        "sha256": "1e9313a0b9158cd8231db06e9c84333ec30812edd902d0e3acf3f5c8300057f2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_01.png",
+        "source": "Attack_1/VFX/attack1_vfx_01.png",
+        "sha256": "64ba7190792761bba59db30cb48def547f673f4448b714669d7859715a0f8ee6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_02.png",
+        "source": "Attack_1/VFX/attack1_vfx_02.png",
+        "sha256": "1c00d694ac3b8849400305780f75429ddb8feed4755906d20b49c4f9d4599bbc",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_03.png",
+        "source": "Attack_1/VFX/attack1_vfx_03.png",
+        "sha256": "b1887e549cef350ab0407c85de8af79a8a502e3dafad5c1c84a04b5ca60b9ffe",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_04.png",
+        "source": "Attack_1/VFX/attack1_vfx_04.png",
+        "sha256": "48ac6e24845e616af68d97d2bb7a1fca581b544100d9fd60f79a2c7f9739aaeb",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_05.png",
+        "source": "Attack_1/VFX/attack1_vfx_05.png",
+        "sha256": "f225af43dcf7604c6a7d3fee95358b41b2a77236c96b17a75cfebccbd2ce7487",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_06.png",
+        "source": "Attack_1/VFX/attack1_vfx_06.png",
+        "sha256": "14d165ebe6f847534f7bb536ad2625e88d38970e37593666827aeb57dde623c2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack1_vfx_07.png",
+        "source": "Attack_1/VFX/attack1_vfx_07.png",
+        "sha256": "3b194605d189d11396cbc69ca6295ff9d15d9213189e77d8e0742ea2d43acb9f",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_2/character": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack2_00.png",
+        "source": "Attack_2/Character/attack2_00.png",
+        "sha256": "ec34beb0eae2e91149f9d026e35449838d60bf5527e1a8a912c2c3393cf6e2da",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_01.png",
+        "source": "Attack_2/Character/attack2_01.png",
+        "sha256": "3369aaa9475a2bb7da45e196449483a7410f38c5e7acc122ca73ccbe020e4047",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_02.png",
+        "source": "Attack_2/Character/attack2_02.png",
+        "sha256": "bd64db5f8115b665d410b7593c18ef3be7309f9ce0db4ad6e5c053b7d623afbc",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_03.png",
+        "source": "Attack_2/Character/attack2_03.png",
+        "sha256": "575303b7e4dac993e87dc66844e619a8522acf4df4619515a0f1bdfe17fe4efa",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_04.png",
+        "source": "Attack_2/Character/attack2_04.png",
+        "sha256": "623a82bc6b6ee3bda084c38da8d5fd394457c435bb6e084b3ad656b9dfa05d65",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_05.png",
+        "source": "Attack_2/Character/attack2_05.png",
+        "sha256": "2fb69757e8e021c5a8428c0b7d652f3ee12e1fb6bd8c53198c66196000c0cd31",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_06.png",
+        "source": "Attack_2/Character/attack2_06.png",
+        "sha256": "b718b7bd9a0ffcc19d3e50793286468bed260ac452889cda78470bbd117eb88c",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_07.png",
+        "source": "Attack_2/Character/attack2_07.png",
+        "sha256": "ad0110c41b6c027157e2b7aa3787ff51bf91b0e38ceeb7cf28897046eb470052",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_2/vfx": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack2_vfx_00.png",
+        "source": "Attack_2/VFX/attack2_vfx_00.png",
+        "sha256": "314dd9ba022703bd6dbe3ecba0ea60bf1223ced20711e7277dbddaeb377df279",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_01.png",
+        "source": "Attack_2/VFX/attack2_vfx_01.png",
+        "sha256": "017c8381739ef70540e8647aa0ff3c85b6354ed98bb1c6abf8c38ba14555c158",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_02.png",
+        "source": "Attack_2/VFX/attack2_vfx_02.png",
+        "sha256": "901f13a219039d20acd4dadaf54f478384410b6ede01634210541ff254bee9c9",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_03.png",
+        "source": "Attack_2/VFX/attack2_vfx_03.png",
+        "sha256": "54ca571d80bb2e740c858c420fcd242005cce9d0496f43dd05765b1f3260b7a0",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_04.png",
+        "source": "Attack_2/VFX/attack2_vfx_04.png",
+        "sha256": "a0aefe23ee34d496f2d9ca0afad218a090c4b7f1e0634ca773e2380236ac2020",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_05.png",
+        "source": "Attack_2/VFX/attack2_vfx_05.png",
+        "sha256": "e21425b23782bc50b3ff372d1a735f94fa75572daf45c4c83bb09c73f27a8578",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_06.png",
+        "source": "Attack_2/VFX/attack2_vfx_06.png",
+        "sha256": "bda322f01c93bd125d8134cfc9fe3256f8a2c07baad5af343757f6b88ebffc11",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack2_vfx_07.png",
+        "source": "Attack_2/VFX/attack2_vfx_07.png",
+        "sha256": "8116f6a109918ed783302c870e1861fc190c618e03ac1d05aef1fbcaff7213a6",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_3/character": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack3_00.png",
+        "source": "Attack_3/Character/attack3_00.png",
+        "sha256": "5f3d6225b2b7ecaf2137d92749c58cb18c563704edd42ef37d1a23204cadacdd",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_01.png",
+        "source": "Attack_3/Character/attack3_01.png",
+        "sha256": "8bdfef3215bacd26c19e0dd634f46a9ca7e4d4bb41c994503e74abd93d2ac87d",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_02.png",
+        "source": "Attack_3/Character/attack3_02.png",
+        "sha256": "3a6e76903011af78a94b58026fd11ee01130e6e043412f37e2382fdacd1292e2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_03.png",
+        "source": "Attack_3/Character/attack3_03.png",
+        "sha256": "252ddd62acd9790dad05be0ab8097097104b6af03799068aa71f4f1a6482c152",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_04.png",
+        "source": "Attack_3/Character/attack3_04.png",
+        "sha256": "8b632d4ce50726813bbf2179b6ae777a976433a73778d7eb0f96f4f5209d0cc8",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_05.png",
+        "source": "Attack_3/Character/attack3_05.png",
+        "sha256": "2c53eddb6214b86663ce5d6acfb9961d68e88ab758b8b402407bf44ed95ad7e1",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_06.png",
+        "source": "Attack_3/Character/attack3_06.png",
+        "sha256": "d76f296cadb0275c19c075ae6c5ef28ec4e226b398e25a8ee5d7f6c469d1e70c",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_07.png",
+        "source": "Attack_3/Character/attack3_07.png",
+        "sha256": "12eb3713b2b04acd34fd724773a6cf35e2b19ae72356f022b13d729274a39ef0",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "combo_master/attack_3/vfx": {
+    "archive": "red_3hit_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "attack3_vfx_00.png",
+        "source": "Attack_3/VFX/attack3_vfx_00.png",
+        "sha256": "a62054488a3cfce3408d3710726d08c3b2e421744a88d57de2fe23112a5a2561",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_01.png",
+        "source": "Attack_3/VFX/attack3_vfx_01.png",
+        "sha256": "232f77fe1ebc6580345f5143fd6901c4f377f9a5f8e597340b22b83ba813ebb0",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_02.png",
+        "source": "Attack_3/VFX/attack3_vfx_02.png",
+        "sha256": "a41009dde3a1b34d30737cf00c002362efd6615a9bc1e08d0272ac3be3bf3768",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_03.png",
+        "source": "Attack_3/VFX/attack3_vfx_03.png",
+        "sha256": "9c67cdb6fbcbe8f40a106cd20399c747012573fbce6824e07d817a08cd802656",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_04.png",
+        "source": "Attack_3/VFX/attack3_vfx_04.png",
+        "sha256": "c7f861734ff42136318f5d98a34a1f2ea40ad9ee2d1d5e261993dff68cdd4323",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_05.png",
+        "source": "Attack_3/VFX/attack3_vfx_05.png",
+        "sha256": "5e724a4fab5740c671a6777053a5b643db8ef8dd69efb7bf6f4ce836eb97ee0d",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_06.png",
+        "source": "Attack_3/VFX/attack3_vfx_06.png",
+        "sha256": "57d2ae1692b43be4778027d5fb024b1500e2cfce014e8743dcfeeb379c597792",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "attack3_vfx_07.png",
+        "source": "Attack_3/VFX/attack3_vfx_07.png",
+        "sha256": "e3c831e87d1bed65610bcef33dc22af815683bdef4b11ecec1fa4a9c1a3ce402",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_1/character": {
+    "archive": "red_air_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack1_character_00.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_00.png",
+        "sha256": "f938dce1cf0538e25142870cb624a0c90c3d9ca4574cf46f1d0d36a8e665e0d2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_01.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_01.png",
+        "sha256": "c0d10530774ea8f244f28a651845130f18dacd0bac5114f71e0202243b045936",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_02.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_02.png",
+        "sha256": "b07cb8e810a0821c2d2db9d426d8d95155a2c00dd715464120b66904417e9e52",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_03.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_03.png",
+        "sha256": "c3a332e285a504790c15c1faff55b9b13c09eeceea3683d258b46a6f0a6ce3bd",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_04.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_04.png",
+        "sha256": "4d8c5b790c643501998a60d3d47e24673d8bd539788876f1bf53b22ffcd012d2",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_05.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_05.png",
+        "sha256": "b8e6b9c2cd1a6918964a2c123a770bccba8cec4467475ab181ca0f072ac58a90",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_06.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_06.png",
+        "sha256": "3f9e48a7543153ceae9e2eb2732808160ac03206ca9d06df3321cc42cca702dd",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack1_character_07.png",
+        "source": "Air_Attack_1/Character/air_attack1_character_07.png",
+        "sha256": "e900c3873f935148a449f199a35b6a76b34b9d5075571200560aaf3e47593537",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_1/vfx": {
+    "archive": "air_attack1_vfx_clean_frames_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack1_vfx_00.png",
+        "source": "air_attack1_vfx_00.png",
+        "sha256": "ed0cf85e48ea39e321be87357b572e5fa6367c3e8055b2bba4cdbbd1590891d5",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_01.png",
+        "source": "air_attack1_vfx_01.png",
+        "sha256": "81aa60d9db3f31f69d1d3c1d24e905aeb878d984a0325506c1422c2235fa68bf",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_02.png",
+        "source": "air_attack1_vfx_02.png",
+        "sha256": "24060e2d8558345caca433d60872b9e2307d3d68fdea3a8eb1d7bd4d64da59a7",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_03.png",
+        "source": "air_attack1_vfx_03.png",
+        "sha256": "e6479e376608de8e9cfe00b520c2e91ead01b664acbece25ee58f30b677288a9",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_04.png",
+        "source": "air_attack1_vfx_04.png",
+        "sha256": "7befd2f53ab986189d04f099ba61b9136417658649ef5b54476494e5fe1556bd",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_05.png",
+        "source": "air_attack1_vfx_05.png",
+        "sha256": "0426ac6431fbb6a311f6f6a1e55e9ef59e7fa5a8c46aa190eea1a6f06fa0971b",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_06.png",
+        "source": "air_attack1_vfx_06.png",
+        "sha256": "00425ae7893fcb1f8eccdf65da8e3059435c7bd763d0e73d6788a544cbc54b2c",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack1_vfx_07.png",
+        "source": "air_attack1_vfx_07.png",
+        "sha256": "1959a672fb56f03e1bd24ac65700654d813c3d8f91db8c84040c4ac55db70923",
+        "canvas": [
+          1536,
+          1536
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_2/character": {
+    "archive": "red_air_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack2_character_00.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_00.png",
+        "sha256": "a16a982a5b2aa6900435795887605f88d5edfa47fab61e233aebb0519d6bc3af",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_01.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_01.png",
+        "sha256": "dca68a29ebe93946387e83db95a8b02abf554ecf147ff746a0f10a48188ccc4a",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_02.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_02.png",
+        "sha256": "3b6434840dccda41d85c56134729de813ca542c87f96cb7ff289efb7f415732b",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_03.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_03.png",
+        "sha256": "5b8724459bfb1d9c7b7eaba43c1d8916bc84be87343ae132667c23b2c25ad3e7",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_04.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_04.png",
+        "sha256": "21c403bc144c7e61b32932a2a3a3ce4a86b233c1d1b56258f255a6f52ca0ef8e",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_05.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_05.png",
+        "sha256": "8fe63244034a1592df134351f0d748965ac4835e24edfa25b8c2e9c0f563a5da",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_06.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_06.png",
+        "sha256": "38d4288be7dd6d851405cdb2a72a13acb21225f62759e7e257ab8427a3ed89ce",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack2_character_07.png",
+        "source": "Air_Attack_2/Character/air_attack2_character_07.png",
+        "sha256": "fd8ed41a474eeda2ca97de010fca86c0c635f872441b960c4d310a114614693f",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_2/vfx": {
+    "archive": "air_attack2_vfx_clean_frames_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack2_vfx_00.png",
+        "source": "air_attack2_vfx_00.png",
+        "sha256": "786d1fd1b2cd599e05137c0dc7fd486da7eeb98da7e82fb63079e161815292f2",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_01.png",
+        "source": "air_attack2_vfx_01.png",
+        "sha256": "1f681fb5955aadcef585c547ed41914544b0cdce1b0e64b4c7fba7eaf62ab377",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_02.png",
+        "source": "air_attack2_vfx_02.png",
+        "sha256": "df7e9efd1992fdd0eaf8d72a35645c3c489c4f46b51568ac1958e845e7f8bdac",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_03.png",
+        "source": "air_attack2_vfx_03.png",
+        "sha256": "2eb4e5e390f52a1e9d2ad7b384ceba697967221a792401ec5e5aa9f58f3354ce",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_04.png",
+        "source": "air_attack2_vfx_04.png",
+        "sha256": "76bafe642ea4ba3c128dd5a29ee8f8a13ce28b6ae89b63860ffe939f82dca9a5",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_05.png",
+        "source": "air_attack2_vfx_05.png",
+        "sha256": "6b453e8cc0e37e3db207fadfed09bf8ffe507bdf90ab12c0825758ff06ff3b68",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_06.png",
+        "source": "air_attack2_vfx_06.png",
+        "sha256": "0aba7b3f76132cbe58b16f1bb1a33fd2c870c43ee1b78e33afe36a48756d9d7a",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack2_vfx_07.png",
+        "source": "air_attack2_vfx_07.png",
+        "sha256": "f4261b91b9e8311023f7648a2501da277972a5cc635c11324885d64c0cc44a33",
+        "canvas": [
+          1536,
+          1536
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_3/character": {
+    "archive": "red_air_combo_master_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack3_character_00.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_00.png",
+        "sha256": "98f0ada47c58f2d106cc84adaf5a230b0aa9cf5efc08868c43d978c53b4affe6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_01.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_01.png",
+        "sha256": "73947d024035d4716d5a8500e40c6c2ddbda8498085f0d3f4c443e233aae6270",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_02.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_02.png",
+        "sha256": "d9e9a4c63052fc7959b69b0b6a3dfae142f22de59b474d0a736754b9baebda03",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_03.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_03.png",
+        "sha256": "03c4e86a9a91b1df5d4341be1fcdc786f2359a34430828da4bf05c2559f43516",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_04.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_04.png",
+        "sha256": "a25bfb1504e8459d1e7c7e09dc090737e6d4a5c434d4e5fd11711f7be892f82b",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_05.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_05.png",
+        "sha256": "d888f8f13035ca65ab6b74cdf324942205dc39138f3ce5d4739b6f75222209e6",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_06.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_06.png",
+        "sha256": "b73c911696e70120e54059d5bc8906da103c7c21ccf74b5e4d8c032560ad3c4c",
+        "canvas": [
+          512,
+          512
+        ]
+      },
+      {
+        "file": "air_attack3_character_07.png",
+        "source": "Air_Attack_3/Character/air_attack3_character_07.png",
+        "sha256": "ced018bf0b1eccec1bce3ea78d214c4df68aff941a5ed2f0519fe1735a5862cc",
+        "canvas": [
+          512,
+          512
+        ]
+      }
+    ]
+  },
+  "air_combo_master/air_attack_3/vfx": {
+    "archive": "air_attack3_vfx_redone_clean_for_codex.zip",
+    "frames": [
+      {
+        "file": "air_attack3_vfx_00.png",
+        "source": "air_attack3_vfx_00.png",
+        "sha256": "195884cfb4681cc4feea3bf193c89fea333ab5c616bb3ae51f42982d1a3de6ff",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_01.png",
+        "source": "air_attack3_vfx_01.png",
+        "sha256": "ff7d62c9aaf8dddb03f6016f273fd16f18232a3a46675478d814cb70753d722e",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_02.png",
+        "source": "air_attack3_vfx_02.png",
+        "sha256": "5180e201fedf34205c47a535c13cab57a99bd1f4a2d5b2b17e8e1cad7abf2ad0",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_03.png",
+        "source": "air_attack3_vfx_03.png",
+        "sha256": "30fb8fbf949c92d0518664111307d848615467b51b368d527faa0d8a3dbc165d",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_04.png",
+        "source": "air_attack3_vfx_04.png",
+        "sha256": "4ccb1c277af10190a5677c73a0b8d106e8c7fa6b86f933d4e10ae98e22735229",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_05.png",
+        "source": "air_attack3_vfx_05.png",
+        "sha256": "5dfb62783d2ac0f055badb8575d9282af08b09be793d2f074dd4818b4e508ac9",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_06.png",
+        "source": "air_attack3_vfx_06.png",
+        "sha256": "9c8fa4da335cc8b3f3c2ab85c61df1848d53f66fb6164ad4eabe2ed343f60ad2",
+        "canvas": [
+          1536,
+          1536
+        ]
+      },
+      {
+        "file": "air_attack3_vfx_07.png",
+        "source": "air_attack3_vfx_07.png",
+        "sha256": "10b0fca38488bed89b96c999c84efd40ff6c2d555248320a173a1c44049307d1",
+        "canvas": [
+          1536,
+          1536
+        ]
+      }
+    ]
+  },
+  "downward_master/character": {
+    "archive": "downward_slash_full_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "downward_slash_00.png",
+        "source": "Character/downward_slash_00.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "259fa6ad2dce0721e5158f32102c4e3669f5a1fe5401bd0ba358b0f8f1880e27"
+      },
+      {
+        "file": "downward_slash_01.png",
+        "source": "Character/downward_slash_01.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "779604c232648a1ddbe96996541df445522c6f947e5b4fadefbf78f4d92061cf"
+      },
+      {
+        "file": "downward_slash_02.png",
+        "source": "Character/downward_slash_02.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "93f91cce0cbfb5c048625d19217876d02a9aa1d8666fd04dbc3637d33e60f880"
+      },
+      {
+        "file": "downward_slash_03.png",
+        "source": "Character/downward_slash_03.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "ee426e87cd880c179bf57c4c7584a59774da6eac64fe32ec129bb9e51bbe8ebb"
+      },
+      {
+        "file": "downward_slash_04.png",
+        "source": "Character/downward_slash_04.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "70d5a652c28fb25fd3224d5c4c961a73906ab37228e7b5908a88d452df212d35"
+      },
+      {
+        "file": "downward_slash_05.png",
+        "source": "Character/downward_slash_05.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "c22162252d7d8e8334bf164a17fa2cec87d769407e14bb9c0d865e5556b9e978"
+      },
+      {
+        "file": "downward_slash_06.png",
+        "source": "Character/downward_slash_06.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "e265011c81d1d489723254ffe1408ac996d98e9e1e035a6adece448f93147088"
+      },
+      {
+        "file": "downward_slash_07.png",
+        "source": "Character/downward_slash_07.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "056067e1c990bed504dd8cc6001cb73c7cfab1b99d2a27cdfd627db4c5170116"
+      }
+    ]
+  },
+  "downward_master/vfx": {
+    "archive": "downward_slash_full_pack_for_codex.zip",
+    "frames": [
+      {
+        "file": "downward_slash_vfx_00.png",
+        "source": "VFX/downward_slash_vfx_00.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "2eef090518bb3978f2ced6f038cd9560096039caa6bbd6e2bc0e8b6c0e7dbc88"
+      },
+      {
+        "file": "downward_slash_vfx_01.png",
+        "source": "VFX/downward_slash_vfx_01.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "94f24ce714cca37561aa22b5563f9b94af6a6c0033282f9c1c6a5d63ef311aeb"
+      },
+      {
+        "file": "downward_slash_vfx_02.png",
+        "source": "VFX/downward_slash_vfx_02.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "455633b29b716e996f5493d3d6d5daada9742014c274451da5e3b6f9c7cc7f5d"
+      },
+      {
+        "file": "downward_slash_vfx_03.png",
+        "source": "VFX/downward_slash_vfx_03.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "41b01a99124b645a32e143b7549630d72adac8907cede939e1ee1d541b935d7a"
+      },
+      {
+        "file": "downward_slash_vfx_04.png",
+        "source": "VFX/downward_slash_vfx_04.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "7e23baead1f3383926b3e660ea4eb68fcbc3d0344d7b698b4ba549677a2ce476"
+      },
+      {
+        "file": "downward_slash_vfx_05.png",
+        "source": "VFX/downward_slash_vfx_05.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "2a873b220cbd129f35f01fd5c6128afc0c50e1bde6c859da51b3fd9a1dd1b87b"
+      },
+      {
+        "file": "downward_slash_vfx_06.png",
+        "source": "VFX/downward_slash_vfx_06.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "f4bd5590e3c2c898923ba78a0c889aca3fff80f6f9e07b41e310bdb9dd728049"
+      },
+      {
+        "file": "downward_slash_vfx_07.png",
+        "source": "VFX/downward_slash_vfx_07.png",
+        "canvas": [
+          1536,
+          1536
+        ],
+        "sha256": "06b65468f25de09aec6b9ecbf44d8213a7b4ab795eb8c2e264da38d6dc83aa17"
+      }
+    ]
+  }
+}

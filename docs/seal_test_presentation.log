@@ -1,0 +1,65 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Isolated test save files
+PASS: Continue rejects missing save
+PASS: Continue rejects non-stage scenes
+PASS: Continue rejects invalid coordinates
+PASS: Continue hidden without save
+PASS: Start has initial focus
+PASS: Controller D-pad navigates menu
+PASS: Controller A opens Settings
+PASS: Keyboard down selects Settings
+PASS: Keyboard accept opens Settings
+PASS: Music slider independently mutes music
+PASS: Audio settings persist to disk
+PASS: Saved audio levels reload correctly
+PASS: Back restores menu focus
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Start loads Stage 1
+PASS: Stage 1 requests gameplay score
+PASS: Only persistent music player plays stage music
+PASS: Scene-local music is stopped
+PASS: Six existing chapter hazards and two upper-ruins hazards
+PASS: Two moving and three optional crumbling platforms placed
+PASS: Three meaningful chapter checkpoints placed
+PASS: Double jump returns from safety floor through main floor
+PASS: Intro spikes avoidable with existing jump
+PASS: Visible spike collider damages Red and updates health
+PASS: Dash retains 0.7 second invulnerability
+DASH DETAIL: player=(453.6666, 485.0) health=100 iframe=0.35
+PASS: Dash crosses spikes without damage
+PASS: Spike collision uses the exact drawn polygon
+PASS: Cursed root warning precedes danger
+PASS: Root collision rises with visible geometry
+PASS: Root collision switches off when roots withdraw
+PASS: Retractable spikes can be walked across during safe rest
+PASS: Thorn vines avoidable with existing double jump
+PASS: Branch shakes before becoming dangerous
+PASS: Walking away during branch warning avoids damage
+PASS: Landing starts crumble warning
+PASS: Crumbling platform removes collision after warning
+PASS: Crumbling platform safely respawns
+PASS: Moving platform carries Red
+PASS: Moving ferry safely carries Red over the test spike bed
+PASS: S+Space drops through moving platform
+PASS: Checkpoint does not heal on contact
+PASS: E saves safe checkpoint position and heals Red
+PASS: Lethal damage reaches Game Over after Red's animations
+PASS: Death replaces gameplay music with separate Game Over track
+PASS: Checkpoint toast does not leak into Game Over
+PASS: Try Again has initial focus
+PASS: Try Again reloads current stage
+PASS: Retry restores checkpoint with full HP
+PASS: Up Arrow at Moon Gate still reaches Stage 2
+PASS: Gate preserves carried health
+PASS: Stage 2 entry becomes a valid Continue checkpoint
+PASS: Stage 2 retains its boss score
+PASS: Game Over navigation selects Return to Title
+PASS: Return to Title restores menu and menu music
+PASS: Title uses its own distinct score
+PASS: Menu score has valid full-track loop points
+PASS: Continue is visible with saved progress
+PASS: Continue reloads saved Stage 2
+PASS: Continue restores full health
+PRESENTATION CHECKS: 59 passed, 0 failed

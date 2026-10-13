@@ -1,0 +1,470 @@
+{
+  "animations/idle": {
+    "source_sheet": "01_idle_8f_APPROVED.png",
+    "frames": 8,
+    "region": [
+      0,
+      20,
+      2172,
+      390
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/run": {
+    "source_sheet": "02_run_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      45,
+      2172,
+      320
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/jump": {
+    "source_sheet": "03_jump_fall_land_recover.png",
+    "frames": 8,
+    "region": [
+      0,
+      45,
+      1536,
+      320
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/fall": {
+    "source_sheet": "03_jump_fall_land_recover.png",
+    "frames": 4,
+    "region": [
+      0,
+      500,
+      720,
+      700
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/landing_recover": {
+    "source_sheet": "03_jump_fall_land_recover.png",
+    "frames": 6,
+    "region": [
+      720,
+      500,
+      1536,
+      700
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/dash": {
+    "source_sheet": "04_dash_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      75,
+      1774,
+      280
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/basic_attack": {
+    "source_sheet": "05_attack_basic_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      55,
+      1536,
+      285
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/hurt": {
+    "source_sheet": "06_hurt_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      60,
+      1774,
+      310
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/death": {
+    "source_sheet": "07_death_10f.png",
+    "frames": 10,
+    "region": [
+      0,
+      75,
+      1536,
+      345
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/crouch": {
+    "source_sheet": "08_crouch_and_crouch_walk.png",
+    "frames": 6,
+    "region": [
+      0,
+      55,
+      1536,
+      310
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/crouch_walk": {
+    "source_sheet": "08_crouch_and_crouch_walk.png",
+    "frames": 8,
+    "region": [
+      0,
+      625,
+      1536,
+      790
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/air_attack": {
+    "source_sheet": "11_air_attack_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      65,
+      1536,
+      300
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/rising_slash": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 8,
+    "region": [
+      0,
+      90,
+      1140,
+      290
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "animations/downward_slash": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 8,
+    "region": [
+      0,
+      590,
+      1140,
+      785
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "victory/stage1_bittersweet": {
+    "source_sheet": "13_victory_poses.png",
+    "frames": 8,
+    "region": [
+      0,
+      80,
+      1200,
+      245
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "victory/normal_stage_clear": {
+    "source_sheet": "13_victory_poses.png",
+    "frames": 8,
+    "region": [
+      0,
+      365,
+      1200,
+      520
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "victory/cheerful": {
+    "source_sheet": "13_victory_poses.png",
+    "frames": 8,
+    "region": [
+      0,
+      635,
+      1200,
+      785
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "skills/crescent_slash/cast": {
+    "source_sheet": "10_crescent_slash_skill.png",
+    "frames": 8,
+    "region": [
+      0,
+      130,
+      1536,
+      315
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "skills/crescent_slash/projectile": {
+    "source_sheet": "10_crescent_slash_skill.png",
+    "frames": 8,
+    "region": [
+      0,
+      560,
+      1536,
+      700
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "skills/crescent_slash/impact": {
+    "source_sheet": "10_crescent_slash_skill.png",
+    "frames": 6,
+    "region": [
+      0,
+      830,
+      880,
+      960
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/air_slash_projectile": {
+    "source_sheet": "11_air_attack_8f.png",
+    "frames": 8,
+    "region": [
+      0,
+      565,
+      1536,
+      710
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/air_slash_impact": {
+    "source_sheet": "11_air_attack_8f.png",
+    "frames": 6,
+    "region": [
+      0,
+      815,
+      780,
+      980
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/dash_dust": {
+    "source_sheet": "04_dash_8f.png",
+    "frames": 8,
+    "region": [
+      20,
+      535,
+      610,
+      625
+    ],
+    "draft_canvas": 64,
+    "effect": true
+  },
+  "effects/dash_petals": {
+    "source_sheet": "04_dash_8f.png",
+    "frames": 8,
+    "region": [
+      620,
+      535,
+      1130,
+      625
+    ],
+    "draft_canvas": 64,
+    "effect": true
+  },
+  "effects/dash_speed_streak": {
+    "source_sheet": "04_dash_8f.png",
+    "frames": 8,
+    "region": [
+      1140,
+      535,
+      1710,
+      625
+    ],
+    "draft_canvas": 64,
+    "effect": true
+  },
+  "interact/look_around": {
+    "source_sheet": "09_interact.png",
+    "frames": 3,
+    "region": [
+      0,
+      85,
+      350,
+      260
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/pickup": {
+    "source_sheet": "09_interact.png",
+    "frames": 3,
+    "region": [
+      350,
+      85,
+      700,
+      265
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/open_chest": {
+    "source_sheet": "09_interact.png",
+    "frames": 3,
+    "region": [
+      700,
+      85,
+      1090,
+      265
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/push_pull": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      1090,
+      95,
+      1536,
+      270
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/sit_rest": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      0,
+      390,
+      370,
+      545
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/cheer": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      370,
+      390,
+      700,
+      545
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/point": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      700,
+      390,
+      950,
+      545
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/look_up": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      950,
+      390,
+      1180,
+      545
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/talk": {
+    "source_sheet": "09_interact.png",
+    "frames": 2,
+    "region": [
+      1180,
+      390,
+      1536,
+      545
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "interact/rest_sleep": {
+    "source_sheet": "09_interact.png",
+    "frames": 8,
+    "region": [
+      0,
+      845,
+      850,
+      960
+    ],
+    "draft_canvas": 48,
+    "effect": false
+  },
+  "effects/rising_arc": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 3,
+    "region": [
+      1150,
+      55,
+      1536,
+      180
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/rising_petals_fade": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 3,
+    "region": [
+      1150,
+      190,
+      1536,
+      315
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/downward_vertical_slash": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 3,
+    "region": [
+      1150,
+      565,
+      1536,
+      720
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  },
+  "effects/downward_impact_fade": {
+    "source_sheet": "12_rising_and_downward_slash.png",
+    "frames": 3,
+    "region": [
+      1150,
+      730,
+      1536,
+      850
+    ],
+    "draft_canvas": 96,
+    "effect": true
+  }
+}

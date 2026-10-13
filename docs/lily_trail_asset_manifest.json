@@ -1,0 +1,53 @@
+{
+    "source_zip":  "lily_flower_trail_clean_for_codex.zip",
+    "frames":  [
+                   {
+                       "file":  "lily_trail_00.png",
+                       "zip_sha256":  "F432D27AAB3D578EFAF4C552834BED06EADF5959A8295788C7C80D97C15270D0",
+                       "imported_sha256":  "F432D27AAB3D578EFAF4C552834BED06EADF5959A8295788C7C80D97C15270D0",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_01.png",
+                       "zip_sha256":  "39DA93F4CC821A7859B4AA53811C2C357A3C446EC1D57929FAE2E6DD31C1EF32",
+                       "imported_sha256":  "39DA93F4CC821A7859B4AA53811C2C357A3C446EC1D57929FAE2E6DD31C1EF32",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_02.png",
+                       "zip_sha256":  "82541E9150F87B6F9A848B92581A840143B875E554BA05B4FAA46C5122FD46C1",
+                       "imported_sha256":  "82541E9150F87B6F9A848B92581A840143B875E554BA05B4FAA46C5122FD46C1",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_03.png",
+                       "zip_sha256":  "A2368AA6F7E90D3E8297D841DAA49191641E73977CAFCAB7DC640772CCA55AC6",
+                       "imported_sha256":  "A2368AA6F7E90D3E8297D841DAA49191641E73977CAFCAB7DC640772CCA55AC6",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_04.png",
+                       "zip_sha256":  "B0979F967927817DD9CF5D710AFF3401A2C95FA799E4AA1930AC9D1FDCDF0F5C",
+                       "imported_sha256":  "B0979F967927817DD9CF5D710AFF3401A2C95FA799E4AA1930AC9D1FDCDF0F5C",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_05.png",
+                       "zip_sha256":  "6C9149BD1A2FA200A2E4465BD3944FB0219E2751F58A6E4F0C3F623295F4D31B",
+                       "imported_sha256":  "6C9149BD1A2FA200A2E4465BD3944FB0219E2751F58A6E4F0C3F623295F4D31B",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_06.png",
+                       "zip_sha256":  "7730BA3AB02AAAFFA50575D1A52EEE2B3AA81569683C19BC60F12A96CF65B3B0",
+                       "imported_sha256":  "7730BA3AB02AAAFFA50575D1A52EEE2B3AA81569683C19BC60F12A96CF65B3B0",
+                       "unchanged":  true
+                   },
+                   {
+                       "file":  "lily_trail_07.png",
+                       "zip_sha256":  "39F026A80B24C1B10E490FFE98C5E67E8FBBAA2844455DBC146284B0B3D7645B",
+                       "imported_sha256":  "39F026A80B24C1B10E490FFE98C5E67E8FBBAA2844455DBC146284B0B3D7645B",
+                       "unchanged":  true
+                   }
+               ]
+}

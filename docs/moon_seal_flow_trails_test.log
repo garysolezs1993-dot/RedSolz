@@ -1,0 +1,168 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Afterimages live outside the Wisp's moving/hidden hierarchy
+PASS: Pool preallocates twelve sprites, with no per-spawn node allocation
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Unused pooled trail starts hidden
+PASS: Eight-frame trail is a 16 FPS one-shot
+PASS: Trail uses supplied whole-canvas frame 0
+PASS: Trail uses supplied whole-canvas frame 1
+PASS: Trail uses supplied whole-canvas frame 2
+PASS: Trail uses supplied whole-canvas frame 3
+PASS: Trail uses supplied whole-canvas frame 4
+PASS: Trail uses supplied whole-canvas frame 5
+PASS: Trail uses supplied whole-canvas frame 6
+PASS: Trail uses supplied whole-canvas frame 7
+PASS: Idle/circling emits no afterimages
+PASS: Animated move pose does not emit trails when stationary
+PASS: Actual movement emits only after distance and minimum time thresholds
+PASS: An old trail retains its world position and facing when Wisp moves and turns
+PASS: New movement emits separate trails at new locations; total=3
+PASS: New trail has a distinct historical world position
+PASS: Stopping emission lets old trails fade independently
+PASS: Trail returns to its pool after roughly half a second
+PASS: Final trail frame is displayed before removal
+PASS: Idle pool becomes inactive after all effects finish
+PASS: Emitted trail front matches its spawn position
+PASS: Trail art points behind travel direction: (1.0, 0.0)
+PASS: Trail correctly mirrors for reverse travel
+PASS: All eight frames play once during the 0.5-second lifetime
+PASS: Directional trail expires automatically
+PASS: Emitted trail front matches its spawn position
+PASS: Trail art points behind travel direction: (-1.0, 0.0)
+PASS: Trail correctly mirrors for reverse travel
+PASS: All eight frames play once during the 0.5-second lifetime
+PASS: Directional trail expires automatically
+PASS: Emitted trail front matches its spawn position
+PASS: Trail art points behind travel direction: (0.0, -1.0)
+PASS: Trail correctly mirrors for reverse travel
+PASS: All eight frames play once during the 0.5-second lifetime
+PASS: Directional trail expires automatically
+PASS: Emitted trail front matches its spawn position
+PASS: Trail art points behind travel direction: (0.0, 1.0)
+PASS: Trail correctly mirrors for reverse travel
+PASS: All eight frames play once during the 0.5-second lifetime
+PASS: Directional trail expires automatically
+PASS: Hiding the Wisp/guide does not instantly hide existing world trails
+PASS: Trails naturally finish even when the guide is hidden
+PASS: Pool skips extra emissions at its hard cap
+PASS: A full pool completely returns to idle
+PASS: Appear reuses arrival art in reverse
+PASS: Appearance settles into idle without hiding or emitting trails
+PASS: Deleting the visual cleans up its external pool
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Actual cinematic guidance uses moving assets while the world is paused
+PASS: World-space trails spawn and age during the paused camera tour
+PASS: Guidance and lingering trails both finish cleanly
+PASS: Changing stages leaves no orphan trail pool
+MOON WISP TRAILS: 163 checks; 0 failures

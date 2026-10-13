@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 596.21 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5080
+
+STORYBOARD PHASE: starting at frame 21
+STORYBOARD PHASE: panel_1_line_1 at frame 42
+STORYBOARD PHASE: panel_2_line_1 at frame 248
+STORYBOARD PHASE: panel_3_line_1 at frame 442
+STORYBOARD PHASE: panel_3_line_2 at frame 551
+STORYBOARD PHASE: panel_4_line_1 at frame 605
+STORYBOARD PHASE: panel_4_line_2 at frame 714
+STORYBOARD PHASE: panel_4_line_3 at frame 798
+OPENING CAPTURE: Escape Skip sent
+STORYBOARD PHASE: skipping at frame 828
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+STORYBOARD PHASE: gameplay at frame 865
+STORYBOARD CAPTURE COMPLETE: ["panel_1_line_1", "panel_2_line_1", "panel_3_line_1", "panel_3_line_2", "panel_4_line_1", "panel_4_line_2", "panel_4_line_3", "gameplay"]
+OPENING HANDOFF: paused=false; HUD=true; zoom=(1.35, 1.35); music=stage_one; preview frames=0

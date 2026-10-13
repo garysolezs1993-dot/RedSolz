@@ -1,0 +1,44 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Real journey save is isolated
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+   GDScript backtrace (most recent call first):
+       [0] spawn (res://tools/tests/test_platform_art_sample.gd:60)
+       [1] _run (res://tools/tests/test_platform_art_sample.gd:128)
+PASS: Every Stage 1 terrain collider, origin, layer and one-way setting is unchanged
+PASS: Gameplay camera retains 1.35 zoom
+PASS: Every surface uses whole, uniformly scaled, collision-free art on its original ground line: []
+PASS: All Stage 1 fixed, moving, crumbling and safety surfaces are dressed (120 helpers)
+PASS: Entrance, camp, chapel, creek, Oak, Cellar, burial, Heartwood and gate have area profiles
+PASS: Reusable kit varies platform and decoration assets (22 textures)
+PASS: No neighboring ledges in runtime asset: low_moss_shelf.png
+PASS: No neighboring ledges in runtime asset: thin_moss_shelf.png
+PASS: No neighboring ledges in runtime asset: thin_quiet_moss.png
+PASS: No neighboring ledges in runtime asset: quiet_moss_shelf.png
+PASS: No neighboring ledges in runtime asset: bare_branch_roots.png
+PASS: No neighboring ledges in runtime asset: mossy_crimson_stones.png
+PASS: No neighboring ledges in runtime asset: wood_braced_rock.png
+PASS: No neighboring ledges in runtime asset: carved_brace.png
+PASS: No neighboring ledges in runtime asset: carved_post.png
+PASS: No neighboring ledges in runtime asset: large_mossy_stones.png
+PASS: No neighboring ledges in runtime asset: thin_crimson_ledge.png
+PASS: No neighboring ledges in runtime asset: thin_crimson_shelf.png
+PASS: No neighboring ledges in runtime asset: crimson_branch_roots.png
+PASS: No neighboring ledges in runtime asset: thin_rock_shelf.png
+PASS: No neighboring ledges in runtime asset: small_crimson_stones.png
+PASS: No neighboring ledges in runtime asset: crimson_vines.png
+PASS: No neighboring ledges in runtime asset: wide_crimson_sprig.png
+PASS: No neighboring ledges in runtime asset: crimson_bush.png
+PASS: No neighboring ledges in runtime asset: wood_braced_roots.png
+PASS: No neighboring ledges in runtime asset: hanging_moss_cascade.png
+PASS: No neighboring ledges in runtime asset: crimson_root_shelf.png
+PASS: No neighboring ledges in runtime asset: crimson_stump.png
+PASS: Red walks across the dressed floor without snagging or falling
+PASS: Normal jump reaches the original raised ledge
+PASS: Dash crosses the dressed surface
+PASS: Rising Slash passes through decorative roots
+PASS: Rising Slash can still launch into air combat
+PASS: Downward Slash lands and exits its state on the dressed ledge
+PASS: Lower safety route remains walkable
+PLATFORM ART FULL STAGE: 36 checks, 0 failures

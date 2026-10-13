@@ -1,0 +1,1 @@
+Four falling frames from approved crimson_hood_jump_animation_sprite_sheet.png. RGBA 512x512, one shared scale, centered aerial pivot. Fall animation only; landing excluded. Source artwork has soft high-resolution detail and is not native 48x48 pixel art. Inspect previews before importing.

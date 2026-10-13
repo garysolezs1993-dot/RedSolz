@@ -1,0 +1,1 @@
+Idle animation only. Eight RGBA 512x512 frames, derived from the earlier approved transparent idle sheet. Same uniform scaling for all frames, bottom anchor y=470. Review previews before implementation. These are scaled concept sprites, not native 48x48 pixel art. The transparent sheet used here is red_riding_hood_pixel_sprite_sheet.png.

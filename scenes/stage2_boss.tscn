@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource path="res://scripts/red.gd" type="Script" id="1"]
 [ext_resource path="res://scripts/hitbox.gd" type="Script" id="3"]
@@ -8,6 +8,8 @@
 [ext_resource path="res://audio/bgm/alpha_wolf_boss_theme.wav" type="AudioStream" id="11"]
 [ext_resource path="res://scenes/forest_environment.tscn" type="PackedScene" id="12"]
 [ext_resource path="res://scripts/stage2_boss_layout.gd" type="Script" id="14"]
+[ext_resource path="res://scenes/BossIntroCutscene.tscn" type="PackedScene" id="15_intro"]
+[ext_resource path="res://scenes/EndingCutscene.tscn" type="PackedScene" id="16_ending"]
 
 [sub_resource type="RectangleShape2D" id="PlayerBody"]
 size = Vector2(18, 30)
@@ -18,6 +20,7 @@ size = Vector2(44, 28)
 [node name="Stage2Boss" type="Node2D"]
 
 [node name="ForestEnvironment" parent="." instance=ExtResource("12")]
+world_width = 2800.0
 
 [node name="Stage2BossLayout" type="Node2D" parent="."]
 script = ExtResource("14")
@@ -25,11 +28,12 @@ script = ExtResource("14")
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(70, 485)
 script = ExtResource("1")
+ending_test_one_hit_ko = true
 groups = ["player"]
 
 [node name="Visual" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(0, -7)
-scale = Vector2(0.9, 0.9)
+scale = Vector2(1, 1)
 texture_filter = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -62,7 +66,7 @@ script = ExtResource("9")
 [node name="Music" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource("11")
 volume_db = -10.0
-autoplay = true
+autoplay = false
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("7")
@@ -97,13 +101,18 @@ position = Vector2(24, 84)
 text = "THE FOREST REMEMBERS..."
 
 [node name="BossHP" type="ProgressBar" parent="UI/HUD"]
+visible = false
 position = Vector2(610, 48)
 size = Vector2(320, 20)
-value = 260
 max_value = 260
+value = 260
 
 [node name="Controls" type="Label" parent="UI/HUD"]
 position = Vector2(24, 116)
-text = "A/D move   •   Space jump / double jump   •   S + Space drop   •   L dash   •   J attack   •   K wolf   •   U/I skills   •   R restart"
+text = "A/D move · Space double jump · S+Space drop · L dash · C/click combo · R Crescent\n↑+C rising · ↓+C (air) dive · U/I skills · E interact"
 theme_override_colors/font_color = Color(0.78, 0.72, 0.7, 0.9)
 theme_override_font_sizes/font_size = 13
+
+[node name="BossIntroCutscene" parent="." instance=ExtResource("15_intro")]
+
+[node name="EndingCutscene" parent="." instance=ExtResource("16_ending")]

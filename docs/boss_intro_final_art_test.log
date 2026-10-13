@@ -1,0 +1,239 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Entrance remains playable before the trigger
+PASS: Boss HUD hidden before intro
+PASS: In-engine fallback retained at slot 1
+PASS: In-engine fallback retained at slot 2
+PASS: Correct final texture at slot 3
+PASS: Correct final texture at slot 4
+PASS: Correct final texture at slot 5
+PASS: In-engine fallback retained at slot 6
+PASS: Correct final texture at slot 7
+PASS: Correct final texture at slot 8
+PASS: entry: world/AI locked
+PASS: entry: gameplay HUD hidden
+PASS: silent_wolf: world/AI locked
+PASS: silent_wolf: gameplay HUD hidden
+PASS: lily: world/AI locked
+PASS: lily: gameplay HUD hidden
+PASS: Displayed artwork matches slot 3
+PASS: Final art hides placeholder at slot 3
+PASS: Aspect preserved at slot 3
+PASS: recognition: world/AI locked
+PASS: recognition: gameplay HUD hidden
+PASS: Displayed artwork matches slot 4
+PASS: Final art hides placeholder at slot 4
+PASS: Aspect preserved at slot 4
+PASS: memory: world/AI locked
+PASS: memory: gameplay HUD hidden
+PASS: Displayed artwork matches slot 5
+PASS: Final art hides placeholder at slot 5
+PASS: Aspect preserved at slot 5
+PASS: brother: world/AI locked
+PASS: brother: gameplay HUD hidden
+PASS: wolf_turn: world/AI locked
+PASS: wolf_turn: gameplay HUD hidden
+PASS: run: world/AI locked
+PASS: run: gameplay HUD hidden
+PASS: Displayed artwork matches slot 7
+PASS: Final art hides placeholder at slot 7
+PASS: Aspect preserved at slot 7
+PASS: curse_takeover: world/AI locked
+PASS: curse_takeover: gameplay HUD hidden
+PASS: Displayed artwork matches slot 8
+PASS: Final art hides placeholder at slot 8
+PASS: Aspect preserved at slot 8
+PASS: return_camera: world/AI locked
+PASS: return_camera: gameplay HUD hidden
+PASS: boss_title: world/AI locked
+PASS: boss_title: gameplay HUD hidden
+PASS: hud_reveal: world/AI locked
+PASS: All five final illustrations displayed during full run
+PASS: Both dialogue lines rendered separately
+PASS: Boss title precedes HUD handoff
+PASS: Watched: gameplay unpaused
+PASS: Watched: cinematic UI/controller removed
+PASS: Watched: gameplay camera restored
+PASS: Watched: HUD visible at full opacity
+PASS: Watched: boss HP visible at full opacity
+PASS: Watched: boss HP initialized
+PASS: Watched: boss AI/body/hurtbox restored
+PASS: Watched: no cinematic damage or health reset
+PASS: Watched: intro gate cleared
+PASS: Watched: Red idle on solid floor
+PASS: Watched: combat music context restored
+PASS: Watched: animation processing restored
+PASS: Skip waiting: gameplay unpaused
+PASS: Skip waiting: cinematic UI/controller removed
+PASS: Skip waiting: gameplay camera restored
+PASS: Skip waiting: HUD visible at full opacity
+PASS: Skip waiting: boss HP visible at full opacity
+PASS: Skip waiting: boss HP initialized
+PASS: Skip waiting: boss AI/body/hurtbox restored
+PASS: Skip waiting: no cinematic damage or health reset
+PASS: Skip waiting: intro gate cleared
+PASS: Skip waiting: Red idle on solid floor
+PASS: Skip waiting: combat music context restored
+PASS: Skip waiting: animation processing restored
+PASS: Reached Skip phase entry
+PASS: Skip entry: gameplay unpaused
+PASS: Skip entry: cinematic UI/controller removed
+PASS: Skip entry: gameplay camera restored
+PASS: Skip entry: HUD visible at full opacity
+PASS: Skip entry: boss HP visible at full opacity
+PASS: Skip entry: boss HP initialized
+PASS: Skip entry: boss AI/body/hurtbox restored
+PASS: Skip entry: no cinematic damage or health reset
+PASS: Skip entry: intro gate cleared
+PASS: Skip entry: Red idle on solid floor
+PASS: Skip entry: combat music context restored
+PASS: Skip entry: animation processing restored
+PASS: Reached Skip phase silent_wolf
+PASS: Skip silent_wolf: gameplay unpaused
+PASS: Skip silent_wolf: cinematic UI/controller removed
+PASS: Skip silent_wolf: gameplay camera restored
+PASS: Skip silent_wolf: HUD visible at full opacity
+PASS: Skip silent_wolf: boss HP visible at full opacity
+PASS: Skip silent_wolf: boss HP initialized
+PASS: Skip silent_wolf: boss AI/body/hurtbox restored
+PASS: Skip silent_wolf: no cinematic damage or health reset
+PASS: Skip silent_wolf: intro gate cleared
+PASS: Skip silent_wolf: Red idle on solid floor
+PASS: Skip silent_wolf: combat music context restored
+PASS: Skip silent_wolf: animation processing restored
+PASS: Reached Skip phase lily
+PASS: Skip lily: gameplay unpaused
+PASS: Skip lily: cinematic UI/controller removed
+PASS: Skip lily: gameplay camera restored
+PASS: Skip lily: HUD visible at full opacity
+PASS: Skip lily: boss HP visible at full opacity
+PASS: Skip lily: boss HP initialized
+PASS: Skip lily: boss AI/body/hurtbox restored
+PASS: Skip lily: no cinematic damage or health reset
+PASS: Skip lily: intro gate cleared
+PASS: Skip lily: Red idle on solid floor
+PASS: Skip lily: combat music context restored
+PASS: Skip lily: animation processing restored
+PASS: Reached Skip phase recognition
+PASS: Skip recognition: gameplay unpaused
+PASS: Skip recognition: cinematic UI/controller removed
+PASS: Skip recognition: gameplay camera restored
+PASS: Skip recognition: HUD visible at full opacity
+PASS: Skip recognition: boss HP visible at full opacity
+PASS: Skip recognition: boss HP initialized
+PASS: Skip recognition: boss AI/body/hurtbox restored
+PASS: Skip recognition: no cinematic damage or health reset
+PASS: Skip recognition: intro gate cleared
+PASS: Skip recognition: Red idle on solid floor
+PASS: Skip recognition: combat music context restored
+PASS: Skip recognition: animation processing restored
+PASS: Reached Skip phase memory
+PASS: Skip memory: gameplay unpaused
+PASS: Skip memory: cinematic UI/controller removed
+PASS: Skip memory: gameplay camera restored
+PASS: Skip memory: HUD visible at full opacity
+PASS: Skip memory: boss HP visible at full opacity
+PASS: Skip memory: boss HP initialized
+PASS: Skip memory: boss AI/body/hurtbox restored
+PASS: Skip memory: no cinematic damage or health reset
+PASS: Skip memory: intro gate cleared
+PASS: Skip memory: Red idle on solid floor
+PASS: Skip memory: combat music context restored
+PASS: Skip memory: animation processing restored
+PASS: Reached Skip phase brother
+PASS: Skip brother: gameplay unpaused
+PASS: Skip brother: cinematic UI/controller removed
+PASS: Skip brother: gameplay camera restored
+PASS: Skip brother: HUD visible at full opacity
+PASS: Skip brother: boss HP visible at full opacity
+PASS: Skip brother: boss HP initialized
+PASS: Skip brother: boss AI/body/hurtbox restored
+PASS: Skip brother: no cinematic damage or health reset
+PASS: Skip brother: intro gate cleared
+PASS: Skip brother: Red idle on solid floor
+PASS: Skip brother: combat music context restored
+PASS: Skip brother: animation processing restored
+PASS: Reached Skip phase wolf_turn
+PASS: Skip wolf_turn: gameplay unpaused
+PASS: Skip wolf_turn: cinematic UI/controller removed
+PASS: Skip wolf_turn: gameplay camera restored
+PASS: Skip wolf_turn: HUD visible at full opacity
+PASS: Skip wolf_turn: boss HP visible at full opacity
+PASS: Skip wolf_turn: boss HP initialized
+PASS: Skip wolf_turn: boss AI/body/hurtbox restored
+PASS: Skip wolf_turn: no cinematic damage or health reset
+PASS: Skip wolf_turn: intro gate cleared
+PASS: Skip wolf_turn: Red idle on solid floor
+PASS: Skip wolf_turn: combat music context restored
+PASS: Skip wolf_turn: animation processing restored
+PASS: Reached Skip phase run
+PASS: Skip run: gameplay unpaused
+PASS: Skip run: cinematic UI/controller removed
+PASS: Skip run: gameplay camera restored
+PASS: Skip run: HUD visible at full opacity
+PASS: Skip run: boss HP visible at full opacity
+PASS: Skip run: boss HP initialized
+PASS: Skip run: boss AI/body/hurtbox restored
+PASS: Skip run: no cinematic damage or health reset
+PASS: Skip run: intro gate cleared
+PASS: Skip run: Red idle on solid floor
+PASS: Skip run: combat music context restored
+PASS: Skip run: animation processing restored
+PASS: Reached Skip phase curse_takeover
+PASS: Skip curse_takeover: gameplay unpaused
+PASS: Skip curse_takeover: cinematic UI/controller removed
+PASS: Skip curse_takeover: gameplay camera restored
+PASS: Skip curse_takeover: HUD visible at full opacity
+PASS: Skip curse_takeover: boss HP visible at full opacity
+PASS: Skip curse_takeover: boss HP initialized
+PASS: Skip curse_takeover: boss AI/body/hurtbox restored
+PASS: Skip curse_takeover: no cinematic damage or health reset
+PASS: Skip curse_takeover: intro gate cleared
+PASS: Skip curse_takeover: Red idle on solid floor
+PASS: Skip curse_takeover: combat music context restored
+PASS: Skip curse_takeover: animation processing restored
+PASS: Reached Skip phase return_camera
+PASS: Skip return_camera: gameplay unpaused
+PASS: Skip return_camera: cinematic UI/controller removed
+PASS: Skip return_camera: gameplay camera restored
+PASS: Skip return_camera: HUD visible at full opacity
+PASS: Skip return_camera: boss HP visible at full opacity
+PASS: Skip return_camera: boss HP initialized
+PASS: Skip return_camera: boss AI/body/hurtbox restored
+PASS: Skip return_camera: no cinematic damage or health reset
+PASS: Skip return_camera: intro gate cleared
+PASS: Skip return_camera: Red idle on solid floor
+PASS: Skip return_camera: combat music context restored
+PASS: Skip return_camera: animation processing restored
+PASS: Reached Skip phase boss_title
+PASS: Skip boss_title: gameplay unpaused
+PASS: Skip boss_title: cinematic UI/controller removed
+PASS: Skip boss_title: gameplay camera restored
+PASS: Skip boss_title: HUD visible at full opacity
+PASS: Skip boss_title: boss HP visible at full opacity
+PASS: Skip boss_title: boss HP initialized
+PASS: Skip boss_title: boss AI/body/hurtbox restored
+PASS: Skip boss_title: no cinematic damage or health reset
+PASS: Skip boss_title: intro gate cleared
+PASS: Skip boss_title: Red idle on solid floor
+PASS: Skip boss_title: combat music context restored
+PASS: Skip boss_title: animation processing restored
+PASS: Reached Skip phase hud_reveal
+PASS: Skip hud_reveal: gameplay unpaused
+PASS: Skip hud_reveal: cinematic UI/controller removed
+PASS: Skip hud_reveal: gameplay camera restored
+PASS: Skip hud_reveal: HUD visible at full opacity
+PASS: Skip hud_reveal: boss HP visible at full opacity
+PASS: Skip hud_reveal: boss HP initialized
+PASS: Skip hud_reveal: boss AI/body/hurtbox restored
+PASS: Skip hud_reveal: no cinematic damage or health reset
+PASS: Skip hud_reveal: intro gate cleared
+PASS: Skip hud_reveal: Red idle on solid floor
+PASS: Skip hud_reveal: combat music context restored
+PASS: Skip hud_reveal: animation processing restored
+PASS: Movement works after Skip
+PASS: Basic attack works after Skip
+PASS: Dash cancellation works after Skip
+BOSS INTRO FINAL ART: 234 checks; 0 failures

@@ -1,0 +1,237 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Ground contact resets aerial restrictions
+PASS: Checks use the actual Stage 1 scene
+PASS: Old standalone air artwork is inactive
+PASS: Air combo hang is enabled by default
+PASS: Eight non-looping character frames for air step 1
+PASS: Uncropped character/replacement VFX canvas 1/00
+PASS: Character scale stays fixed throughout clip 1/00
+PASS: Uncropped character/replacement VFX canvas 1/01
+PASS: Character scale stays fixed throughout clip 1/01
+PASS: Uncropped character/replacement VFX canvas 1/02
+PASS: Character scale stays fixed throughout clip 1/02
+PASS: Uncropped character/replacement VFX canvas 1/03
+PASS: Character scale stays fixed throughout clip 1/03
+PASS: Uncropped character/replacement VFX canvas 1/04
+PASS: Character scale stays fixed throughout clip 1/04
+PASS: Uncropped character/replacement VFX canvas 1/05
+PASS: Character scale stays fixed throughout clip 1/05
+PASS: Uncropped character/replacement VFX canvas 1/06
+PASS: Character scale stays fixed throughout clip 1/06
+PASS: Uncropped character/replacement VFX canvas 1/07
+PASS: Character scale stays fixed throughout clip 1/07
+PASS: Eight non-looping character frames for air step 2
+PASS: Uncropped character/replacement VFX canvas 2/00
+PASS: Character scale stays fixed throughout clip 2/00
+PASS: Uncropped character/replacement VFX canvas 2/01
+PASS: Character scale stays fixed throughout clip 2/01
+PASS: Uncropped character/replacement VFX canvas 2/02
+PASS: Character scale stays fixed throughout clip 2/02
+PASS: Uncropped character/replacement VFX canvas 2/03
+PASS: Character scale stays fixed throughout clip 2/03
+PASS: Uncropped character/replacement VFX canvas 2/04
+PASS: Character scale stays fixed throughout clip 2/04
+PASS: Uncropped character/replacement VFX canvas 2/05
+PASS: Character scale stays fixed throughout clip 2/05
+PASS: Uncropped character/replacement VFX canvas 2/06
+PASS: Character scale stays fixed throughout clip 2/06
+PASS: Uncropped character/replacement VFX canvas 2/07
+PASS: Character scale stays fixed throughout clip 2/07
+PASS: Eight non-looping character frames for air step 3
+PASS: Uncropped character/replacement VFX canvas 3/00
+PASS: Character scale stays fixed throughout clip 3/00
+PASS: Uncropped character/replacement VFX canvas 3/01
+PASS: Character scale stays fixed throughout clip 3/01
+PASS: Uncropped character/replacement VFX canvas 3/02
+PASS: Character scale stays fixed throughout clip 3/02
+PASS: Uncropped character/replacement VFX canvas 3/03
+PASS: Character scale stays fixed throughout clip 3/03
+PASS: Uncropped character/replacement VFX canvas 3/04
+PASS: Character scale stays fixed throughout clip 3/04
+PASS: Uncropped character/replacement VFX canvas 3/05
+PASS: Character scale stays fixed throughout clip 3/05
+PASS: Uncropped character/replacement VFX canvas 3/06
+PASS: Character scale stays fixed throughout clip 3/06
+PASS: Uncropped character/replacement VFX canvas 3/07
+PASS: Character scale stays fixed throughout clip 3/07
+PASS: Ground contact resets aerial restrictions
+PASS: Jump then attack starts air opener
+PASS: Air step 1 retains damage
+PASS: Air step 1 holds Red at the combo's starting height
+PASS: Air step 1 ignores held steering and preserves its position/facing
+PASS: Air step 1 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 1
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 2 retains damage
+PASS: Air step 2 holds Red at the combo's starting height
+PASS: Air step 2 ignores held steering and preserves its position/facing
+PASS: Air step 2 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 2
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 3 retains damage
+PASS: Air step 3 holds Red at the combo's starting height
+PASS: Air step 3 ignores held steering and preserves its position/facing
+PASS: Air step 3 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Finisher stays suspended through its impact pose
+PASS: Finisher cannot queue a fourth attack
+PASS: Hang lasts through finisher recovery frames
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Full air string lands and resets safely
+PASS: Landing returns movement control
+PASS: Ground contact resets aerial restrictions
+PASS: Buffered launcher press starts air opener
+PASS: Launcher follow-up starts an airborne hang
+PASS: Air step 1 retains damage
+PASS: Air step 1 holds Red at the combo's starting height
+PASS: Air step 1 ignores held steering and preserves its position/facing
+PASS: Air step 1 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 1
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 2 retains damage
+PASS: Air step 2 holds Red at the combo's starting height
+PASS: Air step 2 ignores held steering and preserves its position/facing
+PASS: Air step 2 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 2
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 3 retains damage
+PASS: Air step 3 holds Red at the combo's starting height
+PASS: Air step 3 ignores held steering and preserves its position/facing
+PASS: Air step 3 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Finisher stays suspended through its impact pose
+PASS: Finisher cannot queue a fourth attack
+PASS: Hang lasts through finisher recovery frames
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Full air string lands and resets safely
+PASS: Landing returns movement control
+PASS: Ground contact resets aerial restrictions
+PASS: Jump then attack starts air opener
+PASS: Air step 1 retains damage
+PASS: Air step 1 holds Red at the combo's starting height
+PASS: Air step 1 ignores held steering and preserves its position/facing
+PASS: Air step 1 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 1
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 2 retains damage
+PASS: Air step 2 holds Red at the combo's starting height
+PASS: Air step 2 ignores held steering and preserves its position/facing
+PASS: Air step 2 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 2
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 3 retains damage
+PASS: Air step 3 holds Red at the combo's starting height
+PASS: Air step 3 ignores held steering and preserves its position/facing
+PASS: Air step 3 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Finisher stays suspended through its impact pose
+PASS: Finisher cannot queue a fourth attack
+PASS: Hang lasts through finisher recovery frames
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Full air string lands and resets safely
+PASS: Landing returns movement control
+PASS: Ground contact resets aerial restrictions
+PASS: Buffered launcher press starts air opener
+PASS: Launcher follow-up starts an airborne hang
+PASS: Air step 1 retains damage
+PASS: Air step 1 holds Red at the combo's starting height
+PASS: Air step 1 ignores held steering and preserves its position/facing
+PASS: Air step 1 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 1
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 2 retains damage
+PASS: Air step 2 holds Red at the combo's starting height
+PASS: Air step 2 ignores held steering and preserves its position/facing
+PASS: Air step 2 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Buffered press chains air step 2
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Air step 3 retains damage
+PASS: Air step 3 holds Red at the combo's starting height
+PASS: Air step 3 ignores held steering and preserves its position/facing
+PASS: Air step 3 uses its reviewed character size
+PASS: Air VFX uses the character's current frame
+PASS: Air VFX has a fixed authored anchor/scale
+PASS: VFX follows vertical movement without legacy overlap
+PASS: Finisher stays suspended through its impact pose
+PASS: Finisher cannot queue a fourth attack
+PASS: Hang lasts through finisher recovery frames
+PASS: Air combo never refills jumps; landing resets normally
+PASS: Full air string lands and resets safely
+PASS: Landing returns movement control
+PASS: Ground contact resets aerial restrictions
+PASS: Stopping at air step 1 releases to normal airborne/landing state
+PASS: Stopping input does not levitate Red
+PASS: Ground contact resets aerial restrictions
+PASS: Stopping at air step 2 releases to normal airborne/landing state
+PASS: Stopping input does not levitate Red
+PASS: Ground contact resets aerial restrictions
+PASS: Descending jump is available for hang check
+PASS: Starting an attack while falling also suspends Red
+PASS: Horizontal input cannot move Red during the hang
+PASS: Held movement resumes after air attack recovery ends
+PASS: Ground contact resets aerial restrictions
+PASS: Disabling hang restores the old finisher's downward push
+PASS: Ground contact resets aerial restrictions
+PASS: Air opener stops incoming momentum without refilling double jump
+PASS: Air attack interruption does not grant a third jump
+PASS: Ground contact resets aerial restrictions
+PASS: Ground Rising Slash physically launches Red and consumes the ground jump (frame=2, vy=-422.50, jumps=1, launched=true, floor=false)
+PASS: Launcher restriction persists through recovery
+PASS: Repeated airborne Rising Slash gives no new vertical boost
+PASS: Ground contact resets aerial restrictions
+PASS: Landing during air step 1 clears attack and buffered input
+PASS: Air landing uses bounded recovery
+PASS: Ground contact resets aerial restrictions
+PASS: Landing during air step 2 clears attack and buffered input
+PASS: Air landing uses bounded recovery
+PASS: Ground contact resets aerial restrictions
+PASS: Landing during air step 3 clears attack and buffered input
+PASS: Air landing uses bounded recovery
+PASS: Ground contact resets aerial restrictions
+PASS: Cannot restart an exhausted air string without landing
+PASS: Cancelling the attack immediately releases the hang to gravity
+PASS: Ground contact resets aerial restrictions
+PASS: Air step 1 hits once for the original 20 damage
+PASS: Air step 2 hits once for the original 20 damage
+PASS: Air step 3 hits once for the original 20 damage
+PASS: Ground contact resets aerial restrictions
+PASS: Hurt cancels air state, queue, VFX and damage
+PASS: Hurt knockback overrides the cancelled air hang
+PASS: Ground contact resets aerial restrictions
+PASS: Ground C still starts the ground combo
+PASS: Ground contact resets aerial restrictions
+PASS: Death clears air attack, follow-up buffer, VFX and hitbox
+AIR COMBO CHECKS: 232 passed, 0 failed

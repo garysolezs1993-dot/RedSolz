@@ -1,0 +1,188 @@
+[gd_scene load_steps=36 format=3]
+
+[ext_resource type="Script" path="res://scripts/opening_cutscene.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/opening_story_panel.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/opening_story_line.gd" id="3"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_01_silent_keep.png" id="Art1"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_02_brother_prepares.png" id="Art2"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_03_red_tries_to_follow.png" id="Art3"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_04_sibling_promise_lily.png" id="Art4"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_05_brother_leaves.png" id="Art5"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_06_red_waits_by_lantern.png" id="Art6"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_07_red_decides_to_follow.png" id="Art7"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/opening/final_art_v1/opening_08_enter_silent_keep.png" id="Art8"]
+
+[sub_resource type="Resource" id="Line1"]
+script = ExtResource("3")
+text = "Something had begun stirring beyond the old forest.\nRed's brother went to find its source."
+
+[sub_resource type="Resource" id="Line2"]
+script = ExtResource("3")
+text = "There was one person Red trusted more than anyone else — her brother."
+
+[sub_resource type="Resource" id="Line3a"]
+script = ExtResource("3")
+speaker = "Red"
+text = "Then I’m coming with you."
+hold_seconds = 1.4
+
+[sub_resource type="Resource" id="Line3b"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "No."
+hold_seconds = 0.9
+
+[sub_resource type="Resource" id="Line4a"]
+script = ExtResource("3")
+speaker = "Red"
+text = "You always say that."
+
+[sub_resource type="Resource" id="Line4b"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "And you never listen."
+
+[sub_resource type="Resource" id="Line4c"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "I’ve still got this, don’t I?"
+hold_seconds = 1.9
+
+[sub_resource type="Resource" id="Line4d"]
+script = ExtResource("3")
+speaker = "Red"
+text = "…You kept it?"
+hold_seconds = 1.5
+
+[sub_resource type="Resource" id="Line4e"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "Of course."
+hold_seconds = 1.0
+
+[sub_resource type="Resource" id="Line5a"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "Keep the light on for me."
+
+[sub_resource type="Resource" id="Line5b"]
+script = ExtResource("3")
+speaker = "Red"
+text = "Come back before it burns out."
+hold_seconds = 1.8
+
+[sub_resource type="Resource" id="Line5c"]
+script = ExtResource("3")
+speaker = "Brother"
+text = "Deal."
+hold_seconds = 0.9
+
+[sub_resource type="Resource" id="Line6"]
+script = ExtResource("3")
+text = "But night deepened...\nand he did not return."
+
+[sub_resource type="Resource" id="Line7"]
+script = ExtResource("3")
+speaker = "Red"
+text = "...You promised."
+
+[sub_resource type="Resource" id="Line7b"]
+script = ExtResource("3")
+speaker = "Red"
+text = "So I'm coming to find you."
+hold_seconds = 1.9
+
+[sub_resource type="Resource" id="Line8"]
+script = ExtResource("3")
+text = ""
+
+[sub_resource type="Resource" id="Panel1"]
+script = ExtResource("2")
+placeholder = 0
+artwork = ExtResource("Art1")
+shot_label = "THE SILENT KEEP"
+lines = Array[Resource]([SubResource("Line1")])
+hold_seconds = 3.0
+music_level_db = -27.0
+
+[sub_resource type="Resource" id="Panel2"]
+script = ExtResource("2")
+placeholder = 4
+artwork = ExtResource("Art2")
+shot_label = "BROTHER PREPARES TO LEAVE"
+lines = Array[Resource]([SubResource("Line2")])
+hold_seconds = 2.8
+still_pan = Vector2(3, 0)
+music_level_db = -25.0
+
+[sub_resource type="Resource" id="Panel3"]
+script = ExtResource("2")
+placeholder = 5
+artwork = ExtResource("Art3")
+shot_label = "RED TRIES TO FOLLOW"
+lines = Array[Resource]([SubResource("Line3a"), SubResource("Line3b")])
+hold_seconds = 2.0
+still_pan = Vector2(-4, 1)
+music_level_db = -24.0
+
+[sub_resource type="Resource" id="Panel4"]
+script = ExtResource("2")
+placeholder = 6
+artwork = ExtResource("Art4")
+shot_label = "THE OLD WHITE LILY"
+lines = Array[Resource]([SubResource("Line4a"), SubResource("Line4b"), SubResource("Line4c"), SubResource("Line4d"), SubResource("Line4e")])
+hold_seconds = 1.4
+still_pan = Vector2(-4, -1)
+music_level_db = -28.0
+
+[sub_resource type="Resource" id="Panel5"]
+script = ExtResource("2")
+placeholder = 7
+artwork = ExtResource("Art5")
+shot_label = "THE PROMISE"
+lines = Array[Resource]([SubResource("Line5a"), SubResource("Line5b"), SubResource("Line5c")])
+hold_seconds = 1.6
+still_pan = Vector2(-3, 0)
+music_level_db = -29.0
+
+[sub_resource type="Resource" id="Panel6"]
+script = ExtResource("2")
+placeholder = 8
+artwork = ExtResource("Art6")
+shot_label = "WAITING"
+lines = Array[Resource]([SubResource("Line6")])
+hold_seconds = 3.0
+still_pan = Vector2(2, 1)
+music_level_db = -36.0
+
+[sub_resource type="Resource" id="Panel7"]
+script = ExtResource("2")
+placeholder = 9
+artwork = ExtResource("Art7")
+shot_label = "RED'S CHOICE"
+lines = Array[Resource]([SubResource("Line7"), SubResource("Line7b")])
+hold_seconds = 1.4
+still_pan = Vector2(-3, 0)
+music_level_db = -24.0
+
+[sub_resource type="Resource" id="Panel8"]
+script = ExtResource("2")
+placeholder = 1
+artwork = ExtResource("Art8")
+shot_label = "INTO THE FOREST"
+lines = Array[Resource]([SubResource("Line8")])
+hold_seconds = 2.0
+music_level_db = -20.0
+
+[node name="OpeningCutscene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+auto_advance = true
+panel_fade_out = 0.65
+title_hold = 1.8
+panels = Array[Resource]([SubResource("Panel1"), SubResource("Panel2"), SubResource("Panel3"), SubResource("Panel4"), SubResource("Panel5"), SubResource("Panel6"), SubResource("Panel7"), SubResource("Panel8")])

@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 596.21 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5080
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+ENDING TRIGGER: boss HP=0; retained=true; old victory=false
+ENDING PHASE: collapse at frame 0
+ENDING PHASE: red_approaches at frame 178
+ENDING PHASE: lucidity at frame 460
+ENDING PHASE: keep_reacts at frame 1140
+ENDING PHASE: sacrifice at frame 1330
+ENDING PHASE: final_words at frame 1416
+ENDING PHASE: white_lily at frame 2180
+ENDING PHASE: guardian_birth at frame 2252
+ENDING PHASE: guardian_touch at frame 2445
+ENDING PHASE: together at frame 2698
+ENDING PHASE: complete at frame 3334
+ENDING PHASE: prototype_complete at frame 3355
+ENDING RESOLVED: paused=false; story complete=true; ending flag=false; boss nodes=0
+ENDING PHASE: title at frame 3465
+ENDING CAPTURE COMPLETE: phases=["collapse", "red_approaches", "lucidity", "keep_reacts", "sacrifice", "final_words", "white_lily", "guardian_birth", "guardian_touch", "together", "prototype_complete", "title"]; movie frames=239; paused=false; music=title

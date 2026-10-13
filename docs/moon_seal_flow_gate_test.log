@@ -1,0 +1,123 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Gate uses nearest filtering
+PASS: Gate energy remains readable under selective forest lighting
+PASS: Early awakening brightness is deliberately restrained
+PASS: Correct visual at 0/3
+PASS: Correct frame count: dormant
+PASS: Only awakened states loop: dormant
+PASS: Unchanged seal count never restarts: dormant
+PASS: Actual playback and loop behavior: dormant
+PASS: Full uncropped source texture: dormant0
+PASS: Source canvas preserved: dormant0
+PASS: No per-frame transform changes: dormant0
+PASS: Stone sill stays on the shared ground line: dormant0
+PASS: Correct visual at 1/3
+PASS: Correct frame count: awakening_1
+PASS: Only awakened states loop: awakening_1
+PASS: Escalating 6/7/8 FPS: awakening_1
+PASS: Unchanged seal count never restarts: awakening_1
+PASS: Actual playback and loop behavior: awakening_1
+PASS: Full uncropped source texture: awakening_10
+PASS: Source canvas preserved: awakening_10
+PASS: No per-frame transform changes: awakening_10
+PASS: Stone sill stays on the shared ground line: awakening_10
+PASS: Full uncropped source texture: awakening_11
+PASS: Source canvas preserved: awakening_11
+PASS: No per-frame transform changes: awakening_11
+PASS: Stone sill stays on the shared ground line: awakening_11
+PASS: Full uncropped source texture: awakening_12
+PASS: Source canvas preserved: awakening_12
+PASS: No per-frame transform changes: awakening_12
+PASS: Stone sill stays on the shared ground line: awakening_12
+PASS: Full uncropped source texture: awakening_13
+PASS: Source canvas preserved: awakening_13
+PASS: No per-frame transform changes: awakening_13
+PASS: Stone sill stays on the shared ground line: awakening_13
+PASS: Full uncropped source texture: awakening_14
+PASS: Source canvas preserved: awakening_14
+PASS: No per-frame transform changes: awakening_14
+PASS: Stone sill stays on the shared ground line: awakening_14
+PASS: Correct visual at 2/3
+PASS: Correct frame count: awakening_2
+PASS: Only awakened states loop: awakening_2
+PASS: Escalating 6/7/8 FPS: awakening_2
+PASS: Unchanged seal count never restarts: awakening_2
+PASS: Actual playback and loop behavior: awakening_2
+PASS: Full uncropped source texture: awakening_20
+PASS: Source canvas preserved: awakening_20
+PASS: No per-frame transform changes: awakening_20
+PASS: Stone sill stays on the shared ground line: awakening_20
+PASS: Full uncropped source texture: awakening_21
+PASS: Source canvas preserved: awakening_21
+PASS: No per-frame transform changes: awakening_21
+PASS: Stone sill stays on the shared ground line: awakening_21
+PASS: Full uncropped source texture: awakening_22
+PASS: Source canvas preserved: awakening_22
+PASS: No per-frame transform changes: awakening_22
+PASS: Stone sill stays on the shared ground line: awakening_22
+PASS: Full uncropped source texture: awakening_23
+PASS: Source canvas preserved: awakening_23
+PASS: No per-frame transform changes: awakening_23
+PASS: Stone sill stays on the shared ground line: awakening_23
+PASS: Full uncropped source texture: awakening_24
+PASS: Source canvas preserved: awakening_24
+PASS: No per-frame transform changes: awakening_24
+PASS: Stone sill stays on the shared ground line: awakening_24
+PASS: Correct visual at 3/3
+PASS: Correct frame count: fully_awakened
+PASS: Only awakened states loop: fully_awakened
+PASS: Escalating 6/7/8 FPS: fully_awakened
+PASS: Unchanged seal count never restarts: fully_awakened
+PASS: Actual playback and loop behavior: fully_awakened
+PASS: Full uncropped source texture: fully_awakened0
+PASS: Source canvas preserved: fully_awakened0
+PASS: No per-frame transform changes: fully_awakened0
+PASS: Stone sill stays on the shared ground line: fully_awakened0
+PASS: Full uncropped source texture: fully_awakened1
+PASS: Source canvas preserved: fully_awakened1
+PASS: No per-frame transform changes: fully_awakened1
+PASS: Stone sill stays on the shared ground line: fully_awakened1
+PASS: Full uncropped source texture: fully_awakened2
+PASS: Source canvas preserved: fully_awakened2
+PASS: No per-frame transform changes: fully_awakened2
+PASS: Stone sill stays on the shared ground line: fully_awakened2
+PASS: Full uncropped source texture: fully_awakened3
+PASS: Source canvas preserved: fully_awakened3
+PASS: No per-frame transform changes: fully_awakened3
+PASS: Stone sill stays on the shared ground line: fully_awakened3
+PASS: Full uncropped source texture: fully_awakened4
+PASS: Source canvas preserved: fully_awakened4
+PASS: No per-frame transform changes: fully_awakened4
+PASS: Stone sill stays on the shared ground line: fully_awakened4
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Live gate responds to objective progress: 0/3
+PASS: Gate unlock matches objective state: 0/3
+PASS: Live visual is anchored on platform: 0/3
+PASS: Distant glimpse uses the same progress state: 0/3
+PASS: Entry blocked at 0/3 using interact
+PASS: Entry blocked at 0/3 using ui_up
+PASS: Entry blocked at 0/3 using ui_accept
+PASS: Live gate responds to objective progress: 1/3
+PASS: Gate unlock matches objective state: 1/3
+PASS: Live visual is anchored on platform: 1/3
+PASS: Distant glimpse uses the same progress state: 1/3
+PASS: Entry blocked at 1/3 using interact
+PASS: Entry blocked at 1/3 using ui_up
+PASS: Entry blocked at 1/3 using ui_accept
+PASS: Live gate responds to objective progress: 2/3
+PASS: Gate unlock matches objective state: 2/3
+PASS: Live visual is anchored on platform: 2/3
+PASS: Distant glimpse uses the same progress state: 2/3
+PASS: Entry blocked at 2/3 using interact
+PASS: Entry blocked at 2/3 using ui_up
+PASS: Entry blocked at 2/3 using ui_accept
+PASS: Live gate responds to objective progress: 3/3
+PASS: Gate unlock matches objective state: 3/3
+PASS: Live visual is anchored on platform: 3/3
+PASS: Distant glimpse uses the same progress state: 3/3
+PASS: Saved 3/3 restores the fully awakened loop
+PASS: E enters Stage 2 only at 3/3
+PASS: Stage 2 transition preserves Red's health
+MOON GATE VISUAL: 118 checks; 0 failures

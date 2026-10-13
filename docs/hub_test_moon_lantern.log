@@ -1,0 +1,74 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: User save is isolated
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: All three Stage 1 lanterns use the shared implementation
+PASS: Lantern 0 enters waiting pose
+PASS: Frame 01 is held, not autoplayed
+PASS: Red faces the lantern from either side
+PASS: Proximity never activates, heals or saves
+PASS: Cinematic zoom reaches 1.55 smoothly
+PASS: Waiting pose ignores movement and combat
+PASS: Escape cancels waiting pose
+PASS: Escape restores the gameplay zoom
+PASS: Cancellation does not immediately trap Red again
+PASS: Red can walk away after cancelling
+PASS: Leaving and returning offers the preview again
+PASS: E continues at frame 02
+PASS: Checkpoint waits for the hand-contact frame
+PASS: Red frame 04 starts lantern activation frame 00
+PASS: Contact heals once and saves the safe respawn
+PASS: Activated history is persisted
+PASS: Confirmed interaction ignores normal controls and repeated E
+PASS: Sequence completes and unlocks controls
+PASS: Activation transitions into the five-frame idle loop
+PASS: Large activation plays exactly once
+PASS: Successful lighting restores 1.35 gameplay zoom
+PASS: Returning to a lit lantern cannot heal or replay
+PASS: Lit lantern no longer offers the lighting prompt
+PASS: Lantern 1 enters waiting pose
+PASS: Frame 01 is held, not autoplayed
+PASS: Red faces the lantern from either side
+PASS: Proximity never activates, heals or saves
+PASS: Cinematic zoom reaches 1.55 smoothly
+PASS: Waiting pose ignores movement and combat
+PASS: E continues at frame 02
+PASS: Checkpoint waits for the hand-contact frame
+PASS: Red frame 04 starts lantern activation frame 00
+PASS: Contact heals once and saves the safe respawn
+PASS: Activated history is persisted
+PASS: Confirmed interaction ignores normal controls and repeated E
+PASS: Sequence completes and unlocks controls
+PASS: Activation transitions into the five-frame idle loop
+PASS: Large activation plays exactly once
+PASS: Successful lighting restores 1.35 gameplay zoom
+PASS: Returning to a lit lantern cannot heal or replay
+PASS: Lit lantern no longer offers the lighting prompt
+PASS: Lantern 2 enters waiting pose
+PASS: Frame 01 is held, not autoplayed
+PASS: Red faces the lantern from either side
+PASS: Proximity never activates, heals or saves
+PASS: Cinematic zoom reaches 1.55 smoothly
+PASS: Waiting pose ignores movement and combat
+PASS: E continues at frame 02
+PASS: Checkpoint waits for the hand-contact frame
+PASS: Red frame 04 starts lantern activation frame 00
+PASS: Contact heals once and saves the safe respawn
+PASS: Activated history is persisted
+PASS: Confirmed interaction ignores normal controls and repeated E
+PASS: Sequence completes and unlocks controls
+PASS: Activation transitions into the five-frame idle loop
+PASS: Large activation plays exactly once
+PASS: Successful lighting restores 1.35 gameplay zoom
+PASS: Returning to a lit lantern cannot heal or replay
+PASS: Lit lantern no longer offers the lighting prompt
+PASS: Leaving range cancels safely without saving
+PASS: Damage interrupts waiting and clears the lock
+PASS: Damage before contact cancels the activation attempt
+PASS: Damage after contact keeps the saved lantern and completes its idle transition
+PASS: Retry restores the lit checkpoint with full HP
+PASS: Reload uses active idle without replaying activation
+PASS: Scene-transition flag releases the interaction state
+PASS: Death clears the interaction before its presentation takes over
+MOON LANTERN: 69 checks, 0 failures

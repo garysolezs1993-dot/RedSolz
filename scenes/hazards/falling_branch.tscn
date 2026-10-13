@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/forest_hazard.gd" id="1"]
+
+[node name="FallingBranch" type="Node2D"]
+script = ExtResource("1")
+kind = 2
+width = 56.0
+warning_time = 0.9
+rest_time = 2.8
+fall_distance = 164.0

@@ -1,0 +1,24 @@
+# Replacement Cursed Wolf howl and AOE
+
+Source: user-supplied `Cursed_Wolf_Howl_For_Codex.zip`, `SOURCE_HOWL_SHEET.png`. The original is saved as `source_original.png`. It has an opaque black background and panel borders.
+
+`wolf_clean.png` and `aoe_clean.png` are transparent cutout derivatives prepared using the built-in imagegen tool. The supplied pose sequence and design were used; minor edge details can differ from the original. A padding pass repaired clipped effect tips.
+
+Runtime assets: `../howl_v3/howl_00.png` through `howl_07.png` (wolf only), and `../howl_aoe_v3/howl_aoe_00.png` through `howl_aoe_07.png` (effect only). Nearest-neighbor filtering, 8 frames at 7 FPS, about 1.14 seconds. The effect follows the wolf frame/progress and facing, with no separate playback clock. Damage occurs on frame 04; energy builds and fades with the pose. Completion comes from the wolf animation signal.
+
+Both layers use source anchor row 567 in 768-pixel-high canvases, sprite scale 0.35 and local Y -64. The wolf uses a constant anatomical scale across frames. The tall source AOE is spread horizontally with fixed X/Y scales to form a ground shockwave behind the wolf. Its ellipse center, rather than its lowest embers, is anchored at the paws. Manual AOE frame offsets remain available in the boss Inspector. Change the source paw/ring anchors in `tools/prepare_cursed_wolf_howl_v3.py` to repack individual frames.
+
+## Cutout prompts
+
+### Wolf
+
+Use case: background-extraction. Input is an edit target: a cursed wolf howl reference sheet with EIGHT wolf poses across its top row and EIGHT unrelated effect layers below. Extract ONLY the TOP ROW's eight existing wolf poses into a transparent atlas with FOUR equal columns and TWO equal rows, row-major order preserving source frames 0 through 7. Remove the black background, red panel lines, all crosses and borders, ground shadows and ground-energy beneath paws; retain the wolf's actual dark fur, ember-red markings, red scarf, white flower, red eyes, intentional fur flames, exact sitting/howling poses and silhouette. Do not redesign the wolf; keep head, torso and paw proportions unchanged. Consistent anatomical size across all eight poses. First pose tense seated, head progressively lifts through 1/2/3, full howl pose 4, fades 5, returns seated 6/7. Each COMPLETE wolf must fit within its equal cell, with 15% EMPTY TRANSPARENT MARGINS at left and right and generous top/bottom padding. Do NOT fill cell with wolf. Repair only tiny tips cut by source panel edges. No bottom-row AOE ring or swirling energy in these frames. No text, labels, guidelines, dividers, black background, checkerboards, shadows or halos. REAL alpha transparency. This is cutout preparation of the supplied character, not a new design.
+
+### AOE
+
+Use case: background-extraction. Input is an edit target: a cursed wolf howl reference sheet with eight wolf poses on top and eight effect-only poses on bottom. Extract ONLY the BOTTOM ROW's eight existing crimson AOE effects into a transparent atlas with FOUR equal columns and TWO equal rows, preserving left-to-right sequence 0 through 7 in row-major order. Preserve the specific swirling cursed red smoke, embers, white/crimson arcs and ground rings in each supplied pose. No wolf, fur, scarf, flower or body part. Remove black background, ALL red rectangular panel lines, thin straight vertical guide streaks/crosses and borders. Center the ground ring in each cell on the same horizontal anchor and the SAME ground-center baseline. Do not align using the lowest ember or front rim; use ellipse center. Maintain consistent source scale across frames so energy grows at release 3/4 then diminishes 5/6/7. Each COMPLETE effect must fit within central 70% width of its cell with 15% EMPTY TRANSPARENT MARGINS left/right and ample vertical padding, no clipping or neighboring overlap. No text, guides, dividers, checkerboard or black background. REAL alpha transparency, retaining soft translucent smoke. Preserve these effects rather than inventing new shapes.
+
+### AOE padding pass
+
+Edit target: this transparent eight-frame cursed crimson AOE atlas. Fix ONLY padding and clipping. Keep FOUR equal columns and TWO equal rows, exact eight effect poses and sequence. Reduce every effect uniformly to 60% its current size within each cell; recenter with fully EMPTY TRANSPARENT MARGINS at least 15% on ALL FOUR SIDES. Current cells touch the top/bottom row divider: restore only cropped smoke/ember tips so each effect is complete. No neighbor bleed or split artifacts. Preserve ring shapes, original crimson/black smoke and soft transparency; preserve consistent effect scale, not fitted per frame. Same ground ring ellipse center alignment across all cells. Absolutely no wolf, flower, text, labels, borders, lines, guides, shadows, or fake checkerboard. Actual alpha background. Do not redesign effects or fill empty margins.
+

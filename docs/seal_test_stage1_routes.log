@@ -1,0 +1,98 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Ordinary jumps reach (1660.0, 445.0) (Red (1668.421, 429.9814))
+PASS: Ordinary jumps reach (1800.0, 369.0) (Red (1808.509, 353.9723))
+PASS: Clearing moon petal is reachable
+PASS: Ordinary jumps reach (3080.0, 452.0) (Red (3088.418, 436.9904))
+PASS: Ordinary jumps reach (3240.0, 404.0) (Red (3249.187, 388.9905))
+PASS: Ordinary jumps reach (3400.0, 356.0) (Red (3407.374, 340.9905))
+PASS: Ordinary jumps reach (3560.0, 308.0) (Red (3568.143, 292.9905))
+PASS: Ordinary jumps reach (3720.0, 260.0) (Red (3728.913, 196.9858))
+PASS: Ordinary jumps reach (3780.0, 212.0) (Red (3788.914, 148.9948))
+PASS: Ordinary jumps reach (3900.0, 164.0) (Red (3908.331, 148.9851))
+PASS: Ordinary Chapel climb reaches Seal 1
+PASS: Ordinary jumps reach (4040.0, 116.0) (Red (4048.413, 100.9948))
+PASS: Ordinary jumps reach (4180.0, 68.0) (Red (4188.504, 52.99533))
+PASS: Chapel balcony petal is reachable
+PASS: Ordinary jumps reach (4260.0, 260.0) (Red (4269.178, 4.995003))
+PASS: Ordinary jumps reach (4440.0, 308.0) (Red (4448.046, 292.9901))
+PASS: Ordinary jumps reach (4620.0, 356.0) (Red (4629.497, 334.9655))
+PASS: Ordinary jumps reach (4800.0, 404.0) (Red (4808.354, 284.9988))
+PASS: Ordinary jumps reach (5000.0, 452.0) (Red (4988.808, 184.9252))
+PASS: Ordinary jumps reach (5240.0, 452.0) (Red (5247.435, 436.9615))
+PASS: Ordinary jumps reach (5500.0, 424.0) (Red (5482.128, 408.9252))
+PASS: Chapel loop reconnects at the bridge
+PASS: Ordinary jumps reach (4420.0, 450.0) (Red (4429.426, 434.9961))
+PASS: Ordinary jumps reach (4580.0, 400.0) (Red (4587.627, 340.9789))
+PASS: Ordinary jumps reach (4740.0, 350.0) (Red (4748.405, 334.9915))
+PASS: Ordinary jumps reach (4900.0, 300.0) (Red (4909.188, 284.9963))
+PASS: Ordinary jumps reach (5060.0, 250.0) (Red (5067.389, 234.9963))
+PASS: Optional Hollow Oak crown keeps its petal
+PASS: Open hollow descends safely without drop-through skill
+PASS: Walk to lower route (3540.0, 610.0) (Red (3550.492, 564.9252))
+PASS: Walk to lower route (3700.0, 670.0) (Red (3708.655, 654.9252))
+PASS: Walk to lower route (3880.0, 740.0) (Red (3890.066, 672.9252))
+PASS: Walk to lower route (4110.0, 740.0) (Red (4120.562, 724.9252))
+PASS: Walk to lower route (4380.0, 740.0) (Red (4389.827, 724.9252))
+PASS: Walk to lower route (4900.0, 740.0) (Red (4904.525, 724.9252))
+PASS: Shortcut is locked before the cellar objective
+PASS: Seal 2 unlocks its distinct return shortcut
+PASS: Ordinary jumps reach (4570.0, 698.0) (Red (4589.755, 682.9251))
+PASS: Cellar alcove petal remains reachable
+PASS: Ordinary jumps reach (4800.0, 698.0) (Red (4780.379, 682.9251))
+PASS: Walk to lower route (4950.0, 740.0) (Red (4958.917, 724.9252))
+PASS: Walk to lower route (5140.0, 740.0) (Red (5150.678, 598.6486))
+PASS: Seal-powered lift carries Red back to the bridge floor
+PASS: Ordinary jumps reach (3510.0, 690.0) (Red (3491.357, 674.9251))
+PASS: Ordinary jumps reach (3510.0, 635.0) (Red (3515.913, 619.996))
+PASS: Ordinary jumps reach (3510.0, 580.0) (Red (3509.52, 564.9813))
+PASS: Ordinary jumps reach (3510.0, 525.0) (Red (3513.634, 509.996))
+PASS: Ordinary jumps reach (3580.0, 500.0) (Red (3589.135, 484.9782))
+PASS: Western cellar stairs also return to the hub
+PASS: Second open junction descends into the side ruins
+PASS: Walk to lower route (6660.0, 610.0) (Red (6669.848, 594.9908))
+PASS: Walk to lower route (6840.0, 680.0) (Red (6848.691, 664.9252))
+PASS: Walk to lower route (7020.0, 680.0) (Red (7030.118, 664.9252))
+PASS: Walk to lower route (7160.0, 680.0) (Red (7170.208, 664.9252))
+PASS: Lower burial ruins are an optional exploration detour
+PASS: Ordinary jumps reach (7360.0, 680.0) (Red (7340.302, 664.9251))
+PASS: Ordinary jumps reach (7540.0, 630.0) (Red (7520.424, 614.9252))
+PASS: Ordinary jumps reach (7700.0, 580.0) (Red (7682.462, 564.9251))
+PASS: Ordinary jumps reach (7860.0, 530.0) (Red (7841.917, 514.9251))
+PASS: Ordinary jumps reach (8020.0, 480.0) (Red (8028.205, 436.9959))
+PASS: Separate side-ruins exit reconnects before Heartwood
+PASS: Ordinary jumps reach (7000.0, 450.0) (Red (7008.758, 434.9961))
+PASS: Ordinary jumps reach (7160.0, 398.0) (Red (7169.542, 382.9826))
+PASS: Ordinary jumps reach (7340.0, 356.0) (Red (7345.407, 272.9252))
+PASS: Burial viewpoint petal is reachable
+PASS: Ordinary jumps reach (6240.0, 396.0) (Red (6249.204, 380.9253))
+PASS: Ordinary jumps reach (6400.0, 342.0) (Red (6407.38, 326.976))
+PASS: Ordinary jumps reach (6560.0, 288.0) (Red (6568.157, 272.9761))
+PASS: Ordinary jumps reach (6800.0, 288.0) (Red (6782.188, 164.9252))
+PASS: Ordinary jumps reach (6800.0, 234.0) (Red (6806.745, 164.9838))
+PASS: Ordinary jumps reach (6800.0, 180.0) (Red (6800.354, 164.9849))
+PASS: Ordinary jumps reach (6940.0, 126.0) (Red (6948.198, 110.9647))
+PASS: Ordinary jumps reach (7080.0, 72.0) (Red (7088.291, 56.99124))
+PASS: Ordinary jumps reach (7240.0, 18.0) (Red (7249.073, 2.976155))
+PASS: Optional canopy lookout keeps the last petal
+PASS: Ordinary jumps reach (7040.0, 288.0) (Red (7049.872, 272.9253))
+PASS: Ordinary jumps reach (7240.0, 288.0) (Red (7249.384, 272.9839))
+PASS: Ordinary jumps reach (7480.0, 234.0) (Red (7460.833, 218.9253))
+PASS: Ordinary jumps reach (7640.0, 180.0) (Red (7649.706, 164.976))
+PASS: Ordinary jumps reach (7800.0, 126.0) (Red (7807.9, 110.9761))
+PASS: Ordinary jumps reach (8000.0, 126.0) (Red (8007.43, 110.9926))
+PASS: Ordinary jumps reach (8320.0, 126.0) (Red (8301.534, 110.9253))
+PASS: Upper hazard crossing needs only ordinary jumps, without taking damage
+PASS: Upper sanctuary contains Seal 3 after the climb and hazards
+PASS: Ordinary jumps reach (8600.0, 180.0) (Red (8598.668, 164.9252))
+PASS: Ordinary jumps reach (8760.0, 234.0) (Red (8768.734, 218.9958))
+PASS: Ordinary jumps reach (8920.0, 288.0) (Red (8929.493, 272.9675))
+PASS: Ordinary jumps reach (9080.0, 342.0) (Red (9087.658, 326.9626))
+PASS: Ordinary jumps reach (9240.0, 396.0) (Red (9248.404, 380.9619))
+PASS: Ordinary jumps reach (9400.0, 450.0) (Red (9409.15, 388.9927))
+PASS: Ordinary jumps reach (9560.0, 500.0) (Red (9569.907, 388.9955))
+PASS: Gentle eastern descent reaches the quiet Moon Gate approach
+PASS: All six optional rewards need no attacks or dash
+STAGE 1 ROUTES: 93 checks; 0 failures

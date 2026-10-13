@@ -1,0 +1,340 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: dormant contains every supplied frame
+PASS: dormant has the correct loop mode
+PASS: dormant0 uses a complete new source PNG
+PASS: interact_ready contains every supplied frame
+PASS: interact_ready has the correct loop mode
+PASS: interact_ready0 uses a complete new source PNG
+PASS: interact_ready1 uses a complete new source PNG
+PASS: interact_ready2 uses a complete new source PNG
+PASS: interact_ready3 uses a complete new source PNG
+PASS: interact_ready4 uses a complete new source PNG
+PASS: interact_ready5 uses a complete new source PNG
+PASS: interact_ready6 uses a complete new source PNG
+PASS: interact_ready7 uses a complete new source PNG
+PASS: activating contains every supplied frame
+PASS: activating has the correct loop mode
+PASS: activating0 uses a complete new source PNG
+PASS: activating1 uses a complete new source PNG
+PASS: activating2 uses a complete new source PNG
+PASS: activating3 uses a complete new source PNG
+PASS: activating4 uses a complete new source PNG
+PASS: activating5 uses a complete new source PNG
+PASS: activating6 uses a complete new source PNG
+PASS: activating7 uses a complete new source PNG
+PASS: activated_idle contains every supplied frame
+PASS: activated_idle has the correct loop mode
+PASS: activated_idle0 uses a complete new source PNG
+PASS: activated_idle1 uses a complete new source PNG
+PASS: activated_idle2 uses a complete new source PNG
+PASS: activated_idle3 uses a complete new source PNG
+PASS: activated_idle4 uses a complete new source PNG
+PASS: Later seal cannot bypass order
+PASS: Missing first seal remains explained
+PASS: camp_moon_seal static dormant state
+PASS: camp_moon_seal subtle dormant spirit
+PASS: camp_moon_seal hover has no strong trail or unused pool
+PASS: camp_moon_seal entering range uses interaction set
+PASS: camp_moon_seal interaction spirit is brighter
+PASS: camp_moon_seal proximity does not activate
+PASS: camp_moon_seal interaction loop plays every frame without restart
+PASS: camp_moon_seal leaving range restores dormant state
+PASS: Damage safely cancels uncommitted activation
+PASS: camp_moon_seal E starts shrine and Wisp reaction
+PASS: camp_moon_seal owns player interaction lock
+PASS: camp_moon_seal no early save or guide release
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal activation keeps Red grounded and stationary
+PASS: camp_moon_seal spirit circles then approaches rune
+PASS: camp_moon_seal spirit merges at surge frames
+PASS: camp_moon_seal all eight activation frames play
+PASS: camp_moon_seal completes exactly once into idle loop
+PASS: camp_moon_seal completed shrine loops permanently
+PASS: camp_moon_seal local spirit stops and lock clears
+PASS: camp_moon_seal completion is saved after animation
+PASS: camp_moon_seal short post-activation delay precedes release
+PASS: camp_moon_seal releases one guide spirit
+PASS: camp_moon_seal guide emerges from the shrine rune
+PASS: camp_moon_seal configured camera behavior
+PASS: camp_moon_seal lily preview is limited to the first-seal cinematic
+PASS: camp_moon_seal guide disappears and control returns
+PASS: camp_moon_seal runs all guide states
+PASS: camp_moon_seal movement emits lingering trail instances
+PASS: camp_moon_seal all completed-idle frames loop without a local Wisp
+PASS: First cinematic fits six seconds and restores Red's camera
+PASS: camp_moon_seal repeated E cannot reactivate
+PASS: oak_moon_seal static dormant state
+PASS: oak_moon_seal subtle dormant spirit
+PASS: oak_moon_seal hover has no strong trail or unused pool
+PASS: oak_moon_seal entering range uses interaction set
+PASS: oak_moon_seal interaction spirit is brighter
+PASS: oak_moon_seal proximity does not activate
+PASS: oak_moon_seal interaction loop plays every frame without restart
+PASS: oak_moon_seal leaving range restores dormant state
+PASS: oak_moon_seal living guards block activation
+PASS: oak_moon_seal E starts shrine and Wisp reaction
+PASS: oak_moon_seal owns player interaction lock
+PASS: oak_moon_seal no early save or guide release
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal activation keeps Red grounded and stationary
+PASS: oak_moon_seal spirit circles then approaches rune
+PASS: oak_moon_seal spirit merges at surge frames
+PASS: oak_moon_seal all eight activation frames play
+PASS: oak_moon_seal completes exactly once into idle loop
+PASS: oak_moon_seal completed shrine loops permanently
+PASS: oak_moon_seal local spirit stops and lock clears
+PASS: oak_moon_seal completion is saved after animation
+PASS: oak_moon_seal short post-activation delay precedes release
+PASS: oak_moon_seal releases one guide spirit
+PASS: oak_moon_seal guide emerges from the shrine rune
+PASS: oak_moon_seal configured camera behavior
+PASS: oak_moon_seal lily preview is limited to the first-seal cinematic
+PASS: oak_moon_seal guide disappears and control returns
+PASS: oak_moon_seal runs all guide states
+PASS: oak_moon_seal movement emits lingering trail instances
+PASS: oak_moon_seal all completed-idle frames loop without a local Wisp
+PASS: oak_moon_seal repeated E cannot reactivate
+PASS: heartwood_moon_seal static dormant state
+PASS: heartwood_moon_seal subtle dormant spirit
+PASS: heartwood_moon_seal hover has no strong trail or unused pool
+PASS: heartwood_moon_seal entering range uses interaction set
+PASS: heartwood_moon_seal interaction spirit is brighter
+PASS: heartwood_moon_seal proximity does not activate
+PASS: heartwood_moon_seal interaction loop plays every frame without restart
+PASS: heartwood_moon_seal leaving range restores dormant state
+PASS: heartwood_moon_seal living guards block activation
+PASS: heartwood_moon_seal E starts shrine and Wisp reaction
+PASS: heartwood_moon_seal owns player interaction lock
+PASS: heartwood_moon_seal no early save or guide release
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal activation keeps Red grounded and stationary
+PASS: heartwood_moon_seal spirit circles then approaches rune
+PASS: heartwood_moon_seal spirit merges at surge frames
+PASS: heartwood_moon_seal all eight activation frames play
+PASS: heartwood_moon_seal completes exactly once into idle loop
+PASS: heartwood_moon_seal completed shrine loops permanently
+PASS: heartwood_moon_seal local spirit stops and lock clears
+PASS: heartwood_moon_seal completion is saved after animation
+PASS: heartwood_moon_seal short post-activation delay precedes release
+PASS: heartwood_moon_seal releases one guide spirit
+PASS: heartwood_moon_seal guide emerges from the shrine rune
+PASS: heartwood_moon_seal configured camera behavior
+PASS: heartwood_moon_seal lily preview is limited to the first-seal cinematic
+PASS: heartwood_moon_seal guide disappears and control returns
+PASS: heartwood_moon_seal runs all guide states
+PASS: heartwood_moon_seal movement emits lingering trail instances
+PASS: heartwood_moon_seal all completed-idle frames loop without a local Wisp
+PASS: Final Wisp indicates the open Moon Gate
+PASS: heartwood_moon_seal repeated E cannot reactivate
+PASS: Saved completed shrine restores quietly: camp_moon_seal
+PASS: Saved completed shrine restores quietly: oak_moon_seal
+PASS: Saved completed shrine restores quietly: heartwood_moon_seal
+PASS: Reload never replays a release
+MOON SEAL FLOW: 335 checks; 0 failures

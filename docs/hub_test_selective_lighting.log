@@ -1,0 +1,1225 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+WARNING: Camera2D overridden to physics process mode due to use of physics interpolation.
+   at: _update_process_callback (scene/2d/camera_2d.cpp:88)
+PASS: Selective treatment is enabled for Stage 1
+PASS: Stage 1 has no global darkness CanvasModulate
+PASS: Red receives no darkening material or modulation
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Player VFX receive no darkening material
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Enemy silhouette is excluded from background grading
+PASS: Parallax layers have independent grading materials
+PASS: Background materials are independent
+PASS: Far background begins at 85%
+PASS: Mid background begins at 90%
+PASS: Moon/castle mask applies only to the far PNG
+PASS: Existing parallax transparency is preserved
+PASS: Vignette is a mild 4.5% edge treatment
+PASS: Vignette does not intercept controls
+PASS: HUD renders above vignette
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: Shelf has a visual depth shader
+PASS: Platform top retains 94% brightness
+PASS: Platform underside is darker
+PASS: Platform artwork retains whole shelf sprites
+PASS: Walkable edge stays readable
+PASS: All 120 hub-layout platform helpers are covered
+PASS: Lantern artwork remains ungraded
+PASS: Active lantern retains its light pool and warm center
+PASS: Inspector background changes update at runtime
+PASS: Inspector platform changes update at runtime
+PASS: Vignette can be disabled using the Inspector
+PASS: Cellar mood darkens only the background
+PASS: Cellar mood leaves Red undarkened
+PASS: Crescent projectile is excluded from background darkening
+PASS: Stage 2 retains its previous lighting mode
+PASS: Stage 1 vignette does not leak into Stage 2
+SELECTIVE LIGHTING: 1220 checks, 0 failures

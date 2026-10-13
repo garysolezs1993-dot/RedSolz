@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var calm := false
 var elapsed := 0.0
 var motes: Array[Dictionary] = []
 
@@ -18,6 +19,7 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(_on_viewport_resized)
 
 func _process(delta: float) -> void:
+	delta *= 0.45 if calm else 1.0
 	elapsed += delta
 	var view_size := get_viewport_rect().size
 	for index in range(motes.size()):
@@ -59,6 +61,7 @@ func _draw() -> void:
 		var fog_alpha := 0.045 + float(band) * 0.018
 		draw_colored_polygon(fog_shape, Color(0.57, 0.61, 0.76, fog_alpha))
 
+	var index := 0
 	for mote in motes:
 		var center: Vector2 = mote["position"]
 		var size := float(mote["size"])
@@ -71,5 +74,6 @@ func _draw() -> void:
 		for point_index in range(leaf.size()):
 			leaf[point_index] = center + leaf[point_index].rotated(angle)
 		var leaf_alpha := 0.34 + (sin(elapsed + phase) + 1.0) * 0.12
-		draw_colored_polygon(leaf, Color(0.62, 0.11, 0.18, leaf_alpha))
-
+		var color := Color(0.82, 0.75, 0.71, leaf_alpha * 0.75) if calm and index % 4 == 0 else Color(0.62, 0.11, 0.18, leaf_alpha * (0.65 if calm else 1.0))
+		draw_colored_polygon(leaf, color)
+		index += 1

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/game_over.gd" id="1_game_over"]
 [ext_resource type="PackedScene" path="res://scenes/story_atmosphere.tscn" id="2_atmosphere"]
-[ext_resource type="Texture2D" path="res://assets/character_frames_clean_final/death/death_03.png" id="3_red_fallen"]
+[ext_resource type="Texture2D" path="res://assets/game_assets/red_gothic_replacements/death/death_07.png" id="3_red_fallen"]
 [ext_resource type="Texture2D" path="res://assets/game_assets/enemies/common_wolf/idle/idle_00.png" id="4_wolf"]
 [ext_resource type="Script" path="res://scripts/story_music.gd" id="5_story_music"]
 
@@ -10,6 +10,7 @@
 script = ExtResource("1_game_over")
 
 [node name="StoryAtmosphere" parent="." instance=ExtResource("2_atmosphere")]
+quiet_mode = true
 
 [node name="WolfSilhouette" type="Sprite2D" parent="."]
 position = Vector2(648, 448)
@@ -20,10 +21,12 @@ texture_filter = 1
 
 [node name="RedFallen" type="Sprite2D" parent="."]
 position = Vector2(746, 438)
-scale = Vector2(1.7, 1.7)
+scale = Vector2(0.21, 0.21)
+offset = Vector2(0, 7)
 texture = ExtResource("3_red_fallen")
 texture_filter = 1
 modulate = Color(0.86, 0.8, 0.84, 1)
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 script = ExtResource("5_story_music")
+context = "game_over"

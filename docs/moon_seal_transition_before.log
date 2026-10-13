@@ -1,0 +1,28 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 596.21 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 5080
+
+FAIL: frame 0 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 1 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 2 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 3 dormant rendered height 155 declared scale (0.083778, 0.083778)
+FAIL: frame 12 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 13 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 14 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 15 dormant rendered height 155 declared scale (0.083778, 0.083778)
+FAIL: frame 24 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 25 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 26 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 27 dormant rendered height 155 declared scale (0.083778, 0.083778)
+FAIL: frame 36 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 37 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 38 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 39 dormant rendered height 155 declared scale (0.083778, 0.083778)
+FAIL: frame 48 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 49 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 50 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 51 dormant rendered height 155 declared scale (0.083778, 0.083778)
+FAIL: frame 60 dormant rendered height 290 declared scale (0.083778, 0.083778)
+FAIL: frame 61 dormant rendered height 250 declared scale (0.083778, 0.083778)
+FAIL: frame 62 dormant rendered height 201 declared scale (0.083778, 0.083778)
+FAIL: frame 63 dormant rendered height 155 declared scale (0.083778, 0.083778)
+MOON SEAL RENDER TRANSITIONS: 72 frames; 24 failures; max height 290

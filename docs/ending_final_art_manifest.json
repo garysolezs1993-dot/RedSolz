@@ -1,0 +1,44 @@
+[
+    {
+        "file":  "crimson_moonlit_farewell.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "E4C9AA7BF62B12C6BDA0362AEB7A3695CFD53EB04957FF158918FE6880F7EDC2",
+        "imported_sha256":  "E4C9AA7BF62B12C6BDA0362AEB7A3695CFD53EB04957FF158918FE6880F7EDC2"
+    },
+    {
+        "file":  "moonlit_guardian_s_tender_farewell.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "57E83BFBADFE911FDB75F8B357E13D4B2F5E3B673A6240AC46F2277A2824AF57",
+        "imported_sha256":  "57E83BFBADFE911FDB75F8B357E13D4B2F5E3B673A6240AC46F2277A2824AF57"
+    },
+    {
+        "file":  "moonlit_guardian_wolf_transformation.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "72D989F5E85F012BE93D5B59E88961AD955D6ABDD6B3744C7B9E0F047A6F507C",
+        "imported_sha256":  "72D989F5E85F012BE93D5B59E88961AD955D6ABDD6B3744C7B9E0F047A6F507C"
+    },
+    {
+        "file":  "moonlit_wolf_and_crimson_keep.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "3E3E9DE016E5F69FACC5F33CCF2098E0AAE84EE99B7403DA32CB95B298DCB63A",
+        "imported_sha256":  "3E3E9DE016E5F69FACC5F33CCF2098E0AAE84EE99B7403DA32CB95B298DCB63A"
+    },
+    {
+        "file":  "moonlit_wolf_s_crimson_sacrifice.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "BCD8434453BC25E3DDD823EC7715DBAD88F59C79DB7F9FD85CDDF50E7D26393A",
+        "imported_sha256":  "BCD8434453BC25E3DDD823EC7715DBAD88F59C79DB7F9FD85CDDF50E7D26393A"
+    },
+    {
+        "file":  "red_and_the_cursed_wolf_beneath_the_blood_moon.png",
+        "width":  1672,
+        "height":  941,
+        "source_sha256":  "4F5A9E3B40EEB8E128DDC7B67283D97B28C74A682E6FACE9E4076BE4605D8471",
+        "imported_sha256":  "4F5A9E3B40EEB8E128DDC7B67283D97B28C74A682E6FACE9E4076BE4605D8471"
+    }
+]

@@ -1,0 +1,8 @@
+Codex-san: integrate the Red Gothic sprite export in this pack into the existing Godot project.
+Read README_FOR_CODEX.md first. Use the per-animation numbered PNGs; do not crop the reference sheets.
+Prefer game_48x48_draft for Red's prototype character sprites and use source_rgba as higher-resolution visual/reference frames.
+Use separate effect folders for projectiles/slashes/dust/petals. Preserve the existing working gameplay and adapt the animation state machine rather than rewriting unrelated systems.
+The locked idle animation must include breathing + both-eyes-closed blink + cape/hair movement.
+Red is 48x48 target and must stay visually smaller than the 64x64 Cursed Wolf.
+Stage 1 victory is bittersweet/sad; later victory animations can be normal/cheerful.
+If any frame looks poor after automatic downscaling, keep the animation hook/state but report that frame for later art cleanup rather than silently substituting a different design.

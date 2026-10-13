@@ -1,0 +1,54 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Bounded pool lives outside the Wisp hierarchy
+PASS: Lily clip is a 16 FPS one-shot
+PASS: Whole untouched canvas 0
+PASS: Real alpha transparency 0
+PASS: Artwork has transparent margin 0
+PASS: Whole untouched canvas 1
+PASS: Real alpha transparency 1
+PASS: Artwork has transparent margin 1
+PASS: Whole untouched canvas 2
+PASS: Real alpha transparency 2
+PASS: Artwork has transparent margin 2
+PASS: Whole untouched canvas 3
+PASS: Real alpha transparency 3
+PASS: Artwork has transparent margin 3
+PASS: Whole untouched canvas 4
+PASS: Real alpha transparency 4
+PASS: Artwork has transparent margin 4
+PASS: Whole untouched canvas 5
+PASS: Real alpha transparency 5
+PASS: Artwork has transparent margin 5
+PASS: Whole untouched canvas 6
+PASS: Real alpha transparency 6
+PASS: Artwork has transparent margin 6
+PASS: Whole untouched canvas 7
+PASS: Real alpha transparency 7
+PASS: Artwork has transparent margin 7
+PASS: Idle hover emits no lily trail
+PASS: Stationary move animation emits no trail
+PASS: Distance spacing selects lily only, without stacking old trails
+PASS: Trail stays in world space and is softer than the core
+PASS: Stopping emission lets old trails finish naturally
+PASS: Fixed pivot matches spawn (1.0, 0.0)
+PASS: Petals point behind (1.0, 0.0)
+PASS: Eight frames play and fade during half-second life
+PASS: Trail expires after half a second
+PASS: Fixed pivot matches spawn (-1.0, 0.0)
+PASS: Petals point behind (-1.0, 0.0)
+PASS: Eight frames play and fade during half-second life
+PASS: Trail expires after half a second
+PASS: Fixed pivot matches spawn (0.0, -1.0)
+PASS: Petals point behind (0.0, -1.0)
+PASS: Eight frames play and fade during half-second life
+PASS: Trail expires after half a second
+PASS: Fixed pivot matches spawn (0.0, 1.0)
+PASS: Petals point behind (0.0, 1.0)
+PASS: Eight frames play and fade during half-second life
+PASS: Trail expires after half a second
+PASS: Pool enforces twelve-instance cap
+PASS: Hiding Wisp leaves independent trails visible
+PASS: Trails settle to an inactive pool
+PASS: Scene cleanup removes external pool
+LILY TRAIL: 51 checks; 0 failures
