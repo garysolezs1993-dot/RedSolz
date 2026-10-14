@@ -64,7 +64,6 @@ func spawn(art: bool) -> void:
 	stage.get_node("UI/HUD/Controls").hide()
 	var hud := stage.get_node("UI")
 	if hud.exploration_label == null:
-		hud._add_boss_test_button()
 		hud._add_exploration_label()
 	await frames(15)
 	player = stage.get_node("Player")

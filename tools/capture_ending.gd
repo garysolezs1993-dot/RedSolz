@@ -37,6 +37,8 @@ func _run() -> void:
 		await process_frame
 	var boss := current_scene.get_node("Stage2BossLayout/CursedWolfBoss") as CharacterBody2D
 	if OS.get_cmdline_user_args().has("--real-hit"):
+		# Capture-only setup: one normal-damage hit reaches the cinematic.
+		boss.health = 20
 		player.call("_cancel_action")
 		player.global_position = boss.global_position + Vector2(-55,-15)
 		player.velocity = Vector2.ZERO
@@ -49,10 +51,10 @@ func _run() -> void:
 			if boss.dead:
 				break
 		if not boss.dead:
-			push_error("One-hit test attack did not defeat the boss")
+			push_error("Capture attack did not defeat the reduced-health boss")
 			quit(1)
 			return
-		print("ENDING: actual Red attack defeated boss; temporary KO mode=",player.ending_test_one_hit_ko)
+		print("ENDING: normal-damage Red attack defeated reduced-health capture boss")
 	else:
 		boss.take_damage(int(boss.maximum_health))
 	print("ENDING TRIGGER: boss HP=",boss.health,"; retained=",is_instance_valid(boss),"; old victory=",current_scene.get_node("UI").stage_clear_presented)

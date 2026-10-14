@@ -18,7 +18,6 @@ func _ready():
 	_add_ability_status()
 	if _is_stage_one():
 		$HUD/Controls.hide()
-		_add_boss_test_button()
 		_add_exploration_label()
 
 func _add_ability_status() -> void:
@@ -82,40 +81,6 @@ func _add_exploration_label() -> void:
 func _is_stage_one() -> bool:
 	# The parent path is available during _ready, before current_scene is set.
 	return get_parent().scene_file_path == "res://scenes/main.tscn"
-
-func _add_boss_test_button() -> void:
-	var button := Button.new()
-	button.name = "TestSkipToBossButton"
-	button.text = "TEST: SKIP TO BOSS  [F7]"
-	button.tooltip_text = "Testing shortcut: jump directly to Stage 2"
-	button.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT)
-	button.offset_left = -235.0
-	button.offset_top = -54.0
-	button.offset_right = -20.0
-	button.offset_bottom = -18.0
-	button.add_theme_font_size_override("font_size", 13)
-	var normal := StyleBoxFlat.new()
-	normal.bg_color = Color("451b27")
-	normal.border_color = Color("a62936")
-	normal.set_border_width_all(2)
-	normal.set_corner_radius_all(5)
-	button.add_theme_stylebox_override("normal", normal)
-	var hover := normal.duplicate() as StyleBoxFlat
-	hover.bg_color = Color("702536")
-	button.add_theme_stylebox_override("hover", hover)
-	button.pressed.connect(_skip_to_boss_stage)
-	$HUD.add_child(button)
-
-func _input(event: InputEvent) -> void:
-	if _is_stage_one() and event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_F7:
-		_skip_to_boss_stage()
-
-func _skip_to_boss_stage() -> void:
-	if player != null:
-		get_tree().root.set_meta("stage_transition_health", int(player.current_health))
-	var error := get_tree().change_scene_to_file("res://scenes/stage2_boss.tscn")
-	if error != OK:
-		push_error("Could not load Stage 2 test scene (error %s)." % error)
 
 func _style_bar(bar,fill_color):
 	var background=StyleBoxFlat.new()

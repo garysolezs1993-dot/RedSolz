@@ -1,20 +1,17 @@
-# Temporary one-hit KO for ending review
+# Removed temporary one-hit ending test
 
-Enabled on **Player → Ending Test One Hit Ko** in `scenes/stage2_boss.tscn`.
+The one-hit test was removed on 2026-10-14. Its exported player flag, Stage 2 scene setting, and outgoing damage overrides no longer exist.
 
-During this temporary mode, Red's melee attacks, damage-dealing melee skills and Crescent Slash deal **100,000 damage**. One successful hit defeats the current Cursed Wolf and triggers the normal ending. Attack startup, range and collision still apply.
+Original damage is restored:
 
-## Preserved original damage
-
-| Attack | Original damage |
+| Attack | Damage |
 | --- | --- |
-| Basic ground combo and air combo hits | 20 |
+| Basic ground and air combo hits | 20 |
 | Rising Slash and Downward Slash | 20 |
 | Damage-dealing melee skills | 20 |
 | Crescent Slash projectile | 20 |
 
-These values remain in the normal code paths. Crescent's default in `scripts/crescent_projectile.gd` is unchanged. Red's incoming damage and boss attack damage are unchanged. Stage 1 uses the default disabled flag.
+Red's incoming damage and boss attack damage were not retuned. The F7 boss teleport, HUD shortcut button and control-list hint were removed at the same time. Reach the boss through the normal Moon Gate progression.
 
-To restore normal boss-stage damage, uncheck **Ending Test One Hit Ko** on Stage 2's Player (or set `ending_test_one_hit_ko = false` in the scene). No damage values need to be guessed or re-entered.
-
-Pre-change backup: `.godot/local_backups/ending-one-hit-ko-20261013-211020/`. No gameplay tests were run for this temporary switch.
+Historical backup: .godot/local_backups/ending-one-hit-ko-20261013-211020/
+The archived stable-prototype-2026-10-14 tag preserves the earlier debug-enabled snapshot; the subsequent main commit removes those features.

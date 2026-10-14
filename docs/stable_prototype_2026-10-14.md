@@ -2,9 +2,11 @@
 
 This snapshot preserves the current project on editpower1, including the Stage 1 exploration and Moon Seal progression, combat and animation integrations, opening/boss/ending cinematics, final story panels, completion artwork, lighting, checkpoint interactions, Moon Wisp effects, and gate presentation updates.
 
-## Current testing setting
+## Gameplay settings after debug cleanup
 
-Stage 2 Player has ending_test_one_hit_ko = true. This temporary ending-test override is intentionally preserved in this exact-current-state backup. Normal outgoing attack/projectile damage remains 20 when the override is disabled. Turn off the exported setting on Stage 2 Player before normal difficulty playtesting.
+The temporary one-hit damage override has been removed from the player script and Stage 2 scene. Normal outgoing melee, skill and Crescent Slash damage is restored to 20. The F7 boss teleport and its HUD button have also been removed. Reach Stage 2 through the Moon Gate after activating all three seals.
+
+The original archived tag stable-prototype-2026-10-14 and pre-cleanup local backup preserve the earlier debug-enabled snapshot. The follow-up commit on main/editpower1 contains this cleanup.
 
 ## Backup and storage
 

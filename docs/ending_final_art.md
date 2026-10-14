@@ -1,3 +1,5 @@
+> Current gameplay (2026-10-14): the temporary one-hit override and F7 shortcut have been removed. Historical capture results below describe the settings used when those previews were recorded.
+
 # Final ending artwork integration
 
 [Previous art-pack playback](previews/ending_final_art_full_run.gif)

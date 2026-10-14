@@ -102,8 +102,6 @@ var standing_visual_scale := Vector2.ONE
 var dead := false
 var hitstop_serial := 0
 @export var maximum_health := 100
-## Temporary ending preview: overrides outgoing damage; normal damage stays 20.
-@export var ending_test_one_hit_ko := false
 @export var wolf_summon_enabled := false
 var current_health := 100
 
@@ -719,8 +717,6 @@ func _release_crescent() -> void:
 	var projectile := CharacterBody2D.new()
 	projectile.set_script(CRESCENT_PROJECTILE)
 	projectile.source = self
-	if ending_test_one_hit_ko:
-		projectile.damage = 100000
 	projectile.direction = facing
 	projectile.position = get_parent().to_local(global_position + Vector2(26 * facing, -10))
 	get_parent().add_child(projectile)
@@ -740,7 +736,7 @@ func _update_crescent_effect() -> void:
 func _configure_attack() -> void:
 	var shape: RectangleShape2D = hitbox.get_node("CollisionShape2D").shape
 	active_attack_frames = GROUND_ACTIVE_FRAMES
-	hitbox.damage = 100000 if ending_test_one_hit_ko else 20
+	hitbox.damage = 20
 	hitbox.position = Vector2(27 * facing, 0)
 	shape.size = Vector2(44, 28)
 	attack_effect.visible = false
@@ -864,7 +860,7 @@ func _start_skill(animation: String, use_hitbox: bool) -> void:
 	if use_hitbox:
 		hitbox.position = Vector2(34.0 * facing, 0)
 		hitbox.get_node("CollisionShape2D").shape.size = Vector2(44, 28)
-		hitbox.damage = 100000 if ending_test_one_hit_ko else 20
+		hitbox.damage = 20
 	_play_visual(animation)
 	if animation == "crescent_cast":
 		_update_crescent_effect()

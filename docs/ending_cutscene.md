@@ -75,7 +75,7 @@ Logs: `ending_framework_import.log`, `ending_framework_capture.log`, `ending_fra
 - [Together facing the Keep](previews/ending_together.png)
 - [Prototype Complete](previews/ending_prototype_complete.png)
 
-To review live, enter Stage 2 (or use the existing F7 shortcut) and defeat the Cursed Wolf. Review the timing before providing final ending images.
+To review live, enter Stage 2 through the Moon Gate and defeat the Cursed Wolf. The former F7 testing shortcut has been removed.
 
 ## Restored first version
 
