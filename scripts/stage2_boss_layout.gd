@@ -8,7 +8,9 @@ const ARENA_FLOOR_Y := 500.0
 # Layer 5 also identifies the solid arena floor for the boss's terrain mask.
 const BOSS_FLOOR_LAYER := 1 << 4
 @export var platform_art_enabled := true
-var region_labels_visible := true
+@export var environment_art_enabled := true
+@export var attack_cues_enabled := true
+@export var region_labels_visible := false
 var player: CharacterBody2D
 
 # A connected forest clearing: the main floor stays readable while these
@@ -29,6 +31,10 @@ func _ready() -> void:
 	for platform in PLATFORMS:
 		_add_platform(float(platform[0]), float(platform[1]), float(platform[2]), float(platform[3]), int(platform[4]))
 	_add_cursed_wolf(Vector2(1860.0, 500.0))
+	if environment_art_enabled:
+		var art := Node2D.new()
+		art.set_script(preload("res://scripts/stage2_environment_art.gd"))
+		add_child(art)
 	# Run the fallback after Red's movement, including dash and dive branches.
 	process_physics_priority = 100
 	queue_redraw()
@@ -125,12 +131,19 @@ func _add_cursed_wolf(spawn: Vector2) -> void:
 	wolf.set("arena_floor_y", ARENA_FLOOR_Y)
 	wolf.set("arena_limits_x", Vector2(28, MAP_WIDTH - 28))
 	add_child(wolf)
+	if attack_cues_enabled:
+		var cues := Node2D.new()
+		cues.name = "AttackCues"
+		cues.set_script(preload("res://scripts/boss_attack_cues.gd"))
+		wolf.add_child(cues)
 
 func _draw() -> void:
 	var label_color := Color(0.78, 0.68, 0.73, 0.9)
 	if region_labels_visible:
 		draw_string(ThemeDB.fallback_font, Vector2(70.0, 300.0), "THE BLOOD MOON CLEARING", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
 		draw_string(ThemeDB.fallback_font, Vector2(1510.0, 300.0), "CURSED WOLF DEN", HORIZONTAL_ALIGNMENT_LEFT, -1.0, 15, label_color)
+	if environment_art_enabled:
+		return
 	_draw_entrance_arch()
 	_draw_crimson_roots()
 	_draw_lanterns()

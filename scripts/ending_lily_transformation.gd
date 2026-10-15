@@ -11,6 +11,10 @@ var intensity := 0.0:
 	set(value):
 		intensity = value
 		queue_redraw()
+var reveal_glow := 0.0:
+	set(value):
+		reveal_glow = value
+		queue_redraw()
 var emitting := true
 var elapsed := 0.0
 var emit_clock := 0.0
@@ -54,6 +58,13 @@ func _draw() -> void:
 	draw_set_transform(Vector2.ZERO,0,Vector2(1,.55))
 	for index in range(5):
 		draw_circle(Vector2.ZERO,125-index*14,Color(.72,.84,1,.022*intensity))
+	draw_set_transform(Vector2.ZERO)
+	# A local, layered halo bridges into the illustrated Guardian reveal.
+	# It grows around the fallen body; no substitute Guardian sprite is shown.
+	draw_set_transform(Vector2.ZERO,0,Vector2(1,.65))
+	for index in range(10):
+		var radius := (160.0-index*12.0) * lerpf(.65,1.0,reveal_glow)
+		draw_circle(Vector2.ZERO,radius,Color(.9,.96,1,.075*reveal_glow))
 	draw_set_transform(Vector2.ZERO)
 
 func stop_emitting() -> void:

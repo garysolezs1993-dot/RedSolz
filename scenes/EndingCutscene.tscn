@@ -1,18 +1,21 @@
-[gd_scene load_steps=7 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="Script" path="res://scripts/ending_cutscene.gd" id="1"]
 [ext_resource type="Texture2D" path="res://assets/cutscenes/ending/final_art_v1/moonlit_wolf_s_crimson_sacrifice.png" id="2_sacrifice"]
 [ext_resource type="Texture2D" path="res://assets/cutscenes/ending/final_art_v1/red_and_the_cursed_wolf_beneath_the_blood_moon.png" id="3_farewell"]
-[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/guardian_revision_v2/guardian_birth.png" id="4_birth"]
-[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/final_art_v1/moonlit_guardian_s_tender_farewell.png" id="5_touch"]
-[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/guardian_revision_v2/together_wide.png" id="6_wide"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/panels/ending_06_guardian_birth.png" id="4_birth"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/panels/ending_07_guardian_touch.png" id="5_touch"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/panels/ending_08_together.png" id="6_wide"]
+[ext_resource type="Texture2D" path="res://assets/cutscenes/ending/panels/ending_guardian_approach.png" id="7_approach"]
 
 [node name="EndingCutscene" type="Node"]
 process_mode = 3
 script = ExtResource("1")
 auto_advance = false
+wide_hold = 3.0
 sacrifice_artwork = ExtResource("2_sacrifice")
 final_words_artwork = ExtResource("3_farewell")
 guardian_birth_artwork = ExtResource("4_birth")
 guardian_touch_artwork = ExtResource("5_touch")
 together_artwork = ExtResource("6_wide")
+guardian_approach_artwork = ExtResource("7_approach")

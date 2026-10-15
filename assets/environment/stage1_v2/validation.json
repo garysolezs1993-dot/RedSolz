@@ -1,0 +1,520 @@
+{
+  "bridge_main.png": {
+    "size": [
+      1024,
+      512
+    ],
+    "alpha_bbox": [
+      203,
+      23,
+      829,
+      467
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "bridge_pillar.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      68,
+      26,
+      243,
+      482
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "bridge_segment.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      28,
+      30,
+      483,
+      226
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "broken_chapel_back_wall.png": {
+    "size": [
+      1280,
+      1024
+    ],
+    "alpha_bbox": [
+      58,
+      79,
+      1222,
+      945
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_cross.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      17,
+      28,
+      239,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_fence.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      150,
+      14,
+      362,
+      241
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_rubble.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      60,
+      14,
+      451,
+      241
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_tombstone_large.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      83,
+      28,
+      429,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_tombstone_medium.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      14,
+      40,
+      241,
+      472
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "burial_tombstone_small.png": {
+    "size": [
+      256,
+      256
+    ],
+    "alpha_bbox": [
+      43,
+      14,
+      213,
+      241
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "camp_crates.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      32,
+      14,
+      479,
+      241
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "camp_fire.png": {
+    "size": [
+      256,
+      256
+    ],
+    "alpha_bbox": [
+      14,
+      21,
+      241,
+      235
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "camp_lantern.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      30,
+      28,
+      225,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "camp_stool.png": {
+    "size": [
+      256,
+      256
+    ],
+    "alpha_bbox": [
+      29,
+      14,
+      226,
+      241
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "camp_tent.png": {
+    "size": [
+      1024,
+      512
+    ],
+    "alpha_bbox": [
+      90,
+      28,
+      934,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_lift_chain_tile.png": {
+    "size": [
+      64,
+      256
+    ],
+    "alpha_bbox": [
+      17,
+      8,
+      47,
+      234
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_lift_deck.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      33,
+      13,
+      467,
+      230
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_lift_side_frame.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      54,
+      86,
+      206,
+      425
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_lift_top_beam.png": {
+    "size": [
+      512,
+      128
+    ],
+    "alpha_bbox": [
+      24,
+      6,
+      488,
+      122
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_root_large.png": {
+    "size": [
+      1024,
+      512
+    ],
+    "alpha_bbox": [
+      285,
+      27,
+      736,
+      482
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_root_medium.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      38,
+      78,
+      480,
+      451
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_root_small.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      26,
+      62,
+      486,
+      194
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "cellar_root_stalactite.png": {
+    "size": [
+      256,
+      1024
+    ],
+    "alpha_bbox": [
+      13,
+      51,
+      225,
+      950
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_arch.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha_bbox": [
+      146,
+      46,
+      877,
+      977
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_fallen_bell.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      31,
+      52,
+      488,
+      485
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_pillar_left.png": {
+    "size": [
+      256,
+      1024
+    ],
+    "alpha_bbox": [
+      28,
+      57,
+      243,
+      972
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_pillar_right.png": {
+    "size": [
+      256,
+      1024
+    ],
+    "alpha_bbox": [
+      18,
+      52,
+      243,
+      972
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_rubble.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      38,
+      13,
+      478,
+      231
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "chapel_torn_banner.png": {
+    "size": [
+      256,
+      1024
+    ],
+    "alpha_bbox": [
+      13,
+      51,
+      233,
+      972
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "hollow_oak.png": {
+    "size": [
+      1024,
+      1024
+    ],
+    "alpha_bbox": [
+      46,
+      50,
+      977,
+      974
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "hollow_oak_branch.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      46,
+      24,
+      485,
+      488
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "hollow_oak_root.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      47,
+      24,
+      475,
+      476
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "ruin_arch.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      125,
+      28,
+      386,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "ruin_column.png": {
+    "size": [
+      256,
+      512
+    ],
+    "alpha_bbox": [
+      14,
+      119,
+      241,
+      392
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "ruin_ledge.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      28,
+      25,
+      483,
+      230
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "ruin_platform.png": {
+    "size": [
+      512,
+      256
+    ],
+    "alpha_bbox": [
+      28,
+      27,
+      483,
+      229
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  },
+  "ruin_wall.png": {
+    "size": [
+      512,
+      512
+    ],
+    "alpha_bbox": [
+      94,
+      28,
+      417,
+      483
+    ],
+    "touches_canvas_edge": false,
+    "mode": "RGBA"
+  }
+}

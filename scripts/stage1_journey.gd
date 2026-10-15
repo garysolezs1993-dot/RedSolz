@@ -98,11 +98,14 @@ func _process(delta: float) -> void:
 		return
 	var lesson := lesson_for_position(player.global_position) if not player.dead else []
 	_set_hint(str(lesson[0]), str(lesson[3])) if not lesson.is_empty() else _set_hint("", "")
-	if not seal_story_shown and not player.dead and absf(player.global_position.x - 3000) < 170:
-		seal_story_shown = true
+	# Read the inscription beside the first shrine, after reaching its upper route.
+	var first_shrine: Node2D = get_parent().get_node_or_null("camp_moon_seal")
+	if not seal_story_shown and first_shrine != null and not player.dead and player.action_state == 0 and player.is_on_floor() and not GameSession.transitioning:
+		var difference := player.global_position - (first_shrine.global_position + Vector2(0, -15))
 		var objectives := get_parent().get_node("StageObjectives")
-		if objectives.completed_count() == 0:
-			GameSession.notify("Three sleeping seals bind the path beneath the crimson moon.")
+		if absf(difference.x) <= 180 and absf(difference.y) <= 65 and objectives.completed_count() == 0:
+			seal_story_shown = true
+			GameSession.notify("Awaken the three Moon Seals, and the Moon Gate shall open.", 4.0)
 	_update_distant_gate(delta)
 
 func _update_distant_gate(delta: float) -> void:

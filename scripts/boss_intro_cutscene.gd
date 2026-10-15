@@ -81,6 +81,9 @@ var panel_textures: Array[Texture2D] = []
 var current_shot := -1
 var letterbox_bars: Array[ColorRect] = []
 var music_level_tween: Tween
+var skip_requested := false
+var howl_started := false
+var howl_finished := false
 
 func _load_panel_slots() -> void:
 	panel_textures = [clearing_artwork, silent_figure_artwork, lily_artwork, recognition_artwork, memory_artwork, brother_artwork, run_artwork, curse_awakens_artwork]
@@ -152,6 +155,16 @@ func _ready() -> void:
 	get_parent().set_meta("boss_intro_pending", true)
 	boss_bar.hide()
 	AudioDirector.set_context("boss_intro")
+	if GameSession.objective_completed(GameSession.STAGE_TWO, "boss_intro_seen"):
+		call_deferred("_resume_rematch")
+
+func _resume_rematch() -> void:
+	# Reuse the full handoff so retries restore exactly the same combat state.
+	if completed or not is_instance_valid(player) or player.dead:
+		return
+	prior_pause = get_tree().paused
+	player.global_position = Vector2(boss.global_position.x - battle_spacing, boss.global_position.y - 15)
+	skip()
 
 func _physics_process(_delta: float) -> void:
 	if phase != "waiting" or not boss_held or completed or not is_instance_valid(player):
@@ -346,7 +359,7 @@ func _say(text: String, duration: float) -> void:
 	dialogue.text = ""
 
 func _sequence() -> void:
-	if not active:
+	if not active or skip_requested:
 		return
 	phase = "entry"
 	_select_shot(0)
@@ -404,24 +417,66 @@ func _sequence() -> void:
 	# The still shows the curse takeover. Save the one full howl/voice for the
 	# visible in-engine wolf immediately before the battle reveal.
 	await _wait(curse_hold if panel_textures[7] != null else 1.15)
+	await _battle_reveal()
+
+func _battle_reveal(quick: bool = false) -> void:
 	phase = "return_camera"
-	if panel_root.visible:
+	if quick:
+		await _fade(black, ^"color:a", 1.0, .12)
+	elif panel_root.visible:
 		await _fade(black, ^"color:a", 1.0, .25)
 	_select_shot(-1)
-	await _fade(black, ^"color:a", 0.0, .25)
 	var half_view := get_viewport().get_visible_rect().size / (normal_camera.zoom * 2)
 	var target := normal_camera.global_position + normal_camera.offset
 	target.x = clampf(target.x, normal_camera.limit_left + half_view.x, normal_camera.limit_right - half_view.x)
 	target.y = clampf(target.y, normal_camera.limit_top + half_view.y, normal_camera.limit_bottom - half_view.y)
 	var howl_center := Vector2((player.global_position.x + boss.global_position.x) * .5, target.y)
 	howl_center.x = clampf(howl_center.x, normal_camera.limit_left + half_view.x, normal_camera.limit_right - half_view.x)
-	active_tween = TRANSITIONS.fade(self, camera, ^"position", howl_center, 1.1)
-	active_tween.parallel().tween_property(camera, "zoom", normal_camera.zoom, 1.1)
+	if quick:
+		camera.position = howl_center
+		camera.zoom = normal_camera.zoom
+		await _fade(black, ^"color:a", 0.0, .12)
+	else:
+		await _fade(black, ^"color:a", 0.0, .25)
+		active_tween = TRANSITIONS.fade(self, camera, ^"position", howl_center, 1.1)
+		active_tween.parallel().tween_property(camera, "zoom", normal_camera.zoom, 1.1)
+		await active_tween.finished
+	await _play_entry_howl()
+	if not quick and not skip_requested:
+		phase = "boss_title"
+		active_tween = TRANSITIONS.fade(self, boss_title, ^"modulate:a", 1.0, .3)
+		active_tween.parallel().tween_property(camera, "position", target, .3)
+		await active_tween.finished
+		await _wait(title_hold)
+		await _fade(boss_title, ^"modulate:a", 0.0, .3)
+	phase = "hud_reveal"
+	get_parent().set_meta("boss_intro_pending", false)
+	hud.visible = saved["hud_visible"]
+	hud.modulate.a = 0
+	boss_bar.show()
+	boss_bar.modulate.a = 0
+	var reveal_time := .35 if quick or skip_requested else .65
+	active_tween = TRANSITIONS.fade(self, hud, ^"modulate", saved["hud_modulate"], reveal_time)
+	active_tween.parallel().tween_property(boss_bar, "modulate", saved["bar_modulate"], reveal_time)
+	active_tween.parallel().tween_property(overlay, "modulate:a", 0.0, reveal_time)
+	active_tween.parallel().tween_property(camera, "position", target, reveal_time)
 	await active_tween.finished
+	_finish()
+
+func _play_entry_howl() -> void:
+	if howl_started:
+		return
+	howl_started = true
 	phase = "cinematic_howl"
+	skip_button.disabled = true
+	skip_button.hide()
+	wolf_visual.modulate = saved["wolf_modulate"]
+	wolf_visual.flip_h = player.global_position.x < boss.global_position.x
+	wolf_visual.stop()
 	wolf_visual.play("howl")
 	burst.flip_h = wolf_visual.flip_h
 	burst.show()
+	burst.stop()
 	burst.play("howl_aoe")
 	roar.play()
 	shake_remaining = 0
@@ -431,28 +486,12 @@ func _sequence() -> void:
 	var howl_frames := wolf_visual.sprite_frames
 	var howl_duration := float(howl_frames.get_frame_count("howl")) / howl_frames.get_animation_speed("howl")
 	await _wait(howl_duration)
+	howl_finished = true
 	burst.hide()
 	wolf_visual.play("idle")
 	wolf_visual.pause()
 	camera.offset = Vector2.ZERO
 	shake_remaining = 0
-	phase = "boss_title"
-	active_tween = TRANSITIONS.fade(self, boss_title, ^"modulate:a", 1.0, .3)
-	active_tween.parallel().tween_property(camera, "position", target, .3)
-	await active_tween.finished
-	await _wait(title_hold)
-	await _fade(boss_title, ^"modulate:a", 0.0, .3)
-	phase = "hud_reveal"
-	get_parent().set_meta("boss_intro_pending", false)
-	hud.visible = saved["hud_visible"]
-	hud.modulate.a = 0
-	boss_bar.show()
-	boss_bar.modulate.a = 0
-	active_tween = TRANSITIONS.fade(self, hud, ^"modulate", saved["hud_modulate"], .65)
-	active_tween.parallel().tween_property(boss_bar, "modulate", saved["bar_modulate"], .65)
-	active_tween.parallel().tween_property(overlay, "modulate:a", 0.0, .65)
-	await active_tween.finished
-	_finish()
 
 func _on_curse_frame() -> void:
 	# Release frame 4 matches the current 8-frame howl and its darkest sound swell.
@@ -478,14 +517,41 @@ func _input(event: InputEvent) -> void:
 		skip()
 
 func skip() -> void:
-	if completed or not boss_held:
+	if completed or not boss_held or skip_requested:
 		return
 	if not active:
 		_begin()
+	skip_requested = true
+	skip_button.disabled = true
+	skip_button.hide()
+	# A Skip during the howl keeps the same animation/audio clock running.
+	if phase == "cinematic_howl":
+		return
 	if active_tween != null and active_tween.is_valid():
 		active_tween.kill()
+	if howl_finished:
+		_finish()
+		return
 	player.global_position = Vector2(boss.global_position.x - battle_spacing, boss.global_position.y - 15)
-	_finish()
+	player.velocity = Vector2.ZERO
+	player.call("_play_visual", "idle")
+	if music_level_tween != null and music_level_tween.is_valid():
+		music_level_tween.kill()
+	breath.stop()
+	dialogue.text = ""
+	dialogue.modulate.a = 0
+	boss_title.modulate.a = 0
+	call_deferred("_skip_to_howl")
+
+func _skip_to_howl() -> void:
+	# Rematches may enter while the scene transition is still black. Reveal the
+	# arena first so the complete howl is visible, including its opening frames.
+	while GameSession.transitioning or (GameSession.fade_rect != null and GameSession.fade_rect.color.a > .01):
+		await get_tree().process_frame
+		if not active or completed:
+			return
+	if active and not completed and not howl_started:
+		await _battle_reveal(true)
 
 func _finish() -> void:
 	if completed:
@@ -536,6 +602,9 @@ func _finish() -> void:
 	get_parent().get_node("Stage2BossLayout").queue_redraw()
 	AudioDirector.set_context("stage_two")
 	get_tree().paused = prior_pause
+	# Persist only the intro acknowledgement and safe retry anchor, not boss HP.
+	GameSession.complete_objective(GameSession.STAGE_TWO, "boss_intro_seen")
+	GameSession.set_checkpoint(GameSession.STAGE_TWO, Vector2(boss.global_position.x - battle_spacing, boss.global_position.y - 15))
 	queue_free()
 
 func _exit_tree() -> void:

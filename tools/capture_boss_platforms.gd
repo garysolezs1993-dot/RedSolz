@@ -22,7 +22,10 @@ func _run() -> void:
 	var intro := current_scene.get_node_or_null("BossIntroCutscene")
 	if intro != null:
 		intro.skip()
-	await frames(2)
+	for index in range(240):
+		if current_scene.get_node_or_null("BossIntroCutscene") == null:
+			break
+		await physics_frame
 	var player := current_scene.get_node("Player") as CharacterBody2D
 	var boss := current_scene.get_node("Stage2BossLayout/CursedWolfBoss") as CharacterBody2D
 	boss.set_physics_process(false)

@@ -16,6 +16,7 @@ func build(target: Node2D) -> void:
 	var scenery := Node2D.new()
 	scenery.name = "HollowOakAndCellar"
 	scenery.set_script(preload("res://scripts/stage1_exploration_scenery.gd"))
+	scenery.set("use_environment_art", layout.environment_art_enabled)
 	layout.add_child(scenery)
 
 func ground(x: float, y: float, width: float, id: int, drop: bool = false) -> void:
@@ -76,6 +77,7 @@ func _oak_and_cellar_loop() -> void:
 	lift.set("width", 220.0)
 	lift.set("use_gothic_art", layout.platform_art_enabled)
 	lift.set("art_area_style", "cellar")
+	lift.set("use_environment_kit", layout.environment_art_enabled)
 	layout.add_child(lift)
 	# Hollow Oak crown/viewpoint remains optional and meets the Chapel return.
 	shelves([[4420, 450, 220], [4580, 400, 220], [4740, 350, 220], [4900, 300, 220], [5060, 250, 240]], 260)

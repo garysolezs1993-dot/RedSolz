@@ -1,5 +1,7 @@
 # Boss arena floor and platform artwork
 
+> Latest arena dressing, lighting, attack cues and retry behaviour: [Stage 2 polish (2026-10-15)](stage2_polish.md). The floor fixes documented here are retained and covered by the newer integration checks.
+
 ## Floor protection
 
 The boss previously collided physically with Red, whose body shares terrain layer 1. Combined with the thin one-way arena floor, overlapping bodies could push the boss below the combat surface. This is a likely cause based on the controller and collision setup; the reported fall has not been reproduced in a combat playthrough.

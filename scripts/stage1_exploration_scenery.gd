@@ -1,5 +1,7 @@
 extends Node2D
 
+@export var use_environment_art := false
+
 # Existing terrain colors, roots and ruined-stone shapes decorate the new rooms.
 # Scenery has no collision; shelves and marked hazards own all gameplay geometry.
 func _ready() -> void:
@@ -7,6 +9,16 @@ func _ready() -> void:
 	queue_redraw()
 
 func _draw() -> void:
+	if use_environment_art:
+		# Keep water and the enclosed cellar backing; landmark sprites replace
+		# the old arches, graves, tree skeletons and diagonal exit markers.
+		draw_rect(Rect2(5410, 544, 760, 80), Color("1d263b"))
+		for index in range(9):
+			var start := Vector2(5440 + index * 80, 558 + index % 3 * 12)
+			draw_line(start, start + Vector2(45, 0), Color("475166"), 2)
+		draw_rect(Rect2(3330, 540, 1900, 245), Color("161320"))
+		_draw_region_labels()
+		return
 	draw_set_transform(Vector2(510, 0))
 	_draw_creek()
 	draw_set_transform(Vector2(-2100, 0))
@@ -19,6 +31,9 @@ func _draw() -> void:
 	_draw_heartwood()
 	draw_set_transform(Vector2.ZERO)
 	_draw_upper_ruins()
+	_draw_region_labels()
+
+func _draw_region_labels() -> void:
 	for sign in [
 		[Vector2(2720, 382), "FOREST CROSSROADS", "The chapel above. The hollow below."],
 		[Vector2(3700, 112), "BROKEN CHAPEL", "A sleeping seal beneath the fallen bell."],

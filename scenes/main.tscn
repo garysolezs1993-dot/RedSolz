@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene load_steps=12 format=3]
 
 [ext_resource path="res://scripts/red.gd" type="Script" id="1"]
 [ext_resource path="res://scripts/hitbox.gd" type="Script" id="3"]
@@ -8,6 +8,7 @@
 [ext_resource path="res://audio/bgm/silent_forest_theme.wav" type="AudioStream" id="11"]
 [ext_resource path="res://scenes/forest_environment.tscn" type="PackedScene" id="12"]
 [ext_resource path="res://scripts/stage1_layout.gd" type="Script" id="14"]
+[ext_resource path="res://scripts/crimson_forest_petals.gd" type="Script" id="15_petals"]
 
 [sub_resource type="RectangleShape2D" id="A"]
 size=Vector2(18,30)
@@ -99,3 +100,6 @@ position=Vector2(24,116)
 text="A/D move · Space double jump · S+Space drop · L dash · C/click combo · R Crescent\n↑+C rising · ↓+C (air) dive · U/I skills · E interact"
 theme_override_colors/font_color=Color(0.78,0.72,0.7,0.9)
 theme_override_font_sizes/font_size=13
+
+[node name="CrimsonPetals" type="Node2D" parent="."]
+script = ExtResource("15_petals")

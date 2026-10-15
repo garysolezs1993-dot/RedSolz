@@ -1,0 +1,6 @@
+ground_spike_single.png | size=(128, 128) | alpha_bbox=(28, 23, 98, 113) | alpha_extrema=(0, 255) | clipped=False
+ground_spikes_cluster.png | size=(256, 128) | alpha_bbox=(27, 34, 232, 119) | alpha_extrema=(0, 255) | clipped=False
+thorn_vines.png | size=(256, 128) | alpha_bbox=(25, 27, 223, 119) | alpha_extrema=(0, 255) | clipped=False
+falling_branch.png | size=(256, 128) | alpha_bbox=(32, 14, 245, 113) | alpha_extrema=(0, 255) | clipped=False
+cursed_roots_rest.png | size=(256, 128) | alpha_bbox=(26, 41, 233, 119) | alpha_extrema=(0, 255) | clipped=False
+cursed_roots_active.png | size=(256, 128) | alpha_bbox=(46, 17, 212, 119) | alpha_extrema=(0, 255) | clipped=False

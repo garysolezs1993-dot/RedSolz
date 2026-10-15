@@ -29,6 +29,11 @@ func _run() -> void:
 	for index in range(25):
 		await process_frame
 	current_scene.get_node("BossIntroCutscene").skip()
+	# Story Skip now keeps the short opening howl before releasing gameplay.
+	for index in range(240):
+		if current_scene.get_node_or_null("BossIntroCutscene") == null:
+			break
+		await process_frame
 	# Timing previews keep automatic playback; normal gameplay waits for Continue.
 	current_scene.get_node("EndingCutscene").auto_advance = true
 	var player := current_scene.get_node("Player") as CharacterBody2D
@@ -103,6 +108,8 @@ func _run() -> void:
 		if phase == "title" and phase_frames == 120:
 			if not OS.get_cmdline_user_args().has("--skip-ending"):
 				var expected: Array[String] = ["collapse","red_approaches","lucidity","keep_reacts","curse_launch","curse_intercept","curse_impact","sacrifice","final_words","white_lily","guardian_transformation","guardian_birth","guardian_touch","together","complete","prototype_complete","title"]
+				if phase_order.has("guardian_approach"):
+					expected.insert(expected.find("guardian_touch"),"guardian_approach")
 				if phase_order != expected:
 					push_error("Ending story order mismatch: " + str(phase_order))
 					quit(1)

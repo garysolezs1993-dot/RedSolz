@@ -49,6 +49,10 @@ func _announce_gate() -> void:
 	await get_tree().create_timer(2.9).timeout
 	if is_inside_tree() and not GameSession.death_in_progress and not GameSession.transitioning:
 		GameSession.notify("The Moon Gate awakens.")
+		# Let the unlock message finish before the Keep's distant response.
+		await get_tree().create_timer(3.2).timeout
+		if is_inside_tree() and not GameSession.death_in_progress and not GameSession.transitioning:
+			GameSession.notify("Far beyond the forest, a crimson light answered.", 4.0)
 
 func missing_seal(from: Vector2) -> Node2D:
 	# Story order is independent of proximity, including a premature gate visit.

@@ -14,7 +14,7 @@
 
 [sub_resource type="Resource" id="Line1"]
 script = ExtResource("3")
-text = "Something had begun stirring beyond the old forest.\nRed's brother went to find its source."
+text = "A crimson light had begun stirring within the Silent Keep.\nRed's brother went into the forest to find its source."
 
 [sub_resource type="Resource" id="Line2"]
 script = ExtResource("3")

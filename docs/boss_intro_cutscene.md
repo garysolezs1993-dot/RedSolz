@@ -62,7 +62,11 @@ The latest storyboard is copied byte-for-byte to `docs/reference/boss_intro_stor
 
 `skip_boss_intro` defaults to Escape, Enter, Space, controller Start and controller B. The visible Skip button calls the same function. The InputMap action can be defined in Project Settings to customize those defaults.
 
-Skip cancels the active cinematic tween and performs the same fight handoff as natural completion:
+Skip cancels the illustrated/story portion, frames both actors, and plays the complete eight-frame howl with the boss-only dark sound, burst and release-frame shake. Gameplay and damage remain locked during this approximately 1.14-second beat. It then fades in the HUD and performs the same fight handoff as natural completion. Quick Skip omits the boss-title hold.
+
+Repeated Skip presses cannot bypass or restart the howl. Skip during a howl lets it finish on its current clock; Skip after it has finished releases the remaining title/HUD transition without replaying it. Rematches bypass the acknowledged story but keep this same short howl. They wait for any scene-transition black fade to clear before starting it, so its opening frames are visible.
+
+After the howl:
 
 - Red is placed safely on the arena floor, left of the wolf.
 - Normal camera/current-camera state and smoothing are restored.
@@ -72,7 +76,7 @@ Skip cancels the active cinematic tween and performs the same fight handoff as n
 - Temporary panels, shake, audio players and curse sprite are freed with the controller.
 - Normal boss music resumes through AudioDirector.
 
-Boss health, attack damage, attack patterns, cooldowns, movement constants and combat-state code are not modified. `scripts/cursed_wolf_boss.gd` matches its pre-change backup byte-for-byte. The intro gates the actor externally, then `scripts/boss_opening_grace.gd` releases its processing after the opening delay. The intro currently plays once per Stage 2 scene load, so retries can use Skip; there is no new persistent story/save flag.
+Boss health, attack damage, attack patterns, cooldowns, movement constants and combat-state code are not modified by this intro. The intro gates the actor externally, then `scripts/boss_opening_grace.gd` releases its processing after the opening delay. `boss_intro_seen` is saved in the existing journey objectives after watched/skipped completion. Subsequent retries/Continue bypass the story and retain the short entry howl. New Game clears that acknowledgement.
 
 ## Backup and capture evidence
 
@@ -95,7 +99,7 @@ Editor import completed without script errors. `tools/capture_boss_intro.gd` now
 - [Boss title](previews/boss_intro_boss_title.png)
 - [Battle after handoff](previews/boss_intro_battle.png)
 
-To review live with audio, enter Stage 2 through the Moon Gate or the existing F7 shortcut, then move right into the clearing. The five supplied final illustrations are already assigned in the boss-intro scene's Inspector resources.
+To review live with audio, enter Stage 2 through the Moon Gate, then move right into the clearing. The five supplied final illustrations are already assigned in the boss-intro scene's Inspector resources. [Howl after Skip preview](previews/boss_skip_howl.png).
 
 ## Eight-slot preparation backup
 

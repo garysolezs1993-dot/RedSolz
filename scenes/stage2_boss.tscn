@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3]
+[gd_scene load_steps=14 format=3]
 
 [ext_resource path="res://scripts/red.gd" type="Script" id="1"]
 [ext_resource path="res://scripts/hitbox.gd" type="Script" id="3"]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scripts/stage2_boss_layout.gd" type="Script" id="14"]
 [ext_resource path="res://scenes/BossIntroCutscene.tscn" type="PackedScene" id="15_intro"]
 [ext_resource path="res://scenes/EndingCutscene.tscn" type="PackedScene" id="16_ending"]
+[ext_resource path="res://scripts/stage2_petals.gd" type="Script" id="17_petals"]
 
 [sub_resource type="RectangleShape2D" id="PlayerBody"]
 size = Vector2(18, 30)
@@ -21,6 +22,31 @@ size = Vector2(44, 28)
 
 [node name="ForestEnvironment" parent="." instance=ExtResource("12")]
 world_width = 2800.0
+selective_lighting_enabled = true
+regional_background_shading = false
+far_background_brightness = 0.88
+mid_background_brightness = 0.92
+moon_castle_brightness = 0.84
+platform_brightness = 0.96
+platform_underside_brightness = 0.68
+scenery_brightness = 0.8
+vignette_strength = 0.035
+
+[node name="CrimsonPetals" type="Node2D" parent="."]
+script = ExtResource("17_petals")
+background_count = 6
+midground_count = 4
+foreground_count = 0
+ambient_visible_target = 6
+ambient_spawn_interval = Vector2(0.7, 1.2)
+background_opacity = 0.3
+midground_opacity = 0.32
+combat_opacity_multiplier = 0.6
+shedding_interval = Vector2(4.5, 7.5)
+shedding_burst_max = 1
+gust_interval = Vector2(12, 20)
+gust_burst_max = 2
+gust_speed = 24.0
 
 [node name="Stage2BossLayout" type="Node2D" parent="."]
 script = ExtResource("14")

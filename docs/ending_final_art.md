@@ -2,6 +2,8 @@
 
 # Final ending artwork integration
 
+> Current Guardian artwork and dialogue (2026-10-15): [silent spirit reunion](ending_spirit_reunion.md). The three latest images replace the Guardian birth, touch and wide shots described below. Earlier playback and review notes are historical.
+
 [Previous art-pack playback](previews/ending_final_art_full_run.gif)
 
 Guardian Birth and Together now use the two replacements documented below. This earlier GIF predates those replacements and the manual Continue controls.

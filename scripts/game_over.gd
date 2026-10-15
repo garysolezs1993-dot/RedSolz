@@ -1,136 +1,146 @@
-extends Node2D
+extends Control
 
 const RETRY_FALLBACK := "res://scenes/main.tscn"
 const TITLE_SCENE := "res://scenes/title.tscn"
 const UI := preload("res://scripts/menu_ui.gd")
 
-@onready var red_sprite: Sprite2D = $RedFallen
-@onready var wolf_sprite: Sprite2D = $WolfSilhouette
+@export var background_artwork: Texture2D
+# Interactive areas in source-image pixels; preserve the fitted image alignment.
+@export var try_again_rect := Rect2(220,456,514,66)
+@export var return_title_rect := Rect2(220,548,514,66)
 
-var elapsed := 0.0
-var eye_glows: Array[Polygon2D] = []
 var menu_ui: Control
 var menu_buttons: Array[Button] = []
+var retry_dimmer: ColorRect
+var departing := false
+var menu_revealed := false
 
 func _ready() -> void:
-	_build_eye_glows()
-	_build_sword()
 	_build_ui()
 	GameSession.reveal()
-
-func _process(delta: float) -> void:
-	elapsed += delta
-	red_sprite.position.y = get_viewport_rect().size.y - 102.0 + sin(elapsed * 0.42) * 0.8
-	red_sprite.rotation = sin(elapsed * 0.31) * 0.006
-	var reveal_time := fposmod(elapsed, 9.0)
-	var reveal := 0.0
-	if reveal_time < 0.45:
-		reveal = reveal_time / 0.45
-	elif reveal_time < 1.35:
-		reveal = 1.0
-	elif reveal_time < 1.8:
-		reveal = 1.0 - (reveal_time - 1.35) / 0.45
-	wolf_sprite.modulate.a = reveal * 0.28
-	for eye in eye_glows:
-		eye.color.a = reveal * 0.40
-	queue_redraw()
-
-func _build_eye_glows() -> void:
-	for local_position: Vector2 in [Vector2(6.0, -5.0), Vector2(10.0, -5.0)]:
-		var eye := Polygon2D.new()
-		eye.polygon = PackedVector2Array([
-			Vector2(-1.0, -1.0), Vector2(1.0, -1.0),
-			Vector2(1.0, 1.0), Vector2(-1.0, 1.0),
-		])
-		eye.position = wolf_sprite.position + local_position * wolf_sprite.scale
-		eye.color = Color(0.94, 0.18, 0.24, 0.0)
-		eye.z_index = 2
-		add_child(eye)
-		eye_glows.append(eye)
-
-func _build_sword() -> void:
-	var screen_size := get_viewport_rect().size
-	var sword_origin := Vector2(screen_size.x * 0.715, screen_size.y - 51.0)
-	var hilt := Polygon2D.new()
-	hilt.position = sword_origin
-	hilt.polygon = PackedVector2Array([
-		Vector2(-31.0, 9.0), Vector2(-25.0, 5.0),
-		Vector2(-17.0, 9.0), Vector2(-23.0, 13.0),
-	])
-	hilt.color = Color(0.20, 0.09, 0.11, 1.0)
-	add_child(hilt)
-	var guard := Polygon2D.new()
-	guard.position = sword_origin
-	guard.polygon = PackedVector2Array([
-		Vector2(-23.0, 2.0), Vector2(-20.0, 5.0),
-		Vector2(-14.0, 14.0), Vector2(-17.0, 16.0),
-	])
-	guard.color = Color(0.55, 0.36, 0.34, 1.0)
-	add_child(guard)
-	var blade := Polygon2D.new()
-	blade.position = sword_origin
-	blade.polygon = PackedVector2Array([
-		Vector2(-22.0, 7.0), Vector2(18.0, -6.0),
-		Vector2(27.0, -11.0), Vector2(21.0, -2.0),
-		Vector2(-18.0, 10.0),
-	])
-	blade.color = Color(0.58, 0.63, 0.70, 0.86)
-	add_child(blade)
-	var blade_edge := Line2D.new()
-	blade_edge.points = PackedVector2Array([Vector2(-17.0, 9.0), Vector2(21.0, -2.0)])
-	blade_edge.position = sword_origin
-	blade_edge.width = 1.0
-	blade_edge.default_color = Color(0.84, 0.81, 0.78, 0.9)
-	add_child(blade_edge)
+	if not GameSession.death_in_progress:
+		call_deferred("reveal_death_menu")
 
 func _build_ui() -> void:
-	var ui := UI.build_canvas(self)
-	menu_ui = ui
-	var column := UI.build_panel(ui, "THE FOREST CLAIMS YOU", "But your story is not yet over...", 26)
-	var spacer := Control.new()
-	spacer.custom_minimum_size.y = 28
-	column.add_child(spacer)
-	var retry_button := UI.button("TRY AGAIN", "TryAgain")
+	var base := ColorRect.new()
+	base.color = Color("0d0913")
+	base.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(base)
+	base.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	menu_ui = Control.new()
+	menu_ui.name = "IllustratedDeathMenu"
+	menu_ui.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(menu_ui)
+	menu_ui.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var artwork := TextureRect.new()
+	artwork.name = "Artwork"
+	artwork.texture = background_artwork
+	artwork.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	artwork.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	artwork.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	artwork.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	menu_ui.add_child(artwork)
+	artwork.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	retry_dimmer = ColorRect.new()
+	retry_dimmer.name = "UnselectedRetryDimmer"
+	retry_dimmer.color = Color(.01,.005,.01,.42)
+	retry_dimmer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	retry_dimmer.hide()
+	menu_ui.add_child(retry_dimmer)
+	var retry_button := _art_button("TryAgain","Try Again",0)
+	var title_button := _art_button("ReturnToTitle","Return to Title",1)
+	menu_buttons = [retry_button,title_button]
 	retry_button.pressed.connect(_on_try_again)
-	column.add_child(retry_button)
-	var title_button := UI.button("RETURN TO TITLE", "ReturnToTitle")
 	title_button.pressed.connect(_on_return_to_title)
-	column.add_child(title_button)
-	column.add_child(UI.label("A quiet promise waits beneath the moon.", 16, Color("bfb4cd")))
-	UI.link_focus([retry_button, title_button])
-	menu_buttons = [retry_button, title_button]
-	if GameSession.death_in_progress:
-		ui.modulate.a = 0.0
-		for button in menu_buttons:
-			button.disabled = true
-			button.modulate.a = 0.0
-	else:
-		retry_button.grab_focus()
+	UI.link_focus(menu_buttons)
+	resized.connect(_layout_buttons)
+	_layout_buttons()
+	# During death, the persistent fog reveals the complete illustration first.
+	# Its controller calls reveal_death_menu after the fog has cleared.
+	menu_ui.modulate.a = 1.0 if GameSession.death_in_progress else 0.0
+
+func _art_button(node_name: String, caption: String, index: int) -> Button:
+	var button := Button.new()
+	button.name = node_name
+	button.tooltip_text = caption
+	button.focus_mode = Control.FOCUS_ALL
+	button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	for style_name in ["normal","disabled"]:
+		button.add_theme_stylebox_override(style_name,StyleBoxEmpty.new())
+	var highlight := StyleBoxFlat.new()
+	highlight.bg_color = Color(1,.25,.3,.10)
+	highlight.border_color = Color(1,.7,.7,.95)
+	highlight.set_border_width_all(2)
+	highlight.set_corner_radius_all(3)
+	button.add_theme_stylebox_override("hover",highlight)
+	button.add_theme_stylebox_override("focus",highlight)
+	var pressed := highlight.duplicate() as StyleBoxFlat
+	pressed.bg_color = Color(.04,.005,.015,.25)
+	button.add_theme_stylebox_override("pressed",pressed)
+	button.disabled = true
+	button.modulate.a = 0.0
+	menu_ui.add_child(button)
+	button.focus_entered.connect(_select_choice.bind(index))
+	button.mouse_entered.connect(func():
+		if not button.disabled:
+			button.grab_focus()
+	)
+	return button
+
+func _select_choice(index: int) -> void:
+	retry_dimmer.visible = index == 1
+	if not menu_buttons[index].disabled:
+		AudioDirector.play_sfx("menu_hover")
+
+func _layout_buttons() -> void:
+	if background_artwork == null or menu_buttons.size() != 2:
+		return
+	var source_size := background_artwork.get_size()
+	var fit_scale := minf(size.x/source_size.x,size.y/source_size.y)
+	var fitted_origin := (size-source_size*fit_scale)*.5
+	var rectangles: Array[Rect2] = [try_again_rect,return_title_rect]
+	for index in range(menu_buttons.size()):
+		menu_buttons[index].position = fitted_origin+rectangles[index].position*fit_scale
+		menu_buttons[index].size = rectangles[index].size*fit_scale
+	retry_dimmer.position = menu_buttons[0].position
+	retry_dimmer.size = menu_buttons[0].size
 
 func reveal_death_menu() -> void:
+	if menu_revealed:
+		return
+	menu_revealed = true
 	var intro := create_tween().set_ignore_time_scale(true)
-	intro.tween_property(menu_ui, "modulate:a", 1.0, 0.55)
+	intro.tween_property(menu_ui,"modulate:a",1.0,.55)
 	intro.set_parallel(true)
 	for button in menu_buttons:
-		intro.tween_property(button, "modulate:a", 1.0, 0.25).set_delay(0.55)
+		intro.tween_property(button,"modulate:a",1.0,.25).set_delay(.55)
 	await intro.finished
 	for button in menu_buttons:
 		button.disabled = false
 	menu_buttons[0].grab_focus()
 
-func _draw() -> void:
-	var size := get_viewport_rect().size
-	var flower := Vector2(size.x * 0.82, size.y - 60.0)
-	for layer in range(5):
-		draw_circle(Vector2(size.x * 0.77, size.y - 115.0), 28.0 + layer * 17.0, Color(0.63, 0.69, 0.90, 0.015))
-	draw_line(flower + Vector2(0, 3), flower + Vector2(-2, 12), Color("6d8269"), 2)
-	for petal in [Vector2(-3, 0), Vector2(3, 0), Vector2(0, -3), Vector2(0, 3)]:
-		draw_rect(Rect2(flower + petal - Vector2(2, 2), Vector2(4, 4)), Color("eee8df"))
-	draw_rect(Rect2(flower - Vector2(1, 1), Vector2(2, 2)), Color("d6b273"))
+func _input(event: InputEvent) -> void:
+	if event.is_echo() or menu_buttons.is_empty() or menu_buttons[0].disabled:
+		return
+	if event.is_action_pressed("ui_cancel"):
+		get_viewport().set_input_as_handled()
+		_on_return_to_title()
+
+func _begin_departure() -> bool:
+	if departing or GameSession.transitioning:
+		return false
+	departing = true
+	for button in menu_buttons:
+		button.disabled = true
+	AudioDirector.play_sfx("menu_confirm")
+	return true
 
 func _on_try_again() -> void:
-	var retry_path := str(get_tree().root.get_meta("retry_scene_path", RETRY_FALLBACK))
+	if not _begin_departure():
+		return
+	var retry_path := str(get_tree().root.get_meta("retry_scene_path",RETRY_FALLBACK))
 	GameSession.retry_stage(retry_path)
 
 func _on_return_to_title() -> void:
-	GameSession.transition_to(TITLE_SCENE)
+	if _begin_departure():
+		GameSession.transition_to(TITLE_SCENE)

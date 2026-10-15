@@ -1,0 +1,50 @@
+[
+    {
+        "file":  "crimson_petal_01.png",
+        "width":  64,
+        "height":  64,
+        "visible_bounds":  [
+                               22,
+                               22,
+                               41,
+                               40
+                           ],
+        "sha256":  "9E1D7F3272B374C8051AC2D2AE20FD51CDC48D0BBC1058D4165BD18EB65DBFC9"
+    },
+    {
+        "file":  "crimson_petal_02.png",
+        "width":  64,
+        "height":  64,
+        "visible_bounds":  [
+                               23,
+                               22,
+                               40,
+                               41
+                           ],
+        "sha256":  "D5818CB0EB72890FB828FD2C6EB81EBF57B942648AC26B15EB86A3C2AA4C6B34"
+    },
+    {
+        "file":  "crimson_petal_03.png",
+        "width":  64,
+        "height":  64,
+        "visible_bounds":  [
+                               22,
+                               23,
+                               41,
+                               39
+                           ],
+        "sha256":  "1FC625C118E03C8026196B7A015235A05E2D59D9216AA302E3F20E69BB6BE954"
+    },
+    {
+        "file":  "crimson_petal_04.png",
+        "width":  64,
+        "height":  64,
+        "visible_bounds":  [
+                               24,
+                               22,
+                               39,
+                               41
+                           ],
+        "sha256":  "22D7BB7070AA1FF77C54B2760C319803540BEC74F69AF5D48DA18309F78BA27A"
+    }
+]

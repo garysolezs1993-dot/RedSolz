@@ -16,6 +16,7 @@ var player: CharacterBody2D
 var boss: CharacterBody2D
 var expected_health := 0
 var expected_player_health := 0
+var skip_howl_captured := false
 
 func _initialize() -> void:
 	call_deferred("_run")
@@ -31,6 +32,8 @@ func frames(count: int) -> void:
 		await process_frame
 
 func fresh_stage() -> void:
+	# Each fixture explicitly reviews a first-time intro, not the rematch path.
+	session.stage_objectives.erase(session.STAGE_TWO)
 	change_scene_to_file(session.STAGE_TWO)
 	await frames(20)
 	stage = current_scene
@@ -72,6 +75,34 @@ func handoff(label: String) -> void:
 	check(root.get_node("AudioDirector").current_context == "stage_two", label + ": combat music context restored")
 	check(player.get_node("Visual").process_mode == Node.PROCESS_MODE_INHERIT, label + ": animation processing restored")
 
+func wait_handoff_after_skip(label: String, expect_howl: bool, expect_first_frame: bool) -> void:
+	var howl_frames: Dictionary = {}
+	var lock_checked := false
+	for index in range(240):
+		if stage.get_node_or_null("BossIntroCutscene") == null:
+			break
+		if intro.get("phase") == "cinematic_howl":
+			howl_frames[intro.get("wolf_visual").frame] = true
+			if not lock_checked:
+				lock_checked = true
+				check(paused and boss.process_mode == Node.PROCESS_MODE_DISABLED, label + ": howl locks world and AI")
+				check(boss.collision_layer == 0 and boss.get_node("Hurtbox").collision_layer == 0, label + ": howl has no combat receivers")
+				check(not stage.get_node("UI/HUD").visible, label + ": howl precedes gameplay HUD")
+				check(intro.get("roar").playing and intro.get("burst").visible, label + ": howl sound and burst play")
+			if index % 9 == 0:
+				intro.call("skip") # Repeated input must not bypass/restart the howl.
+			if label == "Skip memory" and intro.get("wolf_visual").frame == 3 and not skip_howl_captured:
+				skip_howl_captured = true
+				await RenderingServer.frame_post_draw
+				root.get_texture().get_image().save_png("res://docs/previews/boss_skip_howl.png")
+		await process_frame
+	if expect_howl:
+		check(howl_frames.has(7), label + ": final howl frame plays before combat")
+		if expect_first_frame:
+			check(howl_frames.size() == 8, label + ": all eight howl frames play after Skip")
+	else:
+		check(howl_frames.is_empty(), label + ": completed howl is not replayed")
+
 func _run() -> void:
 	session = root.get_node("GameSession")
 	session.save_path = "user://boss_intro_final_art_test.cfg"
@@ -95,11 +126,14 @@ func _run() -> void:
 	var seen_art: Dictionary = {}
 	var brother_seen := false
 	var run_seen := false
+	var watched_howl_frames: Dictionary = {}
 	for index in range(1900):
 		await process_frame
 		if stage.get_node_or_null("BossIntroCutscene") == null:
 			break
 		var phase: String = intro.get("phase")
+		if phase == "cinematic_howl":
+			watched_howl_frames[intro.get("wolf_visual").frame] = true
 		if not seen.has(phase):
 			seen[phase] = true
 			check(paused and boss.process_mode == Node.PROCESS_MODE_DISABLED, phase + ": world/AI locked")
@@ -119,13 +153,20 @@ func _run() -> void:
 	check(seen_art.size() == 5, "All five final illustrations displayed during full run")
 	check(brother_seen and run_seen, "Both dialogue lines rendered separately")
 	check(seen.has("boss_title") and seen.has("hud_reveal"), "Boss title precedes HUD handoff")
+	check(watched_howl_frames.size() == 8, "Watched introduction retains the full eight-frame howl")
 	await frames(3)
 	handoff("Watched")
-	for target in ["waiting", "entry", "silent_wolf", "lily", "recognition", "memory", "brother", "wolf_turn", "run", "curse_takeover", "return_camera", "boss_title", "hud_reveal"]:
+	for target in ["waiting", "entry", "silent_wolf", "lily", "recognition", "memory", "brother", "wolf_turn", "run", "curse_takeover", "return_camera", "cinematic_howl", "boss_title", "hud_reveal"]:
 		await fresh_stage()
 		if target != "waiting":
 			await trigger_intro()
 			check(await wait_phase(target), "Reached Skip phase " + target)
+		if target == "cinematic_howl":
+			await frames(20)
+			var before_frame: int = intro.get("wolf_visual").frame
+			intro.call("skip")
+			check(intro.get("wolf_visual").frame == before_frame and not intro.get("howl_finished"), "Mid-howl Skip preserves its current frame")
+		var expect_howl := not bool(intro.get("howl_finished"))
 		if target == "run":
 			var event := InputEventKey.new()
 			event.keycode = KEY_ESCAPE
@@ -142,7 +183,8 @@ func _run() -> void:
 			intro.call("skip")
 		if is_instance_valid(intro):
 			intro.call("skip") # repeated requests must not duplicate handoff.
-		await frames(4)
+		await wait_handoff_after_skip("Skip " + target, expect_howl, target != "cinematic_howl")
+		await frames(2)
 		handoff("Skip " + target)
 	# The final skipped fight must accept ordinary movement, basic attack and dash.
 	var starting_x := player.global_position.x

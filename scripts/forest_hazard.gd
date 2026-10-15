@@ -1,6 +1,8 @@
 extends Node2D
 
+const HazardArt = preload("res://scripts/forest_hazard_art.gd")
 enum Kind { GROUND_SPIKES, RETRACTABLE_SPIKES, FALLING_BRANCH, THORN_VINES, CURSED_ROOTS }
+@export var use_hazard_art := true
 @export var kind: Kind = Kind.GROUND_SPIKES
 @export_range(24.0, 220.0, 2.0) var width := 60.0
 @export_range(12.0, 64.0, 1.0) var height := 22.0
@@ -21,6 +23,7 @@ var fall_offset := 0.0
 var fall_velocity := 0.0
 var danger_enabled := false
 var display_strength := 0.0
+var art: Node2D
 
 func _ready() -> void:
 	add_to_group("forest_hazards")
@@ -37,6 +40,10 @@ func _ready() -> void:
 	danger.body_entered.connect(_damage_body)
 	age = phase_offset
 	_update_visual_and_collision()
+	if use_hazard_art:
+		art = HazardArt.new()
+		add_child(art)
+		art.configure(self)
 
 func _build_geometry() -> void:
 	if kind == Kind.FALLING_BRANCH:
@@ -105,6 +112,8 @@ func _update_visual_and_collision() -> void:
 	danger.position = Vector2(sin(elapsed * 43) * 3 if kind == Kind.FALLING_BRANCH and state == "warning" else 0.0, fall_offset)
 	for collider in danger.get_children():
 		collider.set_deferred("disabled", not danger_enabled)
+	if art != null:
+		art.update_art()
 
 func _damage_body(body: Node2D) -> void:
 	if danger_enabled and body.is_in_group("player") and body.has_method("take_damage"):
@@ -117,18 +126,20 @@ func _draw() -> void:
 	if kind == Kind.FALLING_BRANCH:
 		var origin := danger.position
 		var alpha := 1.0 - age / 0.65 if state == "recovery" else 1.0
-		draw_rect(Rect2(origin + Vector2(-width/2, -6), Vector2(width, 12)), Color(0.34, 0.24, 0.25, maxf(0.0, alpha)))
-		draw_line(origin + Vector2(-width/2+3, -3), origin + Vector2(width/2-4, -3), Color("987661"), 2)
+		if art == null:
+			draw_rect(Rect2(origin + Vector2(-width/2, -6), Vector2(width, 12)), Color(0.34, 0.24, 0.25, maxf(0.0, alpha)))
+			draw_line(origin + Vector2(-width/2+3, -3), origin + Vector2(width/2-4, -3), Color("987661"), 2)
 		if state == "warning":
 			draw_line(Vector2(-width/2, fall_distance+6), Vector2(width/2, fall_distance+6), Color("e4ba73"), 3)
 			draw_string(ThemeDB.fallback_font, Vector2(-5, fall_distance-18), "!", HORIZONTAL_ALIGNMENT_LEFT, -1, 18, Color("f0cc86"))
 		return
-	draw_rect(Rect2(-width/2, 0, width, 4), Color("56323c"))
+	if art == null:
+		draw_rect(Rect2(-width/2, 0, width, 4), Color("56323c"))
 	if state == "warning":
 		var warning := Color(0.87, 0.48, 0.24, 0.45 + .35 * sin(elapsed * 8))
 		draw_line(Vector2(-width/2, -2), Vector2(width/2, -2), warning, 3)
 		draw_string(ThemeDB.fallback_font, Vector2(-4, -11), "!", HORIZONTAL_ALIGNMENT_LEFT, -1, 16, warning)
-	if display_strength <= 0.0:
+	if art != null or display_strength <= 0.0:
 		return
 	for polygon in polygons:
 		var visible_polygon := PackedVector2Array()

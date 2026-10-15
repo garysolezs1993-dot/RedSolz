@@ -284,12 +284,12 @@ func reveal() -> void:
 	fade_tween = create_tween().set_ignore_time_scale(true)
 	fade_tween.tween_property(fade_rect, "color:a", 0.0, 0.45)
 
-func notify(message: String) -> void:
+func notify(message: String, hold_seconds: float = 2.2) -> void:
 	toast.text = message
 	if toast_tween != null and toast_tween.is_valid():
 		toast_tween.kill()
 	toast.modulate.a = 0.0
 	toast_tween = create_tween()
 	toast_tween.tween_property(toast, "modulate:a", 1.0, 0.25)
-	toast_tween.tween_interval(2.2)
+	toast_tween.tween_interval(hold_seconds)
 	toast_tween.tween_property(toast, "modulate:a", 0.0, 0.5)

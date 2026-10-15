@@ -1,0 +1,2466 @@
+[
+    {
+        "version":  "v1",
+        "file":  "bridge_main.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     111,
+                     25,
+                     912,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  138962,
+        "opaque_pixels":  138962,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             138872,
+                                             111,
+                                             25,
+                                             912,
+                                             486
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             84,
+                                             266,
+                                             190,
+                                             286,
+                                             203
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "4652BC4BF4D1A5F21D4B45625A0A30CC6151DFDD788A336FF5A5DE497BB82FF5"
+    },
+    {
+        "version":  "v1",
+        "file":  "bridge_pillar.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     32,
+                     243,
+                     479
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  29158,
+        "opaque_pixels":  29158,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             29158,
+                                             13,
+                                             32,
+                                             243,
+                                             479
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "EE05681958E7333899B20607C8A2B526990D6EB595D527AE8D11040AC46894E0"
+    },
+    {
+        "version":  "v1",
+        "file":  "bridge_segment.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     28,
+                     486,
+                     227
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  49293,
+        "opaque_pixels":  49293,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             49293,
+                                             25,
+                                             28,
+                                             486,
+                                             227
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "C20502CE9D4320914B9539BD139F77B264E4AA7047EDD58D51702D7AFFC11C81"
+    },
+    {
+        "version":  "v1",
+        "file":  "broken_chapel_back_wall.png",
+        "width":  1280,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     51,
+                     74,
+                     1229,
+                     950
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  448149,
+        "opaque_pixels":  314,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             413645,
+                                             90,
+                                             146,
+                                             1204,
+                                             846
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "16F40AF1FCB8F0C59BCA1BDFEEF26C9A333F97D6A16E553D3307B882A9F7F5E2"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_cross.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     25,
+                     231,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  42661,
+        "opaque_pixels":  42661,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             39922,
+                                             25,
+                                             100,
+                                             210,
+                                             480
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             2739,
+                                             225,
+                                             25,
+                                             231,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "6B36441BC79A22E9ABAD88E3238313CD5035991870503ADE9B9922A8D3DE759D"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_fence.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     148,
+                     13,
+                     363,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  26668,
+        "opaque_pixels":  26668,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             26668,
+                                             148,
+                                             13,
+                                             363,
+                                             243
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "E3BB33ED8A0DC000D4BA2848EDDD684B8CD7BCE822E2E451181C7D234D9571A0"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_rubble.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     58,
+                     13,
+                     454,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  64412,
+        "opaque_pixels":  64412,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             64412,
+                                             58,
+                                             13,
+                                             454,
+                                             243
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "D3AA6DC9F5C74663FB2CC75DB2B5565A11FFBB1FD108794D6FE96A6BC900621E"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_tombstone_large.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     80,
+                     25,
+                     431,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  91362,
+        "opaque_pixels":  91362,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             91362,
+                                             80,
+                                             25,
+                                             431,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "10E043A93764C09433BD80C94A3509F3F832AFD2299AABF3EF87AF39C3BAE166"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_tombstone_medium.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     37,
+                     243,
+                     475
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  64205,
+        "opaque_pixels":  64205,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             64205,
+                                             13,
+                                             37,
+                                             243,
+                                             475
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "C269D644272E6641DD701DD4126C5203CF38657A2990BCF3943118B277D0E841"
+    },
+    {
+        "version":  "v1",
+        "file":  "burial_tombstone_small.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     42,
+                     13,
+                     214,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  23383,
+        "opaque_pixels":  23383,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             23383,
+                                             42,
+                                             13,
+                                             214,
+                                             243
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "D95947AF6EC3B1E8938495BC61B594299C45B6268BF56AD30DDEA001645037D4"
+    },
+    {
+        "version":  "v1",
+        "file":  "camp_crates.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     28,
+                     13,
+                     484,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  76117,
+        "opaque_pixels":  76117,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             76117,
+                                             28,
+                                             13,
+                                             484,
+                                             243
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "A4591F9DE5CAB42B42A844BC21AEC2177E0E99086E66ACA8B9A2D538CAD10733"
+    },
+    {
+        "version":  "v1",
+        "file":  "camp_fire.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     19,
+                     243,
+                     236
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  21814,
+        "opaque_pixels":  21814,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             21580,
+                                             13,
+                                             42,
+                                             243,
+                                             236
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             234,
+                                             123,
+                                             19,
+                                             143,
+                                             42
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "20594BA3477D200671810B5D8A119E1DED584FF3E77DA1C827E18107927969AC"
+    },
+    {
+        "version":  "v1",
+        "file":  "camp_lantern.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     29,
+                     25,
+                     227,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  30290,
+        "opaque_pixels":  30290,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             30290,
+                                             29,
+                                             25,
+                                             227,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "71B472BEF46720AEAE2C6F378789F4D4BB70428A46F5F8074610FB07A19ED712"
+    },
+    {
+        "version":  "v1",
+        "file":  "camp_stool.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     31,
+                     13,
+                     225,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  30410,
+        "opaque_pixels":  30410,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             30410,
+                                             31,
+                                             13,
+                                             225,
+                                             243
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "423DCA4861274EB4BCF1A4EA2DB016CDE4A61FE5144B8203C3867480E6C84EAE"
+    },
+    {
+        "version":  "v1",
+        "file":  "camp_tent.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     84,
+                     25,
+                     939,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  243754,
+        "opaque_pixels":  243754,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             243754,
+                                             84,
+                                             25,
+                                             939,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "44A278B6E27BBF3B924ADFD2C8E943DF566430EC34DC2E131E1E3ACAE131AB3C"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_lift_chain_tile.png",
+        "width":  64,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     17,
+                     96,
+                     48,
+                     156
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  586,
+        "opaque_pixels":  7,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             557,
+                                             24,
+                                             96,
+                                             38,
+                                             156
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "299CDD69C8E61C4480F260AD90780CB764EE2E0E176AB302293ECCBA944DE191"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_lift_deck.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     95,
+                     30,
+                     403,
+                     220
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  18003,
+        "opaque_pixels":  131,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             17218,
+                                             105,
+                                             100,
+                                             402,
+                                             187
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "748015E6E3A187060587C9E7E560681A5147DBDD7258A9D50DD595A320005682"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_lift_side_frame.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     10,
+                     85,
+                     230,
+                     426
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  19781,
+        "opaque_pixels":  17,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             18116,
+                                             56,
+                                             85,
+                                             175,
+                                             425
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "859EF73CC41971C2CD73704D36F25236B0A657C01D3B71F5D6C1F27FC09ABE58"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_lift_top_beam.png",
+        "width":  512,
+        "height":  128,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     172,
+                     5,
+                     339,
+                     118
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  5670,
+        "opaque_pixels":  6,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             5104,
+                                             173,
+                                             24,
+                                             338,
+                                             100
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             11,
+                                             331,
+                                             76,
+                                             333,
+                                             86
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "DF36550863EC1F8F639F42BA2139D4E46939CB068096B2F5E423E3DCFE35511E"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_root_large.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     219,
+                     25,
+                     805,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  127787,
+        "opaque_pixels":  127787,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             127787,
+                                             219,
+                                             25,
+                                             805,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "47DB60D2106DAD055A57EF8DF5C5C8B22FC5DD4675D63FC16B211B0B6B4C0D2E"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_root_medium.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     116,
+                     25,
+                     396,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  65501,
+        "opaque_pixels":  65501,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             65479,
+                                             116,
+                                             25,
+                                             396,
+                                             486
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             12,
+                                             202,
+                                             395,
+                                             204,
+                                             401
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             10,
+                                             181,
+                                             434,
+                                             183,
+                                             439
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "0739535E84C3EA91FFEDAF2105318AC981923B80F613550F6D8954C70D45252F"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_root_small.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     61,
+                     486,
+                     194
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  27146,
+        "opaque_pixels":  27146,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             25615,
+                                             57,
+                                             61,
+                                             486,
+                                             194
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             1517,
+                                             25,
+                                             61,
+                                             38,
+                                             194
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             10,
+                                             175,
+                                             183,
+                                             177,
+                                             188
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "769911B13C052123C6063E345A0C031799757E502624D2804BDF14B0B17325E5"
+    },
+    {
+        "version":  "v1",
+        "file":  "cellar_root_stalactite.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     58,
+                     243,
+                     965
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  80953,
+        "opaque_pixels":  80953,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             80953,
+                                             13,
+                                             58,
+                                             243,
+                                             965
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "14F66A74A35D704362F26A49587592B26C151D9601304C63466F54EA5976D700"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_arch.png",
+        "width":  1024,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     142,
+                     41,
+                     882,
+                     983
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  308737,
+        "opaque_pixels":  401,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             284342,
+                                             160,
+                                             45,
+                                             879,
+                                             932
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "F7574DB66F34AA7096D20750CB470A018F837AC73741A19EF12ECE33FF4320CC"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_fallen_bell.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     29,
+                     50,
+                     488,
+                     488
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  63878,
+        "opaque_pixels":  71,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             60178,
+                                             46,
+                                             124,
+                                             466,
+                                             422
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FE4AF3D7EED11B22E0EB9E5FBC41CB7B380E602A7EA616155F755A8B2D110B98"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_pillar_left.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     30,
+                     352,
+                     227,
+                     659
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  21331,
+        "opaque_pixels":  38,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             19761,
+                                             64,
+                                             353,
+                                             206,
+                                             657
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "ED637DA50EAF7F2C55017C2A58D9B2C5BD4A788E3A85DA5D602A25C3B9D8EA10"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_pillar_right.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     10,
+                     359,
+                     233,
+                     653
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  22759,
+        "opaque_pixels":  30,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             21311,
+                                             35,
+                                             377,
+                                             227,
+                                             652
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "4300971A19DD4CD649FF50083471FD268FCB05DBD058E3DF9EA7E5D925B1A93F"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_rubble.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     138,
+                     10,
+                     373,
+                     237
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  15651,
+        "opaque_pixels":  24,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             14551,
+                                             143,
+                                             75,
+                                             372,
+                                             196
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "048D6E2FC11738007E7F5E1FABB050CF1F9F3E12934D474443C89CF3ECCB95D4"
+    },
+    {
+        "version":  "v1",
+        "file":  "chapel_torn_banner.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     12,
+                     350,
+                     234,
+                     662
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  20497,
+        "opaque_pixels":  65,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             18036,
+                                             40,
+                                             369,
+                                             213,
+                                             652
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "9C81116BBF05D5B4F159321211FAF1E4C2CCB5CB5CF0F103495D05C336693840"
+    },
+    {
+        "version":  "v1",
+        "file":  "hollow_oak.png",
+        "width":  1024,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     51,
+                     63,
+                     973,
+                     961
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  646869,
+        "opaque_pixels":  646869,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             646851,
+                                             51,
+                                             63,
+                                             973,
+                                             961
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             18,
+                                             51,
+                                             798,
+                                             57,
+                                             801
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FEC179EFD1825A09BDB31D6BE3AFAB06CBA6D23265746ED678ADEB9FD5048806"
+    },
+    {
+        "version":  "v1",
+        "file":  "hollow_oak_branch.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     103,
+                     486,
+                     408
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  68561,
+        "opaque_pixels":  68561,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             68561,
+                                             25,
+                                             103,
+                                             486,
+                                             408
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "42FC1126BDEC1ED6D868EA6A88875245D01388A9139FB499D40E07A4052C4AD7"
+    },
+    {
+        "version":  "v1",
+        "file":  "hollow_oak_root.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     68,
+                     486,
+                     443
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  98151,
+        "opaque_pixels":  98151,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             98142,
+                                             25,
+                                             68,
+                                             486,
+                                             443
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FCD841A9A541EFA50A19371A1D4D20D5C51E6858BB0A5F6D7FCC7A9F9C376321"
+    },
+    {
+        "version":  "v1",
+        "file":  "ruin_arch.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     115,
+                     25,
+                     397,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  69019,
+        "opaque_pixels":  69019,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             63487,
+                                             145,
+                                             34,
+                                             397,
+                                             474
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             5532,
+                                             115,
+                                             25,
+                                             127,
+                                             486
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "B66A9B55AA79C3BE5EDBC4791E762E1D188E05B69F4E7398B55EA8004C8A0B29"
+    },
+    {
+        "version":  "v1",
+        "file":  "ruin_column.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     117,
+                     243,
+                     394
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  43296,
+        "opaque_pixels":  43296,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             43296,
+                                             13,
+                                             117,
+                                             243,
+                                             394
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "32843C6ED438BD53BC38109B3FC4F4A26C7446139FE395B18114049A3782AAE5"
+    },
+    {
+        "version":  "v1",
+        "file":  "ruin_ledge.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     50,
+                     13,
+                     462,
+                     243
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  46381,
+        "opaque_pixels":  46381,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             46365,
+                                             50,
+                                             57,
+                                             462,
+                                             243
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             16,
+                                             155,
+                                             13,
+                                             159,
+                                             17
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "D3DC34A7EE7DD3C69AAF109FD57E1E3974D7E64C453E825330A8B8F85A84E4F0"
+    },
+    {
+        "version":  "v1",
+        "file":  "ruin_platform.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     25,
+                     25,
+                     486,
+                     230
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  61062,
+        "opaque_pixels":  61062,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             61062,
+                                             25,
+                                             25,
+                                             486,
+                                             230
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FB0B319BDC15CED165CB45862D869E08ED0688E3EAE4544BA70BC799D127E9A1"
+    },
+    {
+        "version":  "v1",
+        "file":  "ruin_wall.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     76,
+                     25,
+                     436,
+                     486
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  98751,
+        "opaque_pixels":  98751,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             90309,
+                                             136,
+                                             49,
+                                             436,
+                                             471
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             8271,
+                                             103,
+                                             25,
+                                             121,
+                                             486
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             162,
+                                             76,
+                                             441,
+                                             88,
+                                             465
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "2CFF1A749988392EBE8A107DD679817FB1C92C55E5999731BF4B1CC1DD8BFD68"
+    },
+    {
+        "version":  "v2",
+        "file":  "bridge_main.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     203,
+                     23,
+                     829,
+                     467
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  78657,
+        "opaque_pixels":  1293,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             67790,
+                                             218,
+                                             154,
+                                             827,
+                                             382
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "F5CE0937148F011172D12262E419C6EB5C6B0E31E6B30CCA97732B0D638C41C1"
+    },
+    {
+        "version":  "v2",
+        "file":  "bridge_pillar.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     68,
+                     26,
+                     243,
+                     482
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  17066,
+        "opaque_pixels":  31,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             15732,
+                                             83,
+                                             28,
+                                             169,
+                                             451
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "AC295399D93E366F98612B21E20F1C21C7100259A8EBA450B11A5A465F637726"
+    },
+    {
+        "version":  "v2",
+        "file":  "bridge_segment.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     28,
+                     30,
+                     483,
+                     226
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  51281,
+        "opaque_pixels":  44674,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             49111,
+                                             28,
+                                             30,
+                                             483,
+                                             226
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "96ACE4203DB62CE8C579484E48DD5251253A0416D7823C456228CD6B09878859"
+    },
+    {
+        "version":  "v2",
+        "file":  "broken_chapel_back_wall.png",
+        "width":  1280,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     58,
+                     79,
+                     1222,
+                     945
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  437860,
+        "opaque_pixels":  544,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             404399,
+                                             97,
+                                             150,
+                                             1198,
+                                             843
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "9368613BD0B449F0AFAAEE5D7C893C93A699875208842304D40EB021E2240741"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_cross.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     17,
+                     28,
+                     239,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  57288,
+        "opaque_pixels":  57288,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             57288,
+                                             17,
+                                             28,
+                                             239,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "8BAA0F1727E4DAC805EE3119A08AEDF822183865881006594562D547418F76DA"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_fence.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     150,
+                     14,
+                     362,
+                     241
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  28674,
+        "opaque_pixels":  23189,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             26824,
+                                             150,
+                                             14,
+                                             362,
+                                             241
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "1903E8506B4C8678977ADE2D21D61CCEFAE7D6A703B91C30C734D362BF43FB66"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_rubble.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     60,
+                     14,
+                     451,
+                     241
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  65063,
+        "opaque_pixels":  60679,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             63562,
+                                             60,
+                                             14,
+                                             451,
+                                             241
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FB1B054BFBFBE1A3B0F88C9C55D51DDA28A052381E628FCA28E7F9E39965B56A"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_tombstone_large.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     83,
+                     28,
+                     429,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  91400,
+        "opaque_pixels":  86418,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             89572,
+                                             83,
+                                             28,
+                                             429,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "E2ED3FB0333C9001FE2DB8D1878F23D3B813796573E1DA1BD622E36BE40CA560"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_tombstone_medium.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     14,
+                     40,
+                     241,
+                     472
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  63987,
+        "opaque_pixels":  60963,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             62945,
+                                             14,
+                                             40,
+                                             241,
+                                             472
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "6E728D0662FA6F4CC9E701376E2B2E05992D0AE62B2D9B54EEAF172AF37B51B5"
+    },
+    {
+        "version":  "v2",
+        "file":  "burial_tombstone_small.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     43,
+                     14,
+                     213,
+                     241
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  23655,
+        "opaque_pixels":  21948,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             23087,
+                                             43,
+                                             14,
+                                             213,
+                                             241
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "5CD65CCBC36FDA0F65F069AEEA528A8A169DF1A558AE6E1CACD9ABF173C2A071"
+    },
+    {
+        "version":  "v2",
+        "file":  "camp_crates.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     32,
+                     14,
+                     479,
+                     241
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  73731,
+        "opaque_pixels":  73731,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             73731,
+                                             32,
+                                             14,
+                                             479,
+                                             241
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "660D6400E0A283C8C3D6569CE33B69A992E3561E65CE5311FCAE123EDF8F438C"
+    },
+    {
+        "version":  "v2",
+        "file":  "camp_fire.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     14,
+                     21,
+                     241,
+                     235
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  22396,
+        "opaque_pixels":  20149,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             21352,
+                                             14,
+                                             43,
+                                             241,
+                                             235
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             260,
+                                             122,
+                                             21,
+                                             143,
+                                             44
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "5F131B1741B6372DCACAF55943C3B46E1EDB8398A0CD0DC1F52E558636C7F875"
+    },
+    {
+        "version":  "v2",
+        "file":  "camp_lantern.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     30,
+                     28,
+                     225,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  32428,
+        "opaque_pixels":  26668,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             30618,
+                                             30,
+                                             28,
+                                             225,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "990C8E92CA4ABDC923AB462364B4548CF88C688BA994440F8D96B598243CE8B1"
+    },
+    {
+        "version":  "v2",
+        "file":  "camp_stool.png",
+        "width":  256,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     29,
+                     14,
+                     226,
+                     241
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  30167,
+        "opaque_pixels":  30167,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             30167,
+                                             29,
+                                             14,
+                                             226,
+                                             241
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "EA7282D713719C0023C3B1221568E6653ADC5C69F1D1DB623B75D6E49AABE852"
+    },
+    {
+        "version":  "v2",
+        "file":  "camp_tent.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     90,
+                     28,
+                     934,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  242292,
+        "opaque_pixels":  232876,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             239070,
+                                             90,
+                                             28,
+                                             934,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "3C3C757ADE67A713EFF15F3E5500347BD85E449E27DBBDE7DC59F8903C0D685D"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_lift_chain_tile.png",
+        "width":  64,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     17,
+                     8,
+                     47,
+                     234
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  2038,
+        "opaque_pixels":  32,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             1933,
+                                             24,
+                                             8,
+                                             37,
+                                             234
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "AF1B838A141EF89A45F1E1DC1E201AA5101653E989374C090CB43253CA8BAE47"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_lift_deck.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     33,
+                     13,
+                     467,
+                     230
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  25229,
+        "opaque_pixels":  37,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             24132,
+                                             40,
+                                             100,
+                                             466,
+                                             186
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "68097A84D649E0B895FFFB368A5A42561F5521C61EDA55BF7CACCFE2EC7AFFB4"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_lift_side_frame.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     54,
+                     86,
+                     206,
+                     425
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  19722,
+        "opaque_pixels":  628,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             18016,
+                                             57,
+                                             87,
+                                             175,
+                                             422
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "BC8AD9D6F034DA7044548CB51C4BDB4DA569DF13CBEA1B31ADAE3D96358AFEA2"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_lift_top_beam.png",
+        "width":  512,
+        "height":  128,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     24,
+                     6,
+                     488,
+                     122
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  15476,
+        "opaque_pixels":  24,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             14015,
+                                             25,
+                                             25,
+                                             485,
+                                             100
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "3036D4A649875B0047DBDDFCE5416AC6726C001390AE0CBFD9DF23E0AC91CB11"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_root_large.png",
+        "width":  1024,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     285,
+                     27,
+                     736,
+                     482
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  64138,
+        "opaque_pixels":  1759,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             50932,
+                                             305,
+                                             73,
+                                             724,
+                                             463
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "7ACFED34BDD5EE53862DB9FFA55301928E0C5314C89B1D4ABC5A418585FD5DB5"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_root_medium.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     38,
+                     78,
+                     480,
+                     451
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  31655,
+        "opaque_pixels":  1156,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             26929,
+                                             61,
+                                             150,
+                                             468,
+                                             383
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "96339B6DF2A9EFDF9A2D817762BB99BE5DA33CBF9ECB81CBC581DED9E1CB00E0"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_root_small.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     26,
+                     62,
+                     486,
+                     194
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  26828,
+        "opaque_pixels":  26828,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             25308,
+                                             58,
+                                             62,
+                                             486,
+                                             194
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             1506,
+                                             26,
+                                             62,
+                                             39,
+                                             194
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             10,
+                                             176,
+                                             183,
+                                             178,
+                                             188
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "527B23485A629C8E91DABAD53C856F4DAB2FEC5E7672789EABD807EED75EA49A"
+    },
+    {
+        "version":  "v2",
+        "file":  "cellar_root_stalactite.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     51,
+                     225,
+                     950
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  27667,
+        "opaque_pixels":  120,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             22689,
+                                             102,
+                                             53,
+                                             175,
+                                             908
+                                         ],
+                               "Count":  5
+                           },
+                           {
+                               "value":  [
+                                             12,
+                                             160,
+                                             671,
+                                             161,
+                                             683
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "A56D3908DD9828B07B12AD00FE0B1043225BAD92335021BC1727C613912B35CE"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_arch.png",
+        "width":  1024,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     146,
+                     46,
+                     877,
+                     977
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  301750,
+        "opaque_pixels":  970,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             278329,
+                                             163,
+                                             50,
+                                             874,
+                                             927
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "563FDA582F55D0D82218CFF7214001D720FA486182E53C4353EBDE3EE8C30D9B"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_fallen_bell.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     31,
+                     52,
+                     488,
+                     485
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  62277,
+        "opaque_pixels":  944,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             59065,
+                                             48,
+                                             126,
+                                             464,
+                                             420
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "0EBD9475FB28F815B344439AF90D028B3D438AC80B6FB88C762CA04D9266484F"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_pillar_left.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     28,
+                     57,
+                     243,
+                     972
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  59301,
+        "opaque_pixels":  116,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             54897,
+                                             66,
+                                             61,
+                                             204,
+                                             923
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "8E50E01785C0EF60391139C6295CDDABA50F43694AFF4D9E8B83AFC2C9A6C302"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_pillar_right.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     18,
+                     52,
+                     243,
+                     972
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  66911,
+        "opaque_pixels":  76,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             62540,
+                                             37,
+                                             104,
+                                             224,
+                                             932
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "668D938F55C69FDA060EF634ECD5DBEB57151FDC758EE20EB8E3AD6965C8B0B7"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_rubble.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     38,
+                     13,
+                     478,
+                     231
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  28805,
+        "opaque_pixels":  59,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             26811,
+                                             44,
+                                             76,
+                                             477,
+                                             194
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "FD66A7E26F0A1B37DED6FABCF0B9FEE436AFB1992050B1F54AB312851B48796D"
+    },
+    {
+        "version":  "v2",
+        "file":  "chapel_torn_banner.png",
+        "width":  256,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     13,
+                     51,
+                     233,
+                     972
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  56637,
+        "opaque_pixels":  140,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             49945,
+                                             42,
+                                             105,
+                                             210,
+                                             910
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "73A454A443C2470BABABBCF234C98206A6F7C8F84E6AE432BED96DF4E08238FE"
+    },
+    {
+        "version":  "v2",
+        "file":  "hollow_oak.png",
+        "width":  1024,
+        "height":  1024,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     46,
+                     50,
+                     977,
+                     974
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  380057,
+        "opaque_pixels":  634,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             313893,
+                                             79,
+                                             72,
+                                             945,
+                                             946
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "EDCFE43A62161D6758A3CDAC23AFC549DE7EE4053DBFB2C0F63892B99599606E"
+    },
+    {
+        "version":  "v2",
+        "file":  "hollow_oak_branch.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     46,
+                     24,
+                     485,
+                     488
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  51395,
+        "opaque_pixels":  1532,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             44795,
+                                             70,
+                                             81,
+                                             483,
+                                             443
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "56A96A30BE00AC42E313CCDB88ED9FB9C4F6771895260D0471CFA52F19DA6EA8"
+    },
+    {
+        "version":  "v2",
+        "file":  "hollow_oak_root.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     47,
+                     24,
+                     475,
+                     476
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  63956,
+        "opaque_pixels":  756,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             58346,
+                                             49,
+                                             92,
+                                             473,
+                                             413
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "B8330889A61F3E71A0077BECE5D8EBDF1529FE6C8017350D25B6124DD60257CE"
+    },
+    {
+        "version":  "v2",
+        "file":  "ruin_arch.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     125,
+                     28,
+                     386,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  68026,
+        "opaque_pixels":  68026,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             68026,
+                                             125,
+                                             28,
+                                             386,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "C0410C5390ABADA2171402C870413045F18B12F19B02C7C149F14E5A945BC165"
+    },
+    {
+        "version":  "v2",
+        "file":  "ruin_column.png",
+        "width":  256,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     14,
+                     119,
+                     241,
+                     392
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  43557,
+        "opaque_pixels":  40840,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             42664,
+                                             14,
+                                             119,
+                                             241,
+                                             392
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "C40720E30A4D9CEC4D662054961CF5CA88B6A262FFE53274B65310F802DB4703"
+    },
+    {
+        "version":  "v2",
+        "file":  "ruin_ledge.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     28,
+                     25,
+                     483,
+                     230
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  56487,
+        "opaque_pixels":  56487,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             56487,
+                                             28,
+                                             25,
+                                             483,
+                                             230
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "F4A2A98964C5691E3B02C3DEBDFBAD1F30A6C9DB94DB8F7764C4908907438C78"
+    },
+    {
+        "version":  "v2",
+        "file":  "ruin_platform.png",
+        "width":  512,
+        "height":  256,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     28,
+                     27,
+                     483,
+                     229
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  61197,
+        "opaque_pixels":  57622,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             59989,
+                                             28,
+                                             27,
+                                             483,
+                                             229
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "AAAEFE2FD7B98744C47FFD3901FE8813CEEBF56CDC18BCEAF3751A38DAAA5E83"
+    },
+    {
+        "version":  "v2",
+        "file":  "ruin_wall.png",
+        "width":  512,
+        "height":  512,
+        "pixel_format":  "Format32bppArgb",
+        "bbox":  [
+                     94,
+                     28,
+                     417,
+                     483
+                 ],
+        "alpha_min":  0,
+        "alpha_max":  255,
+        "nonzero_pixels":  104848,
+        "opaque_pixels":  104848,
+        "border_pixels":  0,
+        "components":  [
+                           {
+                               "value":  [
+                                             104848,
+                                             94,
+                                             28,
+                                             417,
+                                             483
+                                         ],
+                               "Count":  5
+                           }
+                       ],
+        "sha256":  "41318F1DED75672E84CB5BCD855A98F2D7E61C00E5256649795319D243822CF8"
+    }
+]

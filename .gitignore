@@ -1,3 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+
+# Generated desktop builds at the project root.
+/*.exe
+/*.pck

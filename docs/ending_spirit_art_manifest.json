@@ -1,0 +1,26 @@
+[
+    {
+        "source":  "C:\\Users\\Public\\Godot Project\\yuki-solz\\assets\\cutscenes\\ending\\guardian_revision_v2\\guardian_birth.png",
+        "destination":  "C:\\Users\\Public\\Godot Project\\yuki-solz\\assets\\cutscenes\\ending\\panels\\ending_06_guardian_birth.png",
+        "sha256":  "A3EA42B01E164E10BD3B9D2CCC7FEEB71D6A976FBE6D12816E71474960CD643B",
+        "source_unchanged":  true
+    },
+    {
+        "source":  "C:\\Users\\Owner\\Downloads\\ChatGPT Image Oct 15, 2026, 01_16_38 AM-1.png",
+        "destination":  "C:\\Users\\Public\\Godot Project\\yuki-solz\\assets\\cutscenes\\ending\\panels\\ending_guardian_approach.png",
+        "sha256":  "1CB2B3599AACE945D037D4A27D0F6BA45E35ED9A1DB5406CE2CB7EF9B2A58946",
+        "source_unchanged":  true
+    },
+    {
+        "source":  "C:\\Users\\Owner\\Downloads\\ChatGPT Image Oct 15, 2026, 01_16_41 AM-2.png",
+        "destination":  "C:\\Users\\Public\\Godot Project\\yuki-solz\\assets\\cutscenes\\ending\\panels\\ending_07_guardian_touch.png",
+        "sha256":  "25C1A56FFFB001FE4466B6C326CC5F095994243F470D18EF1CAA4769FFFBC943",
+        "source_unchanged":  true
+    },
+    {
+        "source":  "C:\\Users\\Owner\\Downloads\\ChatGPT Image Oct 15, 2026, 01_16_43 AM-3.png",
+        "destination":  "C:\\Users\\Public\\Godot Project\\yuki-solz\\assets\\cutscenes\\ending\\panels\\ending_08_together.png",
+        "sha256":  "7F5E3498DC76706077D553235A3F83DF5C6BE5A845CA47234751C8413275DF8F",
+        "source_unchanged":  true
+    }
+]

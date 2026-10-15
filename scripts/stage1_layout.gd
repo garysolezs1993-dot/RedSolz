@@ -11,6 +11,7 @@ const REWARD_SCENE := preload("res://scenes/forest_reward.tscn")
 const SEAL_SCENE := preload("res://scenes/moon_seal.tscn")
 var build_offset := Vector2.ZERO
 @export var platform_art_enabled := true
+@export var environment_art_enabled := true
 @export_group("White Lily Trail - First Seal Preview")
 @export var lily_trail_enabled := true
 @export_range(25, 60, 1) var lily_trail_spawn_distance := 32.0
@@ -30,6 +31,11 @@ func _ready() -> void:
 	journey.name = "Stage1Journey"
 	journey.set_script(preload("res://scripts/stage1_journey.gd"))
 	add_child(journey)
+	if environment_art_enabled:
+		var dressing := Node2D.new()
+		dressing.name = "Stage1EnvironmentArt"
+		dressing.set_script(preload("res://scripts/stage1_environment_art.gd"))
+		add_child(dressing)
 	var player := get_parent().get_node_or_null("Player") as CharacterBody2D
 	if player != null:
 		var camera := player.get_node("Camera2D") as Camera2D
@@ -256,6 +262,9 @@ func _add_challenge(node_name: String, scene_name: String, spawn: Vector2, prope
 
 func _draw() -> void:
 	# Scenery has no collision and no permanent control instructions.
+	if environment_art_enabled:
+		_draw_gate_story_token()
+		return
 	draw_set_transform(Vector2(160, -288))
 	for x in [3660.0, 3890.0, 4060.0, 4230.0]:
 		draw_rect(Rect2(x, 335, 22, 165), Color("302d39"))
@@ -271,6 +280,9 @@ func _draw() -> void:
 	draw_line(Vector2(2390, 468), Vector2(2420, 498), Color("47342e"), 4)
 	for x in [2380.0, 2400.0]:
 		draw_line(Vector2(x - 8, 494), Vector2(x + 10, 498), Color("392c34"), 4)
+	_draw_gate_story_token()
+
+func _draw_gate_story_token() -> void:
 	# Abandoned scarf and a pale flower quietly echo the cursed guardian.
 	draw_rect(Rect2(9200, 496, 25, 3), Color("6b273d"))
 	for petal in [Vector2(-2, 0), Vector2(2, 0), Vector2(0, -2), Vector2(0, 2)]:

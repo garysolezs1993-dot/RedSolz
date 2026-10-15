@@ -12,6 +12,7 @@ func _initialize() -> void:
 func _run() -> void:
 	var session := root.get_node("GameSession")
 	session.save_path = "user://boss_intro_storyboard_capture.cfg"
+	session.stage_objectives.erase(session.STAGE_TWO)
 	session.checkpoint_scene = session.STAGE_TWO
 	session.checkpoint_position = Vector2(70, 485)
 	session.pending_spawn = false

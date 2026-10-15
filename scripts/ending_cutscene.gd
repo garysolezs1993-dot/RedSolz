@@ -3,12 +3,12 @@ extends Node
 const TRANSITIONS := preload("res://scripts/story_transitions.gd")
 const UI := preload("res://scripts/menu_ui.gd")
 const KEEP := preload("res://scripts/ending_keep_placeholder.gd")
-const SPIRIT_SHADER := preload("res://shaders/guardian_placeholder.gdshader")
+const TRANSFORMATION_GLOW := preload("res://shaders/ending_transformation_glow.gdshader")
 const CURSE_PROJECTILE := preload("res://scripts/ending_curse_projectile.gd")
 const LILY_TRANSFORMATION := preload("res://scripts/ending_lily_transformation.gd")
 const CURSE_IMPACT_ROOT := "res://assets/cutscenes/ending/curse_impact/"
 const CURSE_IMPACT_CORES: Array[Vector2] = [Vector2(162.9,263.7),Vector2(196.1,366.0),Vector2(239.3,303.0),Vector2(205.6,373.3),Vector2(265.5,363.1),Vector2(161.3,366.1),Vector2(123.3,379.3),Vector2(83.9,382.9)]
-const PANEL_NAMES: Array[String] = ["ending_01_lucidity.png", "ending_02_keep_reacts.png", "ending_03_sacrifice.png", "ending_04_final_words.png", "ending_05_white_lily.png", "ending_06_guardian_birth.png", "ending_07_guardian_touch.png", "ending_08_together.png"]
+const PANEL_NAMES: Array[String] = ["ending_01_lucidity.png", "ending_02_keep_reacts.png", "ending_03_sacrifice.png", "ending_04_final_words.png", "ending_05_white_lily.png", "ending_06_guardian_birth.png", "ending_07_guardian_touch.png", "ending_08_together.png", "ending_guardian_approach.png"]
 signal continue_requested
 
 @export var cutscene_enabled := true
@@ -22,11 +22,10 @@ signal continue_requested
 @export var guardian_birth_artwork: Texture2D
 @export var guardian_touch_artwork: Texture2D
 @export var together_artwork: Texture2D
+@export var guardian_approach_artwork: Texture2D
 @export_group("Replaceable Visual Effects")
-@export var guardian_texture: Texture2D
 @export var lily_texture: Texture2D
 @export var curse_strike_texture: Texture2D
-@export var guardian_scale := .35
 @export var curse_strike_scale := .35
 @export_group("Pacing")
 ## Disabled: dialogue and story panels wait for Continue. Animation still runs normally.
@@ -66,7 +65,6 @@ var camera: Camera2D
 var hud: Control
 var world: Node2D
 var keep_visual: Node2D
-var guardian: Sprite2D
 var transformation_lilies: Node2D
 var curse_projectile: Node2D
 var curse_impact: AnimatedSprite2D
@@ -120,7 +118,7 @@ func _ready() -> void:
 	curse_impact_frames.set_animation_speed("impact",curse_impact_fps)
 	for index in range(8):
 		curse_impact_frames.add_frame("impact",load(CURSE_IMPACT_ROOT + "cursed_attack_%02d.png" % index))
-	textures = [lucidity_artwork, keep_reacts_artwork, sacrifice_artwork, final_words_artwork, lily_artwork, guardian_birth_artwork, guardian_touch_artwork, together_artwork]
+	textures = [lucidity_artwork, keep_reacts_artwork, sacrifice_artwork, final_words_artwork, lily_artwork, guardian_birth_artwork, guardian_touch_artwork, together_artwork, guardian_approach_artwork]
 	for index in range(textures.size()):
 		var path := panel_art_directory.path_join(PANEL_NAMES[index])
 		if textures[index] == null and ResourceLoader.exists(path):
@@ -178,6 +176,8 @@ func _on_defeated() -> void:
 		"invulnerable": player.get("invulnerable"), "hud_visible": hud.visible, "music_context": AudioDirector.current_context,
 		"region_labels": get_parent().get_node("Stage2BossLayout").get("region_labels_visible")}
 	saved["wolf_z_index"] = wolf_visual.z_index
+	saved["wolf_material"] = wolf_visual.material
+	saved["wolf_modulate"] = wolf_visual.modulate
 	GameSession.ending_in_progress = true
 	get_parent().set_meta("ending_cutscene_active", true)
 	player.call("_cancel_action")
@@ -426,9 +426,9 @@ func _shot(index: int, label: String, immediate: bool = false) -> void:
 		elif index == 5:
 			motion_seconds = guardian_formation_duration + quiet_hold
 		elif index == 6:
-			motion_seconds = guardian_touch_duration + quiet_hold + .7
+			motion_seconds = guardian_touch_duration + 3.36 + quiet_hold
 		elif index == 7:
-			motion_seconds = 1.5 + wide_hold + 6.0
+			motion_seconds = 1.5 + wide_hold + 5 * (dialogue_hold + .36) + quiet_hold
 		panel_motion = TRANSITIONS.fade(self,artwork,^"scale",Vector2.ONE,motion_seconds)
 		panel_motion.parallel().tween_property(artwork,"position",Vector2.ZERO,motion_seconds)
 
@@ -570,27 +570,8 @@ func _stop_curse_effects() -> void:
 	if is_instance_valid(curse_impact):
 		curse_impact.stop()
 		curse_impact.hide()
-func _make_guardian() -> void:
-	guardian = Sprite2D.new()
-	guardian.name = "GuardianWolfCinematicPlaceholder"
-	guardian.texture = guardian_texture if guardian_texture != null else wolf_visual.sprite_frames.get_frame_texture("idle",0)
-	if guardian_texture == null:
-		guardian.material = ShaderMaterial.new()
-		(guardian.material as ShaderMaterial).shader = SPIRIT_SHADER
-	else:
-		var unlit := CanvasItemMaterial.new()
-		unlit.light_mode = CanvasItemMaterial.LIGHT_MODE_UNSHADED
-		guardian.material = unlit
-	guardian.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	guardian.scale = Vector2.ONE * guardian_scale
-	guardian.position = boss.global_position + Vector2(165,-64)
-	guardian.flip_h = true
-	guardian.z_index = 3
-	guardian.modulate.a = 0
-	world.add_child(guardian)
-
 func _play_guardian_transformation() -> void:
-	# Keep the live arena visible until the lilies and body fade have played fully.
+	# Lilies and growing moonlight lead directly into the Guardian artwork.
 	await _shot(-1,"guardian_transformation")
 	active_tween = TRANSITIONS.fade(self,camera,^"position",boss.global_position+Vector2(-35,-75),.5)
 	active_tween.parallel().tween_property(camera,"zoom",Vector2.ONE*1.5,.5)
@@ -606,18 +587,17 @@ func _play_guardian_transformation() -> void:
 	active_tween = TRANSITIONS.fade(self,transformation_lilies,^"intensity",1.0,transformation_lily_build_duration)
 	active_tween.parallel().tween_property(wolf_visual,"modulate",Color(.8,.88,1,1),transformation_lily_build_duration)
 	await active_tween.finished
-	_make_guardian()
-	guardian.position = boss.global_position+Vector2(25,-64)
-	guardian.z_index = -1
-	# Both forms share the same area while moonlight replaces the cursed body.
-	active_tween = TRANSITIONS.fade(self,wolf_visual,^"modulate:a",0.0,guardian_formation_duration)
-	active_tween.parallel().tween_property(guardian,"modulate:a",.7,guardian_formation_duration)
+	var glow_material := ShaderMaterial.new()
+	glow_material.shader = TRANSFORMATION_GLOW
+	glow_material.set_shader_parameter("glow_amount",0.0)
+	wolf_visual.material = glow_material
+	active_tween = TRANSITIONS.fade(self,glow_material,^"shader_parameter/glow_amount",1.0,guardian_formation_duration)
+	active_tween.parallel().tween_property(transformation_lilies,"reveal_glow",1.0,guardian_formation_duration)
 	await active_tween.finished
 	transformation_lilies.stop_emitting()
-	active_tween = TRANSITIONS.fade(self,transformation_lilies,^"intensity",0.0,transformation_linger_duration)
+	# A brief soft flash bridges the peak glow into the next illustrated shot.
+	active_tween = TRANSITIONS.fade(self,flash,^"color",Color(.94,.98,1,.16),.12)
 	await active_tween.finished
-	# Give the last emitted afterimages their complete lifetime before the artwork.
-	await _wait(maxf(0,.95-transformation_linger_duration))
 
 func _sequence() -> void:
 	# Land onto the actual terrain snapshot before playing all collapse frames.
@@ -674,26 +654,41 @@ func _sequence() -> void:
 	await _say("Brother","See...?")
 	await _say("Brother","I came back.")
 	await _say("Red","Idiot...")
-	await _say("Brother","Take care of it for me.")
+	await _say("Brother","Keep the lily safe.")
 	await _wait(quiet_hold)
 	await _shot(4,"white_lily")
 	_petals(boss.global_position+Vector2(-25,-35),2)
 	await _play_guardian_transformation()
-	await _shot(5,"guardian_birth")
-	await _wait_for_continue(quiet_hold)
+	await _shot(5,"guardian_birth",true)
+	wolf_visual.modulate.a = 0.0
+	# Remaining lilies finish behind the panel instead of delaying the reveal.
+	var glow_fade := transformation_lilies.create_tween().set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	glow_fade.tween_property(transformation_lilies,"intensity",0.0,transformation_linger_duration)
+	glow_fade.parallel().tween_property(transformation_lilies,"reveal_glow",0.0,transformation_linger_duration)
+	await _fade(flash,^"color:a",0.0,.25)
+	await _say("Red","Brother…?")
+	# The Guardian does not answer. Hold the silence before the hand-touch panel.
+	await _wait(quiet_hold)
+	# Recognition uses the original reveal. The new contact paintings follow it.
+	if textures[8] != null:
+		await _shot(8,"guardian_approach")
+		await _wait(guardian_touch_duration)
 	await _shot(6,"guardian_touch")
 	player.call("_play_visual","idle")
 	player.set("facing",1)
 	red_visual.flip_h = false
-	await _fade(guardian,^"global_position",player.global_position+Vector2(62,-47),guardian_touch_duration)
+	await _wait(guardian_touch_duration)
+	await _say("Red","…You don’t remember me, do you?",3.0)
 	await _wait(quiet_hold)
-	guardian.flip_h = false
-	await _wait_for_continue(.7)
 	await _shot(7,"together")
 	active_tween = TRANSITIONS.fade(self,camera,^"position",Vector2(1950,365),1.5)
 	active_tween.parallel().tween_property(camera,"zoom",Vector2.ONE,.1+1.4)
 	await active_tween.finished
 	await _wait(wide_hold)
+	await _say("Red","…Still protecting me.",2.5)
+	await _say("Red","Come on.",1.2)
+	await _say("Red","This time… we go together.",3.0)
+	await _wait(quiet_hold)
 	await _say("","The curse remains.",2.5)
 	await _say("","And the Silent Keep still waits.",2.8)
 	await _fade(black,^"color:a",1.0,1.0)
@@ -771,6 +766,8 @@ func _exit_tree() -> void:
 			boss.physics_interpolation_mode = saved["boss_interpolation"]
 			wolf_visual.process_mode = saved["wolf_mode"]
 			wolf_visual.z_index = saved["wolf_z_index"]
+			wolf_visual.material = saved["wolf_material"]
+			wolf_visual.modulate = saved["wolf_modulate"]
 			boss.set("ending_managed",false)
 			boss.call_deferred("_on_visual_animation_finished")
 		if is_instance_valid(hud):

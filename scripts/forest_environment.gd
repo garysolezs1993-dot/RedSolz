@@ -131,11 +131,18 @@ func _apply_selective_lighting() -> void:
 		grade.set_shader_parameter("moon_castle_brightness", moon_castle_brightness)
 		grade.set_shader_parameter("soften_moon_castle", entry[2])
 	var layout := get_parent().get_node_or_null("Stage1Layout")
+	if layout == null:
+		layout = get_parent().get_node_or_null("Stage2BossLayout")
 	if layout != null:
 		_shade_platforms(layout)
 		var scenery := layout.get_node_or_null("HollowOakAndCellar") as CanvasItem
 		if scenery != null:
 			scenery.self_modulate = Color(scenery_brightness, scenery_brightness, scenery_brightness, 1)
+		var environment_art := layout.get_node_or_null("Stage1EnvironmentArt")
+		if environment_art == null:
+			environment_art = layout.get_node_or_null("Stage2EnvironmentArt")
+		if environment_art != null:
+			environment_art.set_brightness(scenery_brightness)
 	if vignette != null:
 		(vignette.material as ShaderMaterial).set_shader_parameter("strength", vignette_strength)
 
@@ -190,6 +197,7 @@ func _draw() -> void:
 		draw_circle(mote_position, 1.1 if index % 3 == 0 else 0.8, color)
 
 func _draw_lantern_posts() -> void:
+	var visual_kit := _has_stage1_environment_art()
 	for x in LANTERN_X:
 		if x >= world_width or _overlaps_checkpoint(x):
 			continue
@@ -200,12 +208,16 @@ func _draw_lantern_posts() -> void:
 		draw_circle(lamp, 31.0 * flicker, Color(1.0, 0.30, 0.12, 0.025))
 		draw_circle(lamp, 18.0 * flicker, Color(1.0, 0.42, 0.17, 0.055))
 		draw_circle(lamp, 7.0, Color(1.0, 0.67, 0.31, 0.18))
+		if visual_kit:
+			continue # v2 supplies the lamp/post artwork; these glows still apply.
 		draw_line(base + Vector2(0, -2), base + Vector2(0, -38), Color("382b2b"), 3.0, true)
 		draw_line(base + Vector2(-5, -33), base + Vector2(6, -38), Color("564044"), 2.0, true)
 		draw_rect(Rect2(lamp.x - 4.0, lamp.y - 5.0, 8.0, 10.0), Color("755143"), true)
 		draw_rect(Rect2(lamp.x - 2.0, lamp.y - 3.0, 4.0, 6.0), Color("ffba66"), true)
 
 func _draw_gravestones() -> void:
+	if _has_stage1_environment_art():
+		return # Authored v2 burial clusters replace the scattered grey markers.
 	for x in [1240.0, 1292.0, 2320.0, 2380.0, 2670.0, 2718.0, 4130.0, 4182.0, 4510.0, 4570.0]:
 		var y := GROUND_TOP - (18.0 if int(x) % 2 == 0 else 14.0)
 		var stone := PackedVector2Array([
@@ -216,6 +228,12 @@ func _draw_gravestones() -> void:
 		draw_colored_polygon(stone, Color("393542"))
 		draw_line(Vector2(x, y + 5.0), Vector2(x, y + 14.0), Color("766775"), 1.2, true)
 		draw_line(Vector2(x - 3.0, y + 9.0), Vector2(x + 3.0, y + 9.0), Color("766775"), 1.2, true)
+
+func _has_stage1_environment_art() -> bool:
+	var layout := get_parent().get_node_or_null("Stage1Layout")
+	if layout == null:
+		layout = get_parent().get_node_or_null("Stage2BossLayout")
+	return layout != null and bool(layout.get("environment_art_enabled"))
 
 func _draw_ground_growth() -> void:
 	for x in range(45, int(world_width), 115):
