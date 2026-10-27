@@ -1,4 +1,4 @@
-Stage 1 Hazard Assets — Red Riding Hood: The Silent Keep
+Stage 1 Hazard Assets — The Silent Keep: Moonlit Oath
 
 Files:
 - ground_spike_single.png — 128x128

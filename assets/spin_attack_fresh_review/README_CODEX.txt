@@ -1,4 +1,4 @@
-# Red Riding Hood — Attack Spin Fresh Export
+# Red — Attack Spin Fresh Export
 
 This pack was regenerated from a fresh animation reference rather than repairing
 the previous broken attack frames.

@@ -71,7 +71,7 @@ anchor_right=1.0
 anchor_bottom=1.0
 [node name="Title" type="Label" parent="UI/HUD"]
 position=Vector2(24,18)
-text="RED RIDING HOOD"
+text="Red"
 theme_override_colors/font_color=Color(0.75,0.12,0.16,1)
 theme_override_font_sizes/font_size=24
 [node name="HP" type="ProgressBar" parent="UI/HUD"]

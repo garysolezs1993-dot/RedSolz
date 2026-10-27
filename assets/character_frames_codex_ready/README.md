@@ -1,4 +1,4 @@
-# Red Riding Hood — CLEAN / CODEX-READY FRAME ASSETS
+# Red — CLEAN / CODEX-READY FRAME ASSETS
 
 This pack is rebuilt from the supplied atlas with animation cells separated instead of blindly taking 64px chunks.
 

@@ -69,7 +69,7 @@ Guardian design: the same brother's protective identity, expressed as a calmer n
 
 ### Copyable shared prompt prefix
 
-> Create one clean landscape cinematic illustration for Red Riding Hood: The Silent Keep, using the attached approved character and environment references. Match the established character identities, clothing, wolf anatomy, scale relationships and gothic illustration style. Preserve the Wolf's red scarf and exactly one beautiful white lily attached in the reference position. Use a dark crimson and moonlit forest-ruins palette with readable emotional faces and silhouettes. Compose for a 16:9 game cutscene, with quiet space at the bottom for dialogue rendered separately by Godot. No text, dialogue, captions, numbers, borders, collage layout, watermark or UI. This is a single finished shot, not a storyboard or animation sheet.
+> Create one clean landscape cinematic illustration for The Silent Keep: Moonlit Oath, using the attached approved character and environment references. Match the established character identities, clothing, wolf anatomy, scale relationships and gothic illustration style. Preserve the Wolf's red scarf and exactly one beautiful white lily attached in the reference position. Use a dark crimson and moonlit forest-ruins palette with readable emotional faces and silhouettes. Compose for a 16:9 game cutscene, with quiet space at the bottom for dialogue rendered separately by Godot. No text, dialogue, captions, numbers, borders, collage layout, watermark or UI. This is a single finished shot, not a storyboard or animation sheet.
 
 Append the relevant shot description below. The dialogue listed here is narrative context only and must not be written into the PNG.
 

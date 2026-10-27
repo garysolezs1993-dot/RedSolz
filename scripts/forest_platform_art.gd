@@ -7,6 +7,7 @@ extends Node2D
 @export var variant := 0
 @export var area_style := "entrance"
 @export var compact_surface := false
+@export var quiet_surface := false
 const ROOT := "res://assets/environment/gothic_forest/"
 const ART_SCALE := .6
 const DEPTH_SHADER := preload("res://shaders/forest_platform_depth.gdshader")
@@ -67,6 +68,8 @@ static func style_at(x: float, y: float) -> String:
 	return "entrance"
 
 func _pool() -> Array:
+	if quiet_surface:
+		return [KIT["quiet"], KIT["crimson"]]
 	if area_style == "entrance":
 		return PIECES
 	var result: Array = []
@@ -79,7 +82,8 @@ func _pool() -> Array:
 
 
 func _ready() -> void:
-	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	# Fractional art/camera scales need smooth sampling to avoid crawling edges.
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	z_index = -1
 	if area_style == "cellar":
 		modulate = Color(.84, .84, .92, 1)
@@ -177,6 +181,8 @@ func _prop(path: String, x: float, y: float, scale_factor: float, hanging: bool 
 	add_child(sprite)
 
 func _add_dressing() -> void:
+	if quiet_surface:
+		return
 	if area_style == "entrance":
 		if dimensions.x > 300:
 			_prop("root_hanging/bare_branch_roots.png", -dimensions.x * .28, surface_y + 16, .28, true, variant % 2 == 0)

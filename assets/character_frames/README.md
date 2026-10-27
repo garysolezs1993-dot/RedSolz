@@ -1,4 +1,4 @@
-# Red Riding Hood — extracted frame assets
+# Red — extracted frame assets
 
 Each animation is in its own folder. Every frame is a 64x64 transparent PNG, intended to display as a 32x32 logical sprite at 0.5 scale / 2x source resolution. Frames are numbered from 00.
 

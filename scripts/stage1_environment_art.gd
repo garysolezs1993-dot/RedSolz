@@ -48,7 +48,7 @@ const BOUNDS := {
 func _ready() -> void:
 	name = "Stage1EnvironmentArt"
 	z_index = -3
-	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	set_meta("visual_only", true)
 	_build_chapel()
 	_build_camp()
@@ -86,7 +86,7 @@ func _prop(key: String, node_name: String, anchor: Vector2, size: float,
 	sprite.position = anchor - Vector2(center_x, bounds.position.y if hanging else bounds.end.y) * factor
 	sprite.z_index = depth
 	sprite.modulate.a = opacity
-	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	if key in ["camp_crates", "camp_stool"]:
 		# Exclude only the straight export strip in Godot; actual PNGs stay intact.
 		sprite.region_enabled = true
@@ -130,12 +130,30 @@ func _build_oak_and_cellar() -> void:
 	_prop("hollow_oak_root", "CellarWestExitRoots", Vector2(3465, 740), 100, false, false, -2, .8)
 
 func _build_bridge() -> void:
-	# The curved full bridge reads as architecture below the unchanged route.
-	_prop("bridge_main", "RuinedBridgeLandmark", Vector2(5620, 564), 610, false, false, -2, .85)
-	_prop("bridge_pillar", "BridgeEastSupport", Vector2(5870, 566), 180, true, false, -2)
-	# A separate segment dresses the existing straight crossing; terrain draws
-	# above it and retains the readable flat contact row at y=424.
-	_prop("bridge_segment", "BridgeDeckDressing", Vector2(5640, 450), 325, false, false, -1, .85)
+	# RootedLedge_280/281 already supply a continuous flat crossing:
+	# x=5380..5860, surface y=424. Frame that surface, without a second painted
+	# deck above/below it suggesting a different place to stand.
+	_prop("bridge_pillar", "BridgeWestSupport", Vector2(5394, 556), 132, true, false, -1)
+	_prop("bridge_pillar", "BridgeEastSupport", Vector2(5846, 556), 132, true, false, -1)
+	var rail := Line2D.new()
+	rail.name = "BridgeBackRope"
+	rail.width = 2.0
+	rail.default_color = Color("6d4e4b")
+	rail.antialiased = true
+	for index in range(17):
+		var t := float(index) / 16.0
+		rail.add_point(Vector2(lerpf(5394, 5846, t), 395 + sin(t * PI) * 10))
+	add_child(rail)
+	for index in range(7):
+		var t := float(index) / 6.0
+		var x := lerpf(5394, 5846, t)
+		var tie := Line2D.new()
+		tie.name = "BridgeRopeTie_%d" % index
+		tie.width = 1.0
+		tie.default_color = Color("5d4244")
+		tie.antialiased = true
+		tie.points = PackedVector2Array([Vector2(x, 395 + sin(t * PI) * 10), Vector2(x, 424)])
+		add_child(tie)
 
 func _build_burial() -> void:
 	_prop("burial_tombstone_large", "BurialMainGrave", Vector2(7120, 680), 86, true)
@@ -154,39 +172,9 @@ func _build_upper_ruins() -> void:
 	_prop("ruin_wall", "SanctuaryEastWall", Vector2(8490, 126), 170, true, false, -2, .75)
 	_prop("ruin_column", "SanctuaryEastColumn", Vector2(8440, 126), 68, true)
 	_prop("chapel_rubble", "UpperLookoutRubble", Vector2(7295, 18), 60)
-	# Replace artwork on two existing bodies, without touching collision/positions.
-	_dress_existing_ledge("RootedLedge_610", "ruin_platform", 39.0)
-	_dress_existing_ledge("RootedLedge_611", "ruin_ledge", 42.0)
-
-func _dress_existing_ledge(body_name: String, key: String, contact_row: float) -> void:
-	var body := get_parent().get_node_or_null(body_name) as StaticBody2D
-	if body == null:
-		return
-	var legacy := body.get_node_or_null("GothicPlatformArt") as Node2D
-	if legacy == null:
-		return
-	var dimensions: Vector2 = legacy.get("dimensions")
-	var surface: float = legacy.get("surface_y")
-	var sprite := Sprite2D.new()
-	sprite.name = "V2RuinSurface"
-	sprite.texture = load(ROOT + key + ".png") as Texture2D
-	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	sprite.centered = false
-	var bounds: Rect2 = BOUNDS[key]
-	var factor := dimensions.x / bounds.size.x
-	sprite.scale = Vector2.ONE * factor
-	sprite.position = Vector2(-bounds.get_center().x * factor, surface - contact_row * factor)
-	sprite.modulate = Color(brightness, brightness, brightness, 1)
-	sprite.z_index = -1
-	sprite.set_meta("visual_only", true)
-	sprite.set_meta("source_file", key + ".png")
-	body.add_child(sprite)
-	var old_lip := legacy.get_node_or_null("WalkableMossLip") as Line2D
-	if old_lip != null:
-		var lip := old_lip.duplicate() as Line2D
-		lip.name = "V2WalkableMossLip"
-		body.add_child(lip)
-	legacy.hide()
+	# Keep the finished terrain kit on the two upper ledges. The v2 ruin
+	# surface images contain coarse resampled detail; enlarging them cannot
+	# match the cleaner existing platform artwork.
 
 func _light(where: Vector2, energy: float, radius: float) -> void:
 	var gradient := Gradient.new()

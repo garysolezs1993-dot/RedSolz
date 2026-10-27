@@ -3,7 +3,7 @@ extends Control
 const TRANSITIONS := preload("res://scripts/story_transitions.gd")
 @export var completion_artwork: Texture2D
 # Clickable rectangle in source-image pixels; scales with the fitted artwork.
-@export var return_button_rect := Rect2(589, 584, 494, 86)
+@export var return_button_rect := Rect2(1130, 780, 410, 70)
 var artwork: TextureRect
 var return_button: Button
 var departing := false
@@ -34,20 +34,34 @@ func _ready() -> void:
 	artwork.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	return_button = Button.new()
 	return_button.name = "ReturnToTitle"
-	# The supplied image already includes its button label and ornamentation.
+	# New completion art contains the title/message; the button remains editable.
+	return_button.text = "Return to Title"
+	return_button.add_theme_font_override("font", preload("res://assets/menu_font.tres"))
+	return_button.add_theme_color_override("font_color", Color("f0e4dc"))
+	return_button.add_theme_color_override("font_hover_color", Color("fff1df"))
+	return_button.add_theme_color_override("font_focus_color", Color("fff1df"))
 	return_button.tooltip_text = "Return to Title — Enter / Space / controller A"
 	return_button.focus_mode = Control.FOCUS_ALL
 	return_button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	for style_name in ["normal", "disabled"]:
-		return_button.add_theme_stylebox_override(style_name, StyleBoxEmpty.new())
+		var normal := StyleBoxFlat.new()
+		normal.bg_color = Color(.035, .012, .026, .88)
+		normal.border_color = Color("a68169")
+		normal.set_border_width_all(1)
+		normal.set_corner_radius_all(3)
+		normal.content_margin_left = 18
+		normal.content_margin_right = 18
+		return_button.add_theme_stylebox_override(style_name, normal)
 	var focus := StyleBoxFlat.new()
 	focus.bg_color = Color(0,0,0,0)
-	focus.border_color = Color(1.0, .66, .69, .65)
+	focus.border_color = Color("efd2b1")
 	focus.set_border_width_all(1)
 	focus.set_corner_radius_all(3)
 	return_button.add_theme_stylebox_override("focus",focus)
 	var hover := StyleBoxFlat.new()
-	hover.bg_color = Color(1.0, .2, .25, .08)
+	hover.bg_color = Color(.15, .025, .04, .94)
+	hover.border_color = Color("e0b58f")
+	hover.set_border_width_all(1)
 	hover.set_corner_radius_all(3)
 	return_button.add_theme_stylebox_override("hover",hover)
 	var pressed := hover.duplicate() as StyleBoxFlat
@@ -73,6 +87,7 @@ func _layout_art_button() -> void:
 	var source_size := completion_artwork.get_size()
 	var fit_scale := minf(size.x / source_size.x, size.y / source_size.y)
 	var fitted_origin := (size - source_size * fit_scale) * .5
+	return_button.add_theme_font_size_override("font_size", maxi(12, roundi(28 * fit_scale)))
 	return_button.position = fitted_origin + return_button_rect.position * fit_scale
 	return_button.size = return_button_rect.size * fit_scale
 

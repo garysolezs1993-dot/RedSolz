@@ -9,6 +9,9 @@ const STAGE_ONE_ARRIVAL := preload("res://scripts/stage1_arrival.gd")
 const STAGE_ONE_DEFINITION := preload("res://scripts/stage1_definition.gd")
 const INITIAL_POSITION := Vector2(70.0, 485.0)
 const DEATH_PRESENTATION := preload("res://scripts/death_presentation.gd")
+# Intentional legacy folder identifier: preserve saves from the former title.
+# Godot's project-name sanitization replaces ':' with '-' in this directory.
+const LEGACY_DATA_FOLDER := "Red Riding Hood- The Silent Keep"
 
 var music_volume := 0.55
 var sfx_volume := 0.85
@@ -32,11 +35,32 @@ var fade_tween: Tween
 var toast: Label
 var toast_tween: Tween
 
+func _import_legacy_user_files() -> void:
+	# A rename changes the default user:// directory. Copy only missing files;
+	# leave the old folder and any newer destination progress untouched.
+	var destination := OS.get_user_data_dir()
+	var source := destination.get_base_dir().path_join(LEGACY_DATA_FOLDER)
+	if source == destination or not DirAccess.dir_exists_absolute(source):
+		return
+	if DirAccess.make_dir_recursive_absolute(destination) != OK:
+		push_warning("Could not create the new save directory. Original saves remain untouched.")
+		return
+	for file_name: String in ["journey.cfg", "audio_settings.cfg"]:
+		var old_file := source.path_join(file_name)
+		var new_file := destination.path_join(file_name)
+		if FileAccess.file_exists(new_file) or not FileAccess.file_exists(old_file):
+			continue
+		var error := DirAccess.copy_absolute(old_file, new_file)
+		if error != OK:
+			push_warning("Could not import existing %s after title update (%d). Original remains untouched." % [file_name, error])
+
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	if OS.get_cmdline_user_args().has("--presentation-test"):
 		settings_path = "user://presentation_test_settings.cfg"
 		save_path = "user://presentation_test_journey.cfg"
+	else:
+		_import_legacy_user_files()
 	_load_settings()
 	_load_journey()
 	_add_menu_controller_bindings()

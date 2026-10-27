@@ -12,6 +12,13 @@ const SEAL_SCENE := preload("res://scenes/moon_seal.tscn")
 var build_offset := Vector2.ZERO
 @export var platform_art_enabled := true
 @export var environment_art_enabled := true
+@export_group("Camp Layout Review")
+## Fewer overhead ledges and wider vertical spacing at the camp recovery route.
+@export var camp_cleanup_enabled := true
+## Shared cellar stairs and restrained platform dressing below Hollow Oak.
+@export var cellar_cleanup_enabled := true
+## Two staggered recovery ledges beside the cellar lift, instead of a stack.
+@export var lift_approach_cleanup_enabled := true
 @export_group("White Lily Trail - First Seal Preview")
 @export var lily_trail_enabled := true
 @export_range(25, 60, 1) var lily_trail_spawn_distance := 32.0
@@ -201,6 +208,7 @@ func _apply_platform_art(body: StaticBody2D, legacy: Node2D, center_x: float, to
 		art.set("variant", variant + index)
 		art.set("area_style", PLATFORM_ART.style_at(segment_center, top_y))
 		art.set("compact_surface", top_y > 500)
+		art.set("quiet_surface", cellar_cleanup_enabled and segment_center >= 3300 and segment_center <= 5270 and top_y >= 500 and top_y <= 740)
 		art.position.x = segment_center - center_x
 		body.add_child(art)
 

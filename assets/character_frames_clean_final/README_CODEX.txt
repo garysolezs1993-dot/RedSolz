@@ -1,4 +1,4 @@
-# Red Riding Hood — CLEAN Codex-ready frames
+# Red — CLEAN Codex-ready frames
 
 Source: the supplied `image(3).png` atlas.
 

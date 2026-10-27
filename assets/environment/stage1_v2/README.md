@@ -1,6 +1,6 @@
 # Stage 1 Environment Assets v2
 
-Corrected pack for **Red Riding Hood: The Silent Keep**.
+Corrected pack for **The Silent Keep: Moonlit Oath**.
 
 - 37 separate RGBA PNGs
 - Exact filenames and canvas sizes from the Stage 1 environment brief

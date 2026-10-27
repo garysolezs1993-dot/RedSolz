@@ -151,7 +151,7 @@ func _build() -> void:
 	title_group.modulate.a = 0
 	title_group.add_theme_constant_override("separation", 15)
 	center.add_child(title_group)
-	for item in [["RED RIDING HOOD", 36], ["THE SILENT KEEP", 19]]:
+	for item in [["THE SILENT KEEP", 36], ["M O O N L I T  O A T H", 19]]:
 		var label := UI.label(str(item[0]), int(item[1]), Color("eee0d8"))
 		label.autowrap_mode = TextServer.AUTOWRAP_OFF
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER

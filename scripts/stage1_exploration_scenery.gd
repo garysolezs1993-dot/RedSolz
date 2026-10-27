@@ -1,11 +1,25 @@
 extends Node2D
 
 @export var use_environment_art := false
+@export var cellar_cleanup_enabled := false
+var cellar_backing: GradientTexture2D
 
 # Existing terrain colors, roots and ruined-stone shapes decorate the new rooms.
 # Scenery has no collision; shelves and marked hazards own all gameplay geometry.
 func _ready() -> void:
 	z_index = -2
+	if cellar_cleanup_enabled:
+		# Fade the room backing into the forest instead of a hard rectangle.
+		var gradient := Gradient.new()
+		gradient.offsets = PackedFloat32Array([0.0, 0.65, 1.0])
+		gradient.colors = PackedColorArray([Color(0.086, 0.075, 0.125, 0.88), Color(0.086, 0.075, 0.125, 0.88), Color(0.086, 0.075, 0.125, 0)])
+		cellar_backing = GradientTexture2D.new()
+		cellar_backing.gradient = gradient
+		cellar_backing.width = 256
+		cellar_backing.height = 64
+		cellar_backing.fill = GradientTexture2D.FILL_RADIAL
+		cellar_backing.fill_from = Vector2(0.5, 0.5)
+		cellar_backing.fill_to = Vector2(1, 0.5)
 	queue_redraw()
 
 func _draw() -> void:
@@ -16,7 +30,10 @@ func _draw() -> void:
 		for index in range(9):
 			var start := Vector2(5440 + index * 80, 558 + index % 3 * 12)
 			draw_line(start, start + Vector2(45, 0), Color("475166"), 2)
-		draw_rect(Rect2(3330, 540, 1900, 245), Color("161320"))
+		if cellar_backing != null:
+			draw_texture_rect(cellar_backing, Rect2(3330, 540, 1900, 245), false)
+		else:
+			draw_rect(Rect2(3330, 540, 1900, 245), Color("161320"))
 		_draw_region_labels()
 		return
 	draw_set_transform(Vector2(510, 0))
@@ -49,6 +66,10 @@ func _draw_region_labels() -> void:
 		[Vector2(9420, 298), "MOON GATE", "The forest opens beneath the crimson moon."],
 	]:
 		var sign_position: Vector2 = sign[0]
+		# The HUD already names the current region. Keep this room clear of
+		# old map-planning labels; the lift retains its real interaction prompt.
+		if cellar_cleanup_enabled and str(sign[1]) in ["HOLLOW OAK", "ROOT CELLAR", "ROOTBOUND SHORTCUT"]:
+			continue
 		draw_string(ThemeDB.fallback_font, sign_position, str(sign[1]), HORIZONTAL_ALIGNMENT_LEFT, -1, 14, Color("b7a9bb"))
 		draw_string(ThemeDB.fallback_font, sign_position + Vector2(0, 19), str(sign[2]), HORIZONTAL_ALIGNMENT_LEFT, -1, 11, Color("ae989c"))
 

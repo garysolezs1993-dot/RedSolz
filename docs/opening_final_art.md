@@ -27,7 +27,7 @@ Textures use aspect-preserving **Keep Aspect Centered** rendering. Gentle motion
 
 Panel resources expose **Still Zoom**, **Still Pan**, **Music Level Db**, **Artwork**, ordered **Lines** and reading duration. The root exposes fade times, title duration, ambience volume and symbolic petal controls. The text box is placed below the important faces/lily; the final artworks hide temporary storyboard labels and counters.
 
-Transitions crossfade the two artwork layers over 0.4 seconds. The final artwork fades to black over 0.65 seconds, followed by the existing RED RIDING HOOD / THE SILENT KEEP title card. Stage 1 uses the existing arrival camera shot, control lock, HUD fade and return to the 1.35 gameplay camera. A transient **Find your brother.** message appears when control returns, including after Skip. Seal objectives and progression rules remain unchanged.
+Transitions crossfade the two artwork layers over 0.4 seconds. The final artwork fades to black over 0.65 seconds, followed by the THE SILENT KEEP / MOONLIT OATH title card. Stage 1 uses the existing arrival camera shot, control lock, HUD fade and return to the 1.35 gameplay camera. A transient **Find your brother.** message appears when control returns, including after Skip. Seal objectives and progression rules remain unchanged.
 
 The scene defaults to **Auto Advance = true** for the requested short cinematic. Set it false on the OpeningCutscene root to return to reader-paced dialogue. Enter/Space/E/controller A or Continue still advance early. Escape/Start/B or Skip bypass the opening and arrival shot safely.
 

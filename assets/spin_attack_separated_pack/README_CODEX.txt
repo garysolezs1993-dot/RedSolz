@@ -1,4 +1,4 @@
-# Red Riding Hood — Attack Spin Assets for Codex
+# Red — Attack Spin Assets for Codex
 
 attack_spin/ = 8 complete character+attack frames.
 spin_fx/ = 8 separate slash/effect frames.

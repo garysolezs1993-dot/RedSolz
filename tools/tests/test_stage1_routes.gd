@@ -34,6 +34,7 @@ func place(where: Vector2) -> void:
 	await frames(10)
 
 func hop(target: Vector2) -> void:
+	var takeoff_feet := player.position.y + 15.0
 	var direction := 1.0 if target.x >= player.position.x else -1.0
 	var action := "move_right" if direction > 0 else "move_left"
 	# Walk toward the edge of the existing shelf before a longer crossing.
@@ -49,7 +50,7 @@ func hop(target: Vector2) -> void:
 		await physics_frame
 		if (target.x - player.position.x) * direction <= 4:
 			input_action(action, false)
-		if target.y <= 500 and index == 18 and not player.is_on_floor() and player.jumps_used < 2:
+		if (target.y <= 500 or target.y < takeoff_feet - 58.0) and index == 18 and not player.is_on_floor() and player.jumps_used < 2:
 			input_action("jump", true)
 		elif index == 21:
 			input_action("jump", false)
@@ -171,9 +172,14 @@ func _run() -> void:
 	await walk(Vector2(5140,740))
 	await frames(210)
 	check(player.position.y < 530, "Seal-powered lift carries Red back to the bridge floor")
-	await place(Vector2(3360,725))
-	for marker in [Vector2(3510,690),Vector2(3510,635),Vector2(3510,580),Vector2(3510,525),Vector2(3580,500)]:
-		await hop(marker)
+	if current_scene.get_node("Stage1Layout").cellar_cleanup_enabled:
+		await place(Vector2(3700,725))
+		for marker in [Vector2(3700,670),Vector2(3540,610),Vector2(3380,550),Vector2(3260,500)]:
+			await hop(marker)
+	else:
+		await place(Vector2(3360,725))
+		for marker in [Vector2(3510,690),Vector2(3510,635),Vector2(3510,580),Vector2(3510,525),Vector2(3580,500)]:
+			await hop(marker)
 	check(player.position.y < 500, "Western cellar stairs also return to the hub")
 	await place(Vector2(6400,485))
 	input_action("move_right", true)

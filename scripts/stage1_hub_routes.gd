@@ -17,6 +17,7 @@ func build(target: Node2D) -> void:
 	scenery.name = "HollowOakAndCellar"
 	scenery.set_script(preload("res://scripts/stage1_exploration_scenery.gd"))
 	scenery.set("use_environment_art", layout.environment_art_enabled)
+	scenery.set("cellar_cleanup_enabled", layout.cellar_cleanup_enabled)
 	layout.add_child(scenery)
 
 func ground(x: float, y: float, width: float, id: int, drop: bool = false) -> void:
@@ -43,10 +44,26 @@ func _safety_and_main_route() -> void:
 	shelves([[3400, 450, 240], [6530, 450, 240]], 400)
 	# Recovery paths under the opening, bridge and final calm stretch.
 	for x in [150, 2650, 5510, 7970, 9800]:
-		shelves([[x, 810, 180], [x, 758, 180], [x, 706, 180], [x, 654, 180], [x, 602, 180], [x, 550, 180]], 500 + int(x))
+		if x == 5510 and layout.lift_approach_cleanup_enabled:
+			# The lift serves the main ascent to its broad existing landing at
+			# y=500. Two staggered ledges recover a missed ride from the catch
+			# floor via the existing lower bridge floor at y=590. All rises are
+			# 90 px, within Red's normal double jump; no dash/attack is needed.
+			shelves([[5480, 770, 240], [5630, 680, 240]], 6010)
+		elif x == 2650 and layout.camp_cleanup_enabled:
+			# Broad landings reachable with Red's ordinary double jump. Keep the
+			# original IDs of these retained shelves for references and saves.
+			for step in [[758, 1], [654, 3], [550, 5]]:
+				shelves([[x, step[0], 180]], 500 + int(x) + int(step[1]))
+		else:
+			shelves([[x, 810, 180], [x, 758, 180], [x, 706, 180], [x, 654, 180], [x, 602, 180], [x, 550, 180]], 500 + int(x))
 
 func _camp_and_hub() -> void:
-	shelves([[1660, 445, 190], [1800, 369, 180], [1930, 425, 180], [2380, 452, 220], [2560, 405, 200]], 100)
+	# The three western shelves lead to a petal; the camp itself is a quiet
+	# clearing around the tent and lantern rather than another platform stack.
+	shelves([[1660, 445, 190], [1800, 369, 180], [1930, 425, 180]], 100)
+	if not layout.camp_cleanup_enabled:
+		shelves([[2380, 452, 220], [2560, 405, 200]], 103)
 	layout._add_challenge("CampFallingBranch", "falling_branch", Vector2(2250, 330), {"warning_time": 1.1, "damage": 8})
 
 func _chapel_loop() -> void:
@@ -65,8 +82,11 @@ func _oak_and_cellar_loop() -> void:
 		[4570, 698, 240], [4800, 698, 200]], 240)
 	# Broad combat floor with escape shelves; no damaging hazards on this floor.
 	shelves([[3880, 688, 210], [4220, 688, 210]], 270)
-	# A safe return to the hub exists even before awakening Seal 2.
-	shelves([[3510, 690, 200], [3510, 635, 200], [3510, 580, 200], [3510, 525, 200]], 250)
+	# The existing three descent shelves also form the western return. They
+	# connect the combat floor to the surface using normal movement/double jump.
+	# The former four-shelf staircase overlapped this route at the same entrance.
+	if not layout.cellar_cleanup_enabled:
+		shelves([[3510, 690, 200], [3510, 635, 200], [3510, 580, 200], [3510, 525, 200]], 250)
 	# The distinct eastern exit becomes a fast lift after the cellar objective.
 	var lift := AnimatableBody2D.new()
 	lift.name = "CellarReturnLift"

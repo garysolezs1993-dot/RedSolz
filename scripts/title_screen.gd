@@ -108,13 +108,13 @@ func _build_menu() -> void:
 	title_group.size = Vector2(340, 100)
 	title_group.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	menu_root.add_child(title_group)
-	title_label = UI.label("RED RIDING HOOD", 30, Color("f0e4dc"))
+	title_label = UI.label("THE SILENT KEEP", 30, Color("f0e4dc"))
 	title_label.name = "TitleLabel"
 	title_label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	title_label.add_theme_color_override("font_shadow_color", Color(.55, .08, .16, .7))
 	title_label.add_theme_constant_override("shadow_offset_y", 2)
 	title_group.add_child(title_label)
-	subtitle_label = UI.label("T H E   S I L E N T   K E E P", 13, Color("bdb0b7"))
+	subtitle_label = UI.label("M O O N L I T  O A T H", 13, Color("bdb0b7"))
 	subtitle_label.name = "SubtitleLabel"
 	subtitle_label.autowrap_mode = TextServer.AUTOWRAP_OFF
 	subtitle_label.position = Vector2(1, 48)

@@ -1,4 +1,4 @@
-# Red Riding Hood — Attack Spin Codex Assets
+# Red — Attack Spin Codex Assets
 
 This pack contains the cleaned 8-frame spin attack reference.
 

@@ -1,4 +1,4 @@
-# Red Riding Hood — Natural Gothic Forest Background Assets
+# The Silent Keep: Moonlit Oath — Natural Gothic Forest Background Assets
 
 Based on the supplied forest concept sheet.
 

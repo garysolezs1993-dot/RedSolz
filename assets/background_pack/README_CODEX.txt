@@ -1,4 +1,4 @@
-# Red Riding Hood Background Assets — Codex Ready
+# The Silent Keep: Moonlit Oath — Background Assets — Codex Ready
 
 SOURCE_BACKGROUND_ATLAS_ORIGINAL.png is the untouched atlas.
 

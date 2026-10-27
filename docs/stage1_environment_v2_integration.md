@@ -2,6 +2,8 @@
 
 Implemented 2026-10-14 using `stage1_environment_assets_v2_for_codex.zip` after the user selected v2. All 37 original PNGs are copied unchanged to `assets/environment/stage1_v2/`. Their SHA-256 hashes match the reviewed ZIP files.
 
+Presentation update, 26 October 2026: the bridge now frames the existing flat crossing with two supports and a subtle rope, without overlapping curved deck images. Scaled terrain/scenery use linear filtering, and the two upper ledges retain the finished terrain kit. See [bridge presentation notes](bridge_presentation_cleanup.md). Original validation results and older gallery images below describe the initial integration.
+
 ## Placement
 
 | Area | Result |
@@ -10,13 +12,13 @@ Implemented 2026-10-14 using `stage1_environment_assets_v2_for_codex.zip` after 
 | Hollow Oak | A complete large Oak and hollow replace the drawn trunk skeleton, with supporting branch/root pieces and a root-framed cellar entrance. |
 | Root Cellar | Hanging ceiling roots, corner/ground roots and the existing dark backing distinguish the lower route without adding collision. |
 | Lift | Separate moving deck, fixed top beam and side frames, with overlapping chain sections that adjust to the deck height. |
-| Bridge | Ruined bridge architecture dresses the existing crossing; flat terrain continues to show the actual standing surfaces. |
+| Bridge | Two restrained supports and a back rope frame the existing flat crossing. The overlapping curved bridge/segment images are no longer displayed. |
 | Burial ruins | Uneven clusters of graves, cross, fence and rubble, with a collapsed-crypt arch and a small viewpoint grave. |
 | Camp | Tent, supplies, stool, static fire and lanterns form a small camp. Restrained warm lights complement the existing forest lighting. |
-| Upper ruins | Wall/arch/column silhouettes frame the ascent and sanctuary. Two existing ledges receive v2 stone artwork with their original flat contact highlights. |
+| Upper ruins | Wall/arch/column silhouettes frame the ascent and sanctuary. Walkable ledges use the finished terrain kit rather than coarse v2 surface replacements. |
 | Heartwood | A subdued branch silhouette and roots replace the old drawn tree lines, preserving open combat space. |
 
-Decorations render behind Red, enemies and interactions. They use nearest texture filtering and uniform scale. No sprite silhouette generates collision. The old duplicate line/rectangle landmarks, scattered grey graves and stick-drawn lantern posts are suppressed in this mode; water reflections, darkness backing, tutorial text, hazard warnings and story cues remain engine drawings.
+Decorations render behind Red, enemies and interactions. Environment sprites and the shared terrain kit use linear texture filtering and uniform scale; the separate lift rig retains its existing filtering. No sprite silhouette generates collision. The old duplicate line/rectangle landmarks, scattered grey graves and stick-drawn lantern posts are suppressed in this mode; water reflections, darkness backing, tutorial text, hazard warnings and story cues remain engine drawings.
 
 ## Lift and source-art handling
 
@@ -35,7 +37,7 @@ The v2 pillar/banner proportions and some softer details remain characteristics 
 Backup of scripts, scenes and project settings before integration:
 `.godot/local_backups/stage1-environment-v2-20261014-171228/`.
 
-## Validation
+## Original integration validation (14 October 2026)
 
 - Actual-renderer environment review: 260 checks passed, including equality of 438 collision/body configuration entries between v2 and the legacy mode, all 37 source assets represented, no decorative colliders, uniform scales, nearest filtering, fixed mechanism placement, gap-free chain overlap and deck endpoint alignment at lower/middle/upper stops.
 - Moon Seal flow: 335 checks passed, including order, guarding, activation, Wisp release and reload behavior.

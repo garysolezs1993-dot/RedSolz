@@ -1,4 +1,7 @@
-# Gothic Silent Keep main menu
+# The Silent Keep: Moonlit Oath — main menu
+
+Current title: `THE SILENT KEEP`; subtitle: `M O O N L I T  O A T H`.
+Both are editable Godot labels. The clean background PNG remains unchanged.
 
 ## Implementation
 
